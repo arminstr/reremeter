@@ -1,0 +1,2179 @@
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                LINK INFORMATION                                 ***
+***                                                                                 ***
+***************************************************************************************
+
+Copyright (c) 2017-2019 SEGGER Microcontroller GmbH    www.segger.com
+SEGGER Linker 2.32b compiled Aug 20 2019 13:50:10
+
+Command line:
+  --add-region
+  FLASH1=0x00010000@0x08000000
+  --add-region
+  RAM1=0x00004000@0x20000000
+  --defsym=__STACKSIZE__=1024
+  --defsym=__STACKSIZE_PROCESS__=0
+  --defsym=__HEAPSIZE__=1024
+  --full-section-headers
+  -ereset_handler
+  --defsym=__vfprintf=__vfprintf_int_nwp
+  --defsym=__vfscanf=__vfscanf_int
+  --silent
+  --list-all-undefineds
+  --fatal-warnings
+  -EL
+  -mcpu=cortex-m4
+  --gc-sections
+  -T/Applications/SEGGER Embedded Studio for ARM 4.20a/samples/SEGGER_Flash.icf
+  -Map
+  Output/nir_scope_usb/Exe/nir_scope_usb.map
+  -u_vectors
+  -o
+  Output/nir_scope_usb/Exe/nir_scope_usb.elf
+  --emit-relocs
+  --start-group
+  Output/nir_scope_usb nir_scope_usb/Obj/Cortex_M_Startup.o
+  Output/nir_scope_usb nir_scope_usb/Obj/SEGGER_THUMB_Startup.o
+  Output/nir_scope_usb nir_scope_usb/Obj/main.o
+  Output/nir_scope_usb nir_scope_usb/Obj/gpio.o
+  Output/nir_scope_usb nir_scope_usb/Obj/i2c.o
+  Output/nir_scope_usb nir_scope_usb/Obj/spi.o
+  Output/nir_scope_usb nir_scope_usb/Obj/usart.o
+  Output/nir_scope_usb nir_scope_usb/Obj/usb_device.o
+  Output/nir_scope_usb nir_scope_usb/Obj/usbd_conf.o
+  Output/nir_scope_usb nir_scope_usb/Obj/usbd_desc.o
+  Output/nir_scope_usb nir_scope_usb/Obj/usbd_cdc_if.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_it.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_msp.o
+  Output/nir_scope_usb nir_scope_usb/Obj/ADS1255.o
+  Output/nir_scope_usb nir_scope_usb/Obj/TLC59208.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_pcd.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_pcd_ex.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_i2c.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_i2c_ex.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_spi.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_spi_ex.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_tim.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_tim_ex.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_uart.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_uart_ex.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_rcc.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_rcc_ex.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_gpio.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_dma.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_cortex.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_pwr.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_pwr_ex.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_flash.o
+  Output/nir_scope_usb nir_scope_usb/Obj/stm32f3xx_hal_flash_ex.o
+  Output/nir_scope_usb nir_scope_usb/Obj/system_stm32f3xx.o
+  Output/nir_scope_usb nir_scope_usb/Obj/usbd_core.o
+  Output/nir_scope_usb nir_scope_usb/Obj/usbd_ctlreq.o
+  Output/nir_scope_usb nir_scope_usb/Obj/usbd_ioreq.o
+  Output/nir_scope_usb nir_scope_usb/Obj/usbd_cdc.o
+  /Applications/SEGGER Embedded Studio for ARM 4.20a/lib/libdebugio_mempoll_v7em_t_le_eabi.a
+  /Applications/SEGGER Embedded Studio for ARM 4.20a/lib/libm_v7em_t_le_eabi.a
+  /Applications/SEGGER Embedded Studio for ARM 4.20a/lib/libc_v7em_t_le_eabi.a
+  /Applications/SEGGER Embedded Studio for ARM 4.20a/lib/libcpp_v7em_t_le_eabi.a
+  /Applications/SEGGER Embedded Studio for ARM 4.20a/lib/libdebugio_v7em_t_le_eabi.a
+  /Applications/SEGGER Embedded Studio for ARM 4.20a/lib/libvfprintf_v7em_t_le_eabi.o
+  /Applications/SEGGER Embedded Studio for ARM 4.20a/lib/libvfscanf_v7em_t_le_eabi.o
+  --end-group
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                  LINKER SCRIPT                                  ***
+***                                                                                 ***
+***************************************************************************************
+
+Read linker script from '/Applications/SEGGER Embedded Studio for ARM 4.20a/samples/SEGGER_Flash.icf':
+  
+  // **********************************************************************
+  // *                    SEGGER Microcontroller GmbH                     *
+  // *                        The Embedded Experts                        *
+  // **********************************************************************
+  // *                                                                    *
+  // *            (c) 2014 - 2019 SEGGER Microcontroller GmbH             *
+  // *            (c) 2001 - 2019 Rowley Associates Limited               *
+  // *                                                                    *
+  // *           www.segger.com     Support: support@segger.com           *
+  // *                                                                    *
+  // **********************************************************************
+  // *                                                                    *
+  // * All rights reserved.                                               *
+  // *                                                                    *
+  // * Redistribution and use in source and binary forms, with or         *
+  // * without modification, are permitted provided that the following    *
+  // * conditions are met:                                                *
+  // *                                                                    *
+  // * - Redistributions of source code must retain the above copyright   *
+  // *   notice, this list of conditions and the following disclaimer.    *
+  // *                                                                    *
+  // * - Neither the name of SEGGER Microcontroller GmbH                  *
+  // *   nor the names of its contributors may be used to endorse or      *
+  // *   promote products derived from this software without specific     *
+  // *   prior written permission.                                        *
+  // *                                                                    *
+  // * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND             *
+  // * CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,        *
+  // * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF           *
+  // * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE           *
+  // * DISCLAIMED.                                                        *
+  // * IN NO EVENT SHALL SEGGER Microcontroller GmbH BE LIABLE FOR        *
+  // * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR           *
+  // * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT  *
+  // * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;    *
+  // * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF      *
+  // * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT          *
+  // * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE  *
+  // * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH   *
+  // * DAMAGE.                                                            *
+  // *                                                                    *
+  // **********************************************************************
+  
+  define memory with size = 4G;
+  
+  //
+  // Combined regions per memory type
+  //
+  define region FLASH = FLASH1;
+  define region RAM   = RAM1;
+  
+  //
+  // Block definitions
+  //
+  define block vectors                        { section .vectors };                         // Vector table section
+  define block vectors_ram                    { section .vectors_ram };                     // Vector table section
+  define block ctors                          { section .ctors,     section .ctors.*, block with         alphabetical order { init_array } };
+  define block dtors                          { section .dtors,     section .dtors.*, block with reverse alphabetical order { fini_array } };
+  define block exidx                          { section .ARM.exidx, section .ARM.exidx.* };
+  define block tbss                           { section .tbss,      section .tbss.*  };
+  define block tdata                          { section .tdata,     section .tdata.* };
+  define block tls                            { block tbss, block tdata };
+  define block tdata_load                     { copy of block tdata };
+  define block heap  with size = __HEAPSIZE__,  alignment = 8, /* fill =0x00, */ readwrite access { };
+  define block stack with size = __STACKSIZE__, alignment = 8, /* fill =0xCD, */ readwrite access { };
+  //
+  // Explicit initialization settings for sections
+  //
+  do not initialize                           { section .non_init, section .non_init.*, section .*.non_init, section .*.non_init.* };
+  initialize by copy /* with packing=auto */  { section .data, section .data.*, section .*.data, section .*.data.* };
+  initialize by copy /* with packing=auto */  { section .fast, section .fast.* };
+  
+  //
+  // Explicit placement in FLASHn
+  //
+  place in FLASH1                             { section .FLASH1, section .FLASH1.* };
+  //
+  // FLASH Placement
+  //
+  place at start of FLASH                     { block vectors };                         // Vector table section
+  place in FLASH with minimum size order      { section .init,   section .init.*,        // Init code section
+                                                section .init_rodata, section .init_rodata.*, // Init read-only section
+                                                section .text,   section .text.*,        // Code section
+                                                section .rodata, section .rodata.*,      // Read-only data section
+                                                section .segger.*,                       // Auto-generated initialization
+                                                block exidx,                             // ARM exception unwinding block
+                                                block ctors,                             // Constructors block
+                                                block dtors };                           // Destructors block
+  place in FLASH                              { block tdata_load };                      // Thread-local-storage load image
+  
+  //
+  // Explicit placement in RAMn
+  //
+  place in RAM1                               { section .RAM1, section .RAM1.* };
+  //
+  // RAM Placement
+  //
+  place at start of RAM                       { block vectors_ram };
+  place in RAM                                { section .non_init, section .non_init.*,  // No initialization section
+                                                block tls };                             // Thread-local-storage block
+  place in RAM with auto order                { section .fast, section .fast.*,          // "ramfunc" section
+                                                section .data, section .data.*,          // Initialized data section
+                                                section .bss, section .bss.*
+                                              };          // Static data section
+  place in RAM                                { block heap };           // Heap reserved block
+  place at end of RAM                         { block stack };          // Stack reserved block at the end
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                PLACEMENT SUMMARY                                ***
+***                                                                                 ***
+***************************************************************************************
+
+place at 0x08000000
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+  .vectors                 Code  08000000      0xc0      2  Cortex_M_Startup.o
+
+place at 0x20000000
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+place at 0x20004000
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+place in [0x08000000 to 0x0800ffff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+place in [0x08000000 to 0x0800ffff] with maximum packing
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+  .init                    Code  080000c0      0x64      4  Cortex_M_Startup.o
+  .init                    Code  08000124      0x64      4  SEGGER_THUMB_Startup.o
+  .text.HAL_Init           Code  08000188      0x28      4  stm32f3xx_hal.o
+  .text.HAL_InitTick       Code  080001b0      0x60      4  stm32f3xx_hal.o
+  .text.HAL_IncTick        Code  08000210      0x1c      4  stm32f3xx_hal.o
+  .text.HAL_GetTick        Code  0800022c       0xc      4  stm32f3xx_hal.o
+  .text.HAL_Delay          Code  08000238      0x44      4  stm32f3xx_hal.o
+  .text.HAL_RCC_OscConfig  Code  0800027c     0xbdc      4  stm32f3xx_hal_rcc.o
+  .text.HAL_RCC_ClockConfig
+                           Code  08000e58     0x2f0      4  stm32f3xx_hal_rcc.o
+  .text.HAL_RCC_MCOConfig  Code  08001148      0x64      4  stm32f3xx_hal_rcc.o
+  .text.HAL_RCC_GetSysClockFreq
+                           Code  080011ac      0xcc      4  stm32f3xx_hal_rcc.o
+  .text.HAL_RCC_GetHCLKFreq
+                           Code  08001278       0xc      4  stm32f3xx_hal_rcc.o
+  .text.HAL_RCC_GetPCLK1Freq
+                           Code  08001284      0x44      4  stm32f3xx_hal_rcc.o
+  .text.HAL_RCC_GetPCLK2Freq
+                           Code  080012c8      0x44      4  stm32f3xx_hal_rcc.o
+  .text.SystemInit         Code  0800130c      0x7c      4  system_stm32f3xx.o
+  .text.USBD_StdDevReq     Code  08001388      0xa0      4  usbd_ctlreq.o
+  .text.USBD_GetDescriptor
+                           Code  08001428     0x1f0      4  usbd_ctlreq.o
+  .text.USBD_SetConfig     Code  08001618     0x110      4  usbd_ctlreq.o
+  .text.USBD_CDC_Setup     Code  08001728      0xbc      4  usbd_cdc.o
+  .text.USBD_CDC_GetFSCfgDesc
+                           Code  080017e4      0x18      4  usbd_cdc.o
+  .text.USBD_CDC_GetHSCfgDesc
+                           Code  080017fc      0x18      4  usbd_cdc.o
+  .text.USBD_CDC_GetOtherSpeedCfgDesc
+                           Code  08001814      0x18      4  usbd_cdc.o
+  .text.USBD_CDC_GetDeviceQualifierDescriptor
+                           Code  0800182c      0x18      4  usbd_cdc.o
+  .text.main               Code  08001844      0x7c      4  main.o
+  .text.SystemClock_Config
+                           Code  080018c0      0xc4      4  main.o
+  .text.CDC_Receive_Callback
+                           Code  08001984      0xa0      4  main.o
+  .text.measurePlastic     Code  08001a24     0x1fc      4  main.o
+  .text.MX_GPIO_Init       Code  08001c20      0xf8      4  gpio.o
+  .text.MX_I2C1_Init       Code  08001d18      0x7c      4  i2c.o
+  .text.HAL_I2C_MspInit    Code  08001d94      0x80      4  i2c.o
+  .text.MX_SPI3_Init       Code  08001e14      0x78      4  spi.o
+  .text.HAL_SPI_MspInit    Code  08001e8c      0x80      4  spi.o
+  .text.MX_USART2_UART_Init
+                           Code  08001f0c      0x5c      4  usart.o
+  .text.HAL_UART_MspInit   Code  08001f68      0x80      4  usart.o
+  .text.MX_USB_DEVICE_Init
+                           Code  08001fe8      0x60      4  usb_device.o
+  .text.HAL_PCD_MspInit    Code  08002048      0x48      4  usbd_conf.o
+  .text.HAL_PCD_SuspendCallback
+                           Code  08002090      0x34      4  usbd_conf.o
+  .text.USBD_LL_Init       Code  080020c4      0xb0      4  usbd_conf.o
+  .text.USBD_static_malloc
+                           Code  08002174      0x10      4  usbd_conf.o
+  .text.USBD_Get_USB_Status
+                           Code  08002184      0x60      4  usbd_conf.o
+  .text.USBD_FS_DeviceDescriptor
+                           Code  080021e4      0x1c      4  usbd_desc.o
+  .text.USBD_FS_LangIDStrDescriptor
+                           Code  08002200      0x1c      4  usbd_desc.o
+  .text.USBD_FS_ProductStrDescriptor
+                           Code  0800221c      0x3c      4  usbd_desc.o
+  .text.USBD_FS_ManufacturerStrDescriptor
+                           Code  08002258      0x28      4  usbd_desc.o
+  .text.USBD_FS_SerialStrDescriptor
+                           Code  08002280      0x24      4  usbd_desc.o
+  .text.USBD_FS_ConfigStrDescriptor
+                           Code  080022a4      0x3c      4  usbd_desc.o
+  .text.USBD_FS_InterfaceStrDescriptor
+                           Code  080022e0      0x3c      4  usbd_desc.o
+  .text.Get_SerialNum      Code  0800231c      0x54      4  usbd_desc.o
+  .text.CDC_Init_FS        Code  08002370      0x28      4  usbd_cdc_if.o
+  .text.CDC_Control_FS     Code  08002398      0xbc      4  usbd_cdc_if.o
+  .text.CDC_Receive_FS     Code  08002454      0x30      4  usbd_cdc_if.o
+  .text.CDC_Transmit_FS    Code  08002484      0x5c      4  usbd_cdc_if.o
+  .text.ExternalISR20      Code  080024e0      0x10      4  stm32f3xx_it.o
+  .text.HAL_MspInit        Code  080024f0      0x3c      4  stm32f3xx_hal_msp.o
+  .text.ADS1255_init       Code  0800252c      0x88      4  ADS1255.o
+  .text.TLC59208_init      Code  080025b4      0x2c      4  TLC59208.o
+  .text.TLC59208_writeSingleLED
+                           Code  080025e0      0x74      4  TLC59208.o
+  .text.PCD_EP_ISR_Handler
+                           Code  08002654     0x674      4  stm32f3xx_hal_pcd.o
+  .text.HAL_PCD_EP_Open    Code  08002cc8     0x704      4  stm32f3xx_hal_pcd.o
+  .text.HAL_PCD_EP_Close   Code  080033cc     0x414      4  stm32f3xx_hal_pcd.o
+  .text.HAL_PCD_EP_Receive
+                           Code  080037e0     0x214      4  stm32f3xx_hal_pcd.o
+  .text.HAL_PCD_EP_Transmit
+                           Code  080039f4     0x1c8      4  stm32f3xx_hal_pcd.o
+  .text.HAL_PCD_EP_SetStall
+                           Code  08003bbc     0x154      4  stm32f3xx_hal_pcd.o
+  .text.HAL_PCD_EP_ClrStall
+                           Code  08003d10     0x1b8      4  stm32f3xx_hal_pcd.o
+  .text.HAL_I2C_Master_Transmit
+                           Code  08003ec8     0x20c      4  stm32f3xx_hal_i2c.o
+  .text.I2C_IsAcknowledgeFailed
+                           Code  080040d4      0xb8      4  stm32f3xx_hal_i2c.o
+  .text.I2C_TransferConfig
+                           Code  0800418c      0x58      4  stm32f3xx_hal_i2c.o
+  .text.UART_SetConfig     Code  080041e4     0x2fc      4  stm32f3xx_hal_uart.o
+  .text.HAL_RCCEx_PeriphCLKConfig
+                           Code  080044e0     0x320      4  stm32f3xx_hal_rcc_ex.o
+  .text.HAL_GPIO_Init      Code  08004800     0x2e0      4  stm32f3xx_hal_gpio.o
+  .text.NVIC_SetPriorityGrouping
+                           Code  08004ae0      0x40      4  stm32f3xx_hal_cortex.o
+  .text.NVIC_GetPriorityGrouping
+                           Code  08004b20      0x14      4  stm32f3xx_hal_cortex.o
+  .text.NVIC_EnableIRQ     Code  08004b34      0x2c      4  stm32f3xx_hal_cortex.o
+  .text.NVIC_SetPriority   Code  08004b60      0x50      4  stm32f3xx_hal_cortex.o
+  .text.SysTick_Config     Code  08004bb0      0x40      4  stm32f3xx_hal_cortex.o
+  .text.libc.__vfprintf_int_nwp
+                           Code  08004bf0     0x514      4  libvfprintf_v7em_t_le_eabi.o
+  .rodata                  Cnst  08005104      0xa0      4  main.o
+  .rodata.aPLLMULFactorTable
+                           Cnst  080051a4      0x10      4  stm32f3xx_hal_rcc.o
+  .rodata.aPredivFactorTable
+                           Cnst  080051b4      0x10      4  stm32f3xx_hal_rcc.o
+  .rodata.AHBPrescTable    Cnst  080051c4      0x10      4  system_stm32f3xx.o
+  .rodata.APBPrescTable    Cnst  080051d4       0x8      4  system_stm32f3xx.o
+  .rodata.libc.__RAL_hex_lc
+                           Cnst  080051dc      0x10      4  libc2.o (libc_v7em_t_le_eabi.a)
+  .rodata.libc.__RAL_hex_uc
+                           Cnst  080051ec      0x10      4  libc2.o (libc_v7em_t_le_eabi.a)
+  .segger.init.table       Cnst  080082ac      0xb0      4  - Linker created -
+  .rodata                  Cnst  080051fc      0x5a      4  usbd_desc.o
+  .text.USBD_RegisterClass
+                           Code  08005256      0x32      2  usbd_core.o
+  .segger.init.data        Cnst  0800835c     0x1fb      4  - Linker created -
+  .text.USBD_Start         Code  08005288      0x16      2  usbd_core.o
+  .text.USBD_SetClassConfig
+                           Code  0800529e      0x46      2  usbd_core.o
+  .text.USBD_LL_SetupStage
+                           Code  080052e4      0x92      2  usbd_core.o
+  .text.USBD_LL_DataOutStage
+                           Code  08005376      0xba      2  usbd_core.o
+  .text.USBD_LL_DataInStage
+                           Code  08005430     0x122      2  usbd_core.o
+  .text.USBD_LL_SetSpeed   Code  08005552      0x1a      2  usbd_core.o
+  .text.USBD_LL_SOF        Code  0800556c      0x32      2  usbd_core.o
+  .text.USBD_SetAddress    Code  0800559e      0x82      2  usbd_ctlreq.o
+  .text.USBD_GetConfig     Code  08005620      0x62      2  usbd_ctlreq.o
+  .text.USBD_GetStatus     Code  08005682      0x52      2  usbd_ctlreq.o
+  .text.USBD_ClrFeature    Code  080056d4      0x4e      2  usbd_ctlreq.o
+  .text.USBD_GetString     Code  08005722      0x96      2  usbd_ctlreq.o
+  .text.USBD_GetLen        Code  080057b8      0x2e      2  usbd_ctlreq.o
+  .text.USBD_CtlSendData   Code  080057e6      0x3e      2  usbd_ioreq.o
+  .text.USBD_CtlContinueSendData
+                           Code  08005824      0x26      2  usbd_ioreq.o
+  .text.USBD_CtlPrepareRx  Code  0800584a      0x42      2  usbd_ioreq.o
+  .text.USBD_CtlContinueRx
+                           Code  0800588c      0x26      2  usbd_ioreq.o
+  .text.USBD_CDC_DeInit    Code  080058b2      0x5e      2  usbd_cdc.o
+  .text.USBD_CDC_ReceivePacket
+                           Code  08005910      0x52      2  usbd_cdc.o
+  .text.USBD_CDC_EP0_RxReady
+                           Code  08005962      0x4e      2  usbd_cdc.o
+  .text.USBD_CDC_RegisterInterface
+                           Code  080059b0      0x2a      2  usbd_cdc.o
+  .text.USBD_CDC_SetTxBuffer
+                           Code  080059da      0x2e      2  usbd_cdc.o
+  .text.USBD_CDC_SetRxBuffer
+                           Code  08005a08      0x1e      2  usbd_cdc.o
+  .text.USBD_CDC_TransmitPacket
+                           Code  08005a26      0x52      2  usbd_cdc.o
+  .text.libc.sprintf       Code  08005a78      0x2a      2  libc2.o (libc_v7em_t_le_eabi.a)
+  .text.Error_Handler      Code  08005aa2       0x2      2  main.o
+  .text.HAL_PCD_SetupStageCallback
+                           Code  08005aa4      0x22      2  usbd_conf.o
+  .text.HAL_PCD_DataOutStageCallback
+                           Code  08005ac6      0x3a      2  usbd_conf.o
+  .text.HAL_PCD_SOFCallback
+                           Code  08005b00      0x1a      2  usbd_conf.o
+  .text.HAL_PCD_ResetCallback
+                           Code  08005b1a      0x3e      2  usbd_conf.o
+  .text.HAL_PCD_ResumeCallback
+                           Code  08005b58      0x1a      2  usbd_conf.o
+  .text.USBD_LL_OpenEP     Code  08005b72      0x62      2  usbd_conf.o
+  .text.USBD_static_free   Code  08005bd4       0xa      2  usbd_conf.o
+  .text.IntToUnicode       Code  08005bde      0x86      2  usbd_desc.o
+  .text.CDC_DeInit_FS      Code  08005c64       0x6      2  usbd_cdc_if.o
+  .text.HardFault_Handler  Code  08005c6a       0x2      2  stm32f3xx_it.o
+  .text.MemManage_Handler  Code  08005c6c       0x2      2  stm32f3xx_it.o
+  .text.BusFault_Handler   Code  08005c6e       0x2      2  stm32f3xx_it.o
+  .text.UsageFault_Handler
+                           Code  08005c70       0x2      2  stm32f3xx_it.o
+  .text.SysTick_Handler    Code  08005c72       0xa      2  stm32f3xx_it.o
+  .text.HAL_PCD_Init       Code  08005c7c     0x1be      2  stm32f3xx_hal_pcd.o
+  .text.HAL_PCD_SetAddress
+                           Code  08005e3a      0x4e      2  stm32f3xx_hal_pcd.o
+  .text.HAL_PCDEx_PMAConfig
+                           Code  08005e88      0x8a      2  stm32f3xx_hal_pcd_ex.o
+  .text.PCD_WritePMA       Code  08005f12      0x7a      2  stm32f3xx_hal_pcd_ex.o
+  .text.PCD_ReadPMA        Code  08005f8c      0x8e      2  stm32f3xx_hal_pcd_ex.o
+  .text.I2C_Flush_TXDR     Code  0800601a      0x3e      2  stm32f3xx_hal_i2c.o
+  .text.I2C_WaitOnFlagUntilTimeout
+                           Code  08006058      0x76      2  stm32f3xx_hal_i2c.o
+  .text.I2C_WaitOnTXISFlagUntilTimeout
+                           Code  080060ce      0x7e      2  stm32f3xx_hal_i2c.o
+  .text.I2C_WaitOnSTOPFlagUntilTimeout
+                           Code  0800614c      0x76      2  stm32f3xx_hal_i2c.o
+  .text.HAL_I2CEx_ConfigDigitalFilter
+                           Code  080061c2      0x92      2  stm32f3xx_hal_i2c_ex.o
+  .text.HAL_SPI_Init       Code  08006254     0x122      2  stm32f3xx_hal_spi.o
+  .text.HAL_SPI_TransmitReceive
+                           Code  08006376     0x40a      2  stm32f3xx_hal_spi.o
+  .text.SPI_WaitFlagStateUntilTimeout
+                           Code  08006780      0xce      2  stm32f3xx_hal_spi.o
+  .text.SPI_WaitFifoStateUntilTimeout
+                           Code  0800684e      0xe2      2  stm32f3xx_hal_spi.o
+  .text.SPI_EndRxTransaction
+                           Code  08006930      0xae      2  stm32f3xx_hal_spi.o
+  .text.SPI_EndRxTxTransaction
+                           Code  080069de      0x8a      2  stm32f3xx_hal_spi.o
+  .text.UART_AdvFeatureConfig
+                           Code  08006a68     0x13a      2  stm32f3xx_hal_uart.o
+  .text.UART_WaitOnFlagUntilTimeout
+                           Code  08006ba2      0x96      2  stm32f3xx_hal_uart.o
+  .text.HAL_GPIO_TogglePin
+                           Code  08006c38      0x1e      2  stm32f3xx_hal_gpio.o
+  .text.HAL_SYSTICK_Config
+                           Code  08006c56      0x16      2  stm32f3xx_hal_cortex.o
+  .text.libc.memset        Code  08006c6c      0x66      2  libc2_asm.o (libc_v7em_t_le_eabi.a)
+  .segger.init.__SEGGER_init_zero
+                           Code  08008558      0x16      2  SEGGER_THUMB_Startup.o
+  .segger.init.__SEGGER_init_copy
+                           Code  0800856e      0x1a      2  SEGGER_THUMB_Startup.o
+  .text.USBD_Init          Code  08006cd2      0x58      2  usbd_core.o
+  .text.USBD_RunTestMode   Code  08006d2a       0xc      2  usbd_core.o
+  .text.USBD_ClrClassConfig
+                           Code  08006d36      0x28      2  usbd_core.o
+  .text.USBD_LL_Reset      Code  08006d5e      0x5c      2  usbd_core.o
+  .text.USBD_LL_Suspend    Code  08006dba      0x20      2  usbd_core.o
+  .text.USBD_LL_Resume     Code  08006dda      0x18      2  usbd_core.o
+  .text.USBD_StdItfReq     Code  08006df2      0x68      2  usbd_ctlreq.o
+  .text.USBD_StdEPReq      Code  08006e5a     0x1d4      2  usbd_ctlreq.o
+  .text.USBD_SetFeature    Code  0800702e      0x34      2  usbd_ctlreq.o
+  .text.USBD_ParseSetupRequest
+                           Code  08007062      0x70      2  usbd_ctlreq.o
+  .text.USBD_CtlError      Code  080070d2      0x20      2  usbd_ctlreq.o
+  .text.USBD_CtlSendStatus
+                           Code  080070f2      0x24      2  usbd_ioreq.o
+  .text.USBD_CtlReceiveStatus
+                           Code  08007116      0x24      2  usbd_ioreq.o
+  .text.USBD_CDC_Init      Code  0800713a      0xd8      2  usbd_cdc.o
+  .text.USBD_CDC_DataIn    Code  08007212      0x30      2  usbd_cdc.o
+  .text.USBD_CDC_DataOut   Code  08007242      0x58      2  usbd_cdc.o
+  .text.libc.__putc        Code  0800729a      0x34      2  libc2.o (libc_v7em_t_le_eabi.a)
+  .text.libc.strncmp       Code  080072ce      0x40      2  libc2.o (libc_v7em_t_le_eabi.a)
+  .text.HAL_PCD_DataInStageCallback
+                           Code  0800730e      0x38      2  usbd_conf.o
+  .text.USBD_LL_Start      Code  08007346      0x40      2  usbd_conf.o
+  .text.USBD_LL_CloseEP    Code  08007386      0x4c      2  usbd_conf.o
+  .text.USBD_LL_StallEP    Code  080073d2      0x4c      2  usbd_conf.o
+  .text.USBD_LL_ClearStallEP
+                           Code  0800741e      0x4c      2  usbd_conf.o
+  .text.USBD_LL_IsStallEP  Code  0800746a      0x54      2  usbd_conf.o
+  .text.USBD_LL_SetUSBAddress
+                           Code  080074be      0x4c      2  usbd_conf.o
+  .text.USBD_LL_Transmit   Code  0800750a      0x58      2  usbd_conf.o
+  .text.USBD_LL_PrepareReceive
+                           Code  08007562      0x58      2  usbd_conf.o
+  .text.USBD_LL_GetRxDataSize
+                           Code  080075ba      0x28      2  usbd_conf.o
+  .text.HAL_PCDEx_SetConnectionState
+                           Code  080075e2      0x10      2  usbd_conf.o
+  .text.NMI_Handler        Code  080075f2       0x4      2  stm32f3xx_it.o
+  .text.SVC_Handler        Code  080075f6       0x4      2  stm32f3xx_it.o
+  .text.DebugMon_Handler   Code  080075fa       0x4      2  stm32f3xx_it.o
+  .text.PendSV_Handler     Code  080075fe       0x4      2  stm32f3xx_it.o
+  .text.ADS1255_reset      Code  08007602      0x58      2  ADS1255.o
+  .text.ADC_read_data      Code  0800765a      0xfc      2  ADS1255.o
+  .text.HAL_PCD_Start      Code  08007756      0x18      2  stm32f3xx_hal_pcd.o
+  .text.HAL_PCD_IRQHandler
+                           Code  0800776e     0x19c      2  stm32f3xx_hal_pcd.o
+  .text.HAL_PCD_EP_GetRxCount
+                           Code  0800790a      0x2c      2  stm32f3xx_hal_pcd.o
+  .text.HAL_I2C_Init       Code  08007936     0x11c      2  stm32f3xx_hal_i2c.o
+  .text.HAL_I2CEx_ConfigAnalogFilter
+                           Code  08007a52      0x8c      2  stm32f3xx_hal_i2c_ex.o
+  .text.HAL_SPI_Transmit   Code  08007ade     0x2c0      2  stm32f3xx_hal_spi.o
+  .text.HAL_SPI_Receive    Code  08007d9e     0x25c      2  stm32f3xx_hal_spi.o
+  .text.HAL_UART_Init      Code  08007ffa      0xa0      2  stm32f3xx_hal_uart.o
+  .text.UART_CheckIdleState
+                           Code  0800809a      0x90      2  stm32f3xx_hal_uart.o
+  .text.HAL_GPIO_ReadPin   Code  0800812a      0x30      2  stm32f3xx_hal_gpio.o
+  .text.HAL_GPIO_WritePin  Code  0800815a      0x30      2  stm32f3xx_hal_gpio.o
+  .text.NVIC_EncodePriority
+                           Code  0800818a      0x58      2  stm32f3xx_hal_cortex.o
+  .text.HAL_NVIC_SetPriorityGrouping
+                           Code  080081e2      0x14      2  stm32f3xx_hal_cortex.o
+  .text.HAL_NVIC_SetPriority
+                           Code  080081f6      0x38      2  stm32f3xx_hal_cortex.o
+  .text.HAL_NVIC_EnableIRQ
+                           Code  0800822e      0x1c      2  stm32f3xx_hal_cortex.o
+  .text.libc.strlen        Code  0800824a      0x60      2  libc2_asm.o (libc_v7em_t_le_eabi.a)
+  .rodata.block.tdata.copy
+                           Cnst  080082aa                1  - Linker created -
+
+place in [0x08000000 to 0x0800ffff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+place in [0x20000000 to 0x20003fff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+place in [0x20000000 to 0x20003fff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+place in [0x20000000 to 0x20003fff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+  .data.USBD_CDC_CfgHSDesc
+                           Init  20000000      0x43      4  usbd_cdc.o
+  .data.USBD_CDC_CfgFSDesc
+                           Init  20000044      0x43      4  usbd_cdc.o
+  .data.USBD_CDC_OtherSpeedCfgDesc
+                           Init  20000088      0x43      4  usbd_cdc.o
+  .data.USBD_CDC           Init  200000cc      0x38      4  usbd_cdc.o
+  .data.FS_Desc            Init  20000104      0x1c      4  usbd_desc.o
+  .data.USBD_StringSerial  Init  20000120      0x1a      4  usbd_desc.o
+  .data.wakeup             Init  2000013c      0x14      4  main.o
+  .data.ok                 Init  20000150      0x14      4  main.o
+  .data.unknown            Init  20000164      0x14      4  main.o
+  .data.cmd1               Init  20000178      0x14      4  main.o
+  .data.cmd2               Init  2000018c      0x14      4  main.o
+  .data.measure_finish     Init  200001a0      0x14      4  main.o
+  .data.tlc_config         Init  200001b4      0x13      4  TLC59208.o
+  .data.USBD_FS_DeviceDesc
+                           Init  200001c8      0x12      4  usbd_desc.o
+  .data.USBD_Interface_fops_FS
+                           Init  200001dc      0x10      4  usbd_cdc_if.o
+  .data.USBD_CDC_DeviceQualifierDesc
+                           Init  200001ec       0xa      4  usbd_cdc.o
+  .data.uwTickPrio         Init  200001f8       0x4      4  stm32f3xx_hal.o
+  .data.SystemCoreClock    Init  200001fc       0x4      4  system_stm32f3xx.o
+  .data.USBD_LangIDDesc    Init  20000200       0x4      4  usbd_desc.o
+  .data.uwTickFreq         Init  20000043       0x1      1  stm32f3xx_hal.o
+  .bss.hpcd_USB_FS         Zero  20000204     0x3a8      4  usbd_conf.o
+  .bss.hUsbDeviceFS        Zero  200005ac     0x224      4  usb_device.o
+  .bss.mem.7166            Zero  200007d0     0x220      4  usbd_conf.o
+  .bss.USBD_StrDesc        Zero  200009f0     0x200      4  usbd_desc.o
+  .bss.UserRxBufferFS      Zero  20000bf0     0x200      4  usbd_cdc_if.o
+  .bss.UserTxBufferFS      Zero  20000df0     0x200      4  usbd_cdc_if.o
+  .bss.huart2              Zero  20000ff0      0x70      4  usart.o
+  .bss.output_message      Zero  20001060      0x64      4  main.o
+  .bss.hspi3               Zero  200010c4      0x64      4  spi.o
+  .bss.hi2c1               Zero  20001128      0x4c      4  i2c.o
+  .bss.measurements        Zero  20001174      0x20      4  main.o
+  .bss.buffer              Zero  20001194       0x9      4  TLC59208.o
+  .bss.uwTick              Zero  200011a0       0x4      4  stm32f3xx_hal.o
+  .bss.libc.__user_format_extender
+                           Zero  200011a4       0x4      4  libc2.o (libc_v7em_t_le_eabi.a)
+  .bss.cfgidx.7083         Zero  20000087       0x1      1  usbd_ctlreq.o
+  .bss.ifalt.7078          Zero  200000cb       0x1      1  usbd_cdc.o
+  .bss.START_MEASUREMENT   Zero  2000013a       0x1      1  main.o
+
+place in [0x20000000 to 0x20003fff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+
+***************************************************************************************
+***                                                                                 ***
+***                              INITIALIZATION TABLE                               ***
+***                                                                                 ***
+***************************************************************************************
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x1
+          [0x20000087 to 0x20000087]
+    1 initialized sections:
+          [0x20000087 to 0x20000087]  section .bss.cfgidx.7083 from usbd_ctlreq.o, align=1
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x1
+          [0x200000cb to 0x200000cb]
+    1 initialized sections:
+          [0x200000cb to 0x200000cb]  section .bss.ifalt.7078 from usbd_cdc.o, align=1
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x1
+          [0x2000013a to 0x2000013a]
+    1 initialized sections:
+          [0x2000013a to 0x2000013a]  section .bss.START_MEASUREMENT from main.o, align=1
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0xf99
+          [0x20000204 to 0x2000119c]
+    12 initialized sections:
+          [0x20000204 to 0x200005ab]  section .bss.hpcd_USB_FS from usbd_conf.o, align=4
+          [0x200005ac to 0x200007cf]  section .bss.hUsbDeviceFS from usb_device.o, align=4
+          [0x200007d0 to 0x200009ef]  section .bss.mem.7166 from usbd_conf.o, align=4
+          [0x200009f0 to 0x20000bef]  section .bss.USBD_StrDesc from usbd_desc.o, align=4
+          [0x20000bf0 to 0x20000def]  section .bss.UserRxBufferFS from usbd_cdc_if.o, align=4
+          [0x20000df0 to 0x20000fef]  section .bss.UserTxBufferFS from usbd_cdc_if.o, align=4
+          [0x20000ff0 to 0x2000105f]  section .bss.huart2 from usart.o, align=4
+          [0x20001060 to 0x200010c3]  section .bss.output_message from main.o, align=4
+          [0x200010c4 to 0x20001127]  section .bss.hspi3 from spi.o, align=4
+          [0x20001128 to 0x20001173]  section .bss.hi2c1 from i2c.o, align=4
+          [0x20001174 to 0x20001193]  section .bss.measurements from main.o, align=4
+          [0x20001194 to 0x2000119c]  section .bss.buffer from TLC59208.o, align=4
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x8
+          [0x200011a0 to 0x200011a7]
+    2 initialized sections:
+          [0x200011a0 to 0x200011a3]  section .bss.uwTick from stm32f3xx_hal.o, align=4
+          [0x200011a4 to 0x200011a7]  section .bss.libc.__user_format_extender from libc2.o (libc_v7em_t_le_eabi.a), align=4
+
+Copy packing=copy (__SEGGER_init_copy)
+    1 source range, total size 0x87 (100% of destination)
+          [0x0800835c to 0x080083e2]
+    1 destination range, total size 0x87
+          [0x20000000 to 0x20000086]
+    3 initialized sections:
+          [0x20000000 to 0x20000042]  section .data.USBD_CDC_CfgHSDesc from usbd_cdc.o, align=4
+          [0x20000043 to 0x20000043]  section .data.uwTickFreq from stm32f3xx_hal.o, align=1
+          [0x20000044 to 0x20000086]  section .data.USBD_CDC_CfgFSDesc from usbd_cdc.o, align=4
+
+Copy packing=copy (__SEGGER_init_copy)
+    1 source range, total size 0x43 (100% of destination)
+          [0x080083e3 to 0x08008425]
+    1 destination range, total size 0x43
+          [0x20000088 to 0x200000ca]
+    1 initialized sections:
+          [0x20000088 to 0x200000ca]  section .data.USBD_CDC_OtherSpeedCfgDesc from usbd_cdc.o, align=4
+
+Copy packing=copy (__SEGGER_init_copy)
+    1 source range, total size 0x6e (100% of destination)
+          [0x08008426 to 0x08008493]
+    1 destination range, total size 0x6e
+          [0x200000cc to 0x20000139]
+    3 initialized sections:
+          [0x200000cc to 0x20000103]  section .data.USBD_CDC from usbd_cdc.o, align=4
+          [0x20000104 to 0x2000011f]  section .data.FS_Desc from usbd_desc.o, align=4
+          [0x20000120 to 0x20000139]  section .data.USBD_StringSerial from usbd_desc.o, align=4
+
+Copy packing=copy (__SEGGER_init_copy)
+    1 source range, total size 0x8b (100% of destination)
+          [0x08008494 to 0x0800851e]
+    1 destination range, total size 0x8b
+          [0x2000013c to 0x200001c6]
+    7 initialized sections:
+          [0x2000013c to 0x2000014f]  section .data.wakeup from main.o, align=4
+          [0x20000150 to 0x20000163]  section .data.ok from main.o, align=4
+          [0x20000164 to 0x20000177]  section .data.unknown from main.o, align=4
+          [0x20000178 to 0x2000018b]  section .data.cmd1 from main.o, align=4
+          [0x2000018c to 0x2000019f]  section .data.cmd2 from main.o, align=4
+          [0x200001a0 to 0x200001b3]  section .data.measure_finish from main.o, align=4
+          [0x200001b4 to 0x200001c6]  section .data.tlc_config from TLC59208.o, align=4
+
+Copy packing=copy (__SEGGER_init_copy)
+    1 source range, total size 0x12 (100% of destination)
+          [0x0800851f to 0x08008530]
+    1 destination range, total size 0x12
+          [0x200001c8 to 0x200001d9]
+    1 initialized sections:
+          [0x200001c8 to 0x200001d9]  section .data.USBD_FS_DeviceDesc from usbd_desc.o, align=4
+
+Copy packing=copy (__SEGGER_init_copy)
+    1 source range, total size 0x1a (100% of destination)
+          [0x08008531 to 0x0800854a]
+    1 destination range, total size 0x1a
+          [0x200001dc to 0x200001f5]
+    2 initialized sections:
+          [0x200001dc to 0x200001eb]  section .data.USBD_Interface_fops_FS from usbd_cdc_if.o, align=4
+          [0x200001ec to 0x200001f5]  section .data.USBD_CDC_DeviceQualifierDesc from usbd_cdc.o, align=4
+
+Copy packing=copy (__SEGGER_init_copy)
+    1 source range, total size 0xc (100% of destination)
+          [0x0800854b to 0x08008556]
+    1 destination range, total size 0xc
+          [0x200001f8 to 0x20000203]
+    3 initialized sections:
+          [0x200001f8 to 0x200001fb]  section .data.uwTickPrio from stm32f3xx_hal.o, align=4
+          [0x200001fc to 0x200001ff]  section .data.SystemCoreClock from system_stm32f3xx.o, align=4
+          [0x20000200 to 0x20000203]  section .data.USBD_LangIDDesc from usbd_desc.o, align=4
+
+Totals:
+    Initialization table:     0xb0 bytes
+    Source image:            0x1fb bytes
+    Destination image:       0x1fb bytes
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                 MODULE SUMMARY                                  ***
+***                                                                                 ***
+***************************************************************************************
+
+                                            Object      Code  RO Data  RW Data  ZI Data
+---------------------------------------------------------------------------------------
+                                         ADS1255.o       476                            
+                                Cortex_M_Startup.o       292                            
+                            SEGGER_THUMB_Startup.o       148                            
+                                        TLC59208.o       160                19        9 
+                                            gpio.o       248                            
+                                             i2c.o       252                         76 
+                   libc2.o (libc_v7em_t_le_eabi.a)       158       32                 4 
+               libc2_asm.o (libc_v7em_t_le_eabi.a)       198                            
+                      libvfprintf_v7em_t_le_eabi.o      1300                            
+                                            main.o       990      160      120      133 
+                                             spi.o       248                        100 
+                                   stm32f3xx_hal.o       244                 5        4 
+                            stm32f3xx_hal_cortex.o       486                            
+                              stm32f3xx_hal_gpio.o       862                            
+                               stm32f3xx_hal_i2c.o      1504                            
+                            stm32f3xx_hal_i2c_ex.o       286                            
+                               stm32f3xx_hal_msp.o        60                            
+                               stm32f3xx_hal_pcd.o      7264                            
+                            stm32f3xx_hal_pcd_ex.o       402                            
+                               stm32f3xx_hal_rcc.o      4240       32                   
+                            stm32f3xx_hal_rcc_ex.o       800                            
+                               stm32f3xx_hal_spi.o      3376                            
+                              stm32f3xx_hal_uart.o      1532                            
+                                    stm32f3xx_it.o        50                            
+                                system_stm32f3xx.o       124       24        4          
+                                           usart.o       220                        112 
+                                      usb_device.o        96                        548 
+                                        usbd_cdc.o      1090               267        1 
+                                     usbd_cdc_if.o       374                16     1024 
+                                       usbd_conf.o      1466                       1480 
+                                       usbd_core.o      1128                            
+                                     usbd_ctlreq.o      2280                          1 
+                                       usbd_desc.o       530       90       76      512 
+                                      usbd_ioreq.o       276                            
+                                                    ===================================
+                                            Total:     33160      338      507     4004
+                                                    ===================================
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                   SYMBOL LIST                                   ***
+***                                                                                 ***
+***************************************************************************************
+
+Symbols by value
+
+  Symbol                   Value         Size  Align  Type      Object
+  ------                   -----         ----  -----  ----      ------
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  - Linker created -
+  vectors_ram$$Length      00000000                   ----  Gb  - Linker created -
+  __vectors_ram_size__     00000000                   ----  Gb  - Linker created -
+  __vectors_ram_size       00000000                   ----  Gb  - Linker created -
+  ctors$$Length            00000000                   ----  Gb  - Linker created -
+  __ctors_size__           00000000                   ----  Gb  - Linker created -
+  __ctors_size             00000000                   ----  Gb  - Linker created -
+  dtors$$Length            00000000                   ----  Gb  - Linker created -
+  __dtors_size__           00000000                   ----  Gb  - Linker created -
+  __dtors_size             00000000                   ----  Gb  - Linker created -
+  exidx$$Length            00000000                   ----  Gb  - Linker created -
+  __exidx_size__           00000000                   ----  Gb  - Linker created -
+  __exidx_size             00000000                   ----  Gb  - Linker created -
+  tbss$$Length             00000000                   ----  Gb  - Linker created -
+  __tbss_size__            00000000                   ----  Gb  - Linker created -
+  __tbss_size              00000000                   ----  Gb  - Linker created -
+  tdata$$Length            00000000                   ----  Gb  - Linker created -
+  __tdata_size__           00000000                   ----  Gb  - Linker created -
+  __tdata_size             00000000                   ----  Gb  - Linker created -
+  tls$$Length              00000000                   ----  Gb  - Linker created -
+  __tls_size__             00000000                   ----  Gb  - Linker created -
+  __tls_size               00000000                   ----  Gb  - Linker created -
+  tdata_load$$Length       00000000                   ----  Gb  - Linker created -
+  __tdata_load_size__      00000000                   ----  Gb  - Linker created -
+  __tdata_load_size        00000000                   ----  Gb  - Linker created -
+  vectors$$Length          000000c0                   ----  Gb  - Linker created -
+  __vectors_size__         000000c0                   ----  Gb  - Linker created -
+  __vectors_size           000000c0                   ----  Gb  - Linker created -
+  __STACKSIZE__            00000400                   ----  Gb  - Linker created -
+  __HEAPSIZE__             00000400                   ----  Gb  - Linker created -
+  heap$$Length             00000400                   ----  Gb  - Linker created -
+  __heap_size__            00000400                   ----  Gb  - Linker created -
+  __heap_size              00000400                   ----  Gb  - Linker created -
+  stack$$Length            00000400                   ----  Gb  - Linker created -
+  __stack_size__           00000400                   ----  Gb  - Linker created -
+  __stack_size             00000400                   ----  Gb  - Linker created -
+  __RAM1_segment_size__    00004000                   ----  Gb  - Linker created -
+  __RAM_segment_size__     00004000                   ----  Gb  - Linker created -
+  __RAM_segment_used_size__
+                           00004000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_size__
+                           00004000                   ----  Gb  - Linker created -
+  __FLASH_segment_used_size__
+                           00008588                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_size__
+                           00008588                   ----  Gb  - Linker created -
+  __FLASH_segment_size__   00010000                   ----  Gb  - Linker created -
+  __FLASH1_segment_size__  00010000                   ----  Gb  - Linker created -
+  _vectors                 08000000      0xc0      2  Code  Gb  Cortex_M_Startup.o
+  vectors$$Base            08000000                   ----  Gb  - Linker created -
+  __vectors_start__        08000000                   ----  Gb  - Linker created -
+  __vectors_start          08000000                   ----  Gb  - Linker created -
+  __FLASH_segment_start__  08000000                   ----  Gb  - Linker created -
+  __FLASH_segment_used_start__
+                           08000000                   ----  Gb  - Linker created -
+  __FLASH1_segment_start__
+                           08000000                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_start__
+                           08000000                   ----  Gb  - Linker created -
+  _vectors_end             080000c0      0xc0      2  Code  Lc  Cortex_M_Startup.o
+  vectors$$Limit           080000c0                   ----  Gb  - Linker created -
+  __vectors_end__          080000c0                   ----  Gb  - Linker created -
+  __vectors_end            080000c0                   ----  Gb  - Linker created -
+  NMI_Handler              080000c1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  HardFault_Handler        080000c3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  MemManage_Handler        080000c5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  BusFault_Handler         080000c7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  UsageFault_Handler       080000c9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  SVC_Handler              080000cb      0x64      4  Code  Wk  Cortex_M_Startup.o
+  DebugMon_Handler         080000cd      0x64      4  Code  Wk  Cortex_M_Startup.o
+  PendSV_Handler           080000cf      0x64      4  Code  Wk  Cortex_M_Startup.o
+  SysTick_Handler          080000d1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR0             080000d3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR1             080000d5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR2             080000d7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR3             080000d9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR4             080000db      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR5             080000dd      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR6             080000df      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR7             080000e1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR8             080000e3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR9             080000e5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR10            080000e7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR11            080000e9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR12            080000eb      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR13            080000ed      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR14            080000ef      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR15            080000f1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR16            080000f3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR17            080000f5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR18            080000f7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR19            080000f9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR20            080000fb      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR21            080000fd      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR22            080000ff      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR23            08000101      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR24            08000103      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR25            08000105      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR26            08000107      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR27            08000109      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR28            0800010b      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR29            0800010d      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR30            0800010f      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR31            08000111      0x64      4  Code  Wk  Cortex_M_Startup.o
+  reset_handler            08000113      0x64      4  Code  Gb  Cortex_M_Startup.o
+  Reset_Handler            08000113      0x64      4  Code  Gb  Cortex_M_Startup.o
+  SystemInit               0800011f      0x64      4  Code  Wk  Cortex_M_Startup.o
+  _start                   08000125      0x64      4  Code  Gb  SEGGER_THUMB_Startup.o
+  ctor_loop                0800014c      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_end                 0800015c      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  start                    08000163      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit_loop                0800016a      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit                     0800016b      0x64      4  Code  Wk  SEGGER_THUMB_Startup.o
+  HAL_Init                 08000189      0x28      4  Code  Gb  stm32f3xx_hal.o
+  HAL_InitTick             080001b1      0x60      4  Code  Wk  stm32f3xx_hal.o
+  HAL_IncTick              08000211      0x1c      4  Code  Wk  stm32f3xx_hal.o
+  HAL_GetTick              0800022d       0xc      4  Code  Wk  stm32f3xx_hal.o
+  HAL_Delay                08000239      0x44      4  Code  Wk  stm32f3xx_hal.o
+  HAL_RCC_OscConfig        0800027d     0xbdc      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_ClockConfig      08000e59     0x2f0      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_MCOConfig        08001149      0x64      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetSysClockFreq  080011ad      0xcc      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetHCLKFreq      08001279       0xc      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetPCLK1Freq     08001285      0x44      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetPCLK2Freq     080012c9      0x44      4  Code  Gb  stm32f3xx_hal_rcc.o
+  SystemInit               0800130d      0x7c      4  Code  Gb  system_stm32f3xx.o
+  USBD_StdDevReq           08001389      0xa0      4  Code  Gb  usbd_ctlreq.o
+  USBD_GetDescriptor       08001429     0x1f0      4  Code  Lc  usbd_ctlreq.o
+  USBD_SetConfig           08001619     0x110      4  Code  Lc  usbd_ctlreq.o
+  USBD_CDC_Setup           08001729      0xbc      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetFSCfgDesc    080017e5      0x18      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetHSCfgDesc    080017fd      0x18      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetOtherSpeedCfgDesc
+                           08001815      0x18      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetDeviceQualifierDescriptor
+                           0800182d      0x18      4  Code  Gb  usbd_cdc.o
+  main                     08001845      0x7c      4  Code  Gb  main.o
+  SystemClock_Config       080018c1      0xc4      4  Code  Gb  main.o
+  CDC_Receive_Callback     08001985      0xa0      4  Code  Wk  main.o
+  measurePlastic           08001a25     0x1fc      4  Code  Gb  main.o
+  MX_GPIO_Init             08001c21      0xf8      4  Code  Gb  gpio.o
+  MX_I2C1_Init             08001d19      0x7c      4  Code  Gb  i2c.o
+  HAL_I2C_MspInit          08001d95      0x80      4  Code  Gb  i2c.o
+  MX_SPI3_Init             08001e15      0x78      4  Code  Gb  spi.o
+  HAL_SPI_MspInit          08001e8d      0x80      4  Code  Gb  spi.o
+  MX_USART2_UART_Init      08001f0d      0x5c      4  Code  Gb  usart.o
+  HAL_UART_MspInit         08001f69      0x80      4  Code  Gb  usart.o
+  MX_USB_DEVICE_Init       08001fe9      0x60      4  Code  Gb  usb_device.o
+  HAL_PCD_MspInit          08002049      0x48      4  Code  Gb  usbd_conf.o
+  HAL_PCD_SuspendCallback  08002091      0x34      4  Code  Gb  usbd_conf.o
+  USBD_LL_Init             080020c5      0xb0      4  Code  Gb  usbd_conf.o
+  USBD_static_malloc       08002175      0x10      4  Code  Gb  usbd_conf.o
+  USBD_Get_USB_Status      08002185      0x60      4  Code  Lc  usbd_conf.o
+  USBD_FS_DeviceDescriptor
+                           080021e5      0x1c      4  Code  Gb  usbd_desc.o
+  USBD_FS_LangIDStrDescriptor
+                           08002201      0x1c      4  Code  Gb  usbd_desc.o
+  USBD_FS_ProductStrDescriptor
+                           0800221d      0x3c      4  Code  Gb  usbd_desc.o
+  USBD_FS_ManufacturerStrDescriptor
+                           08002259      0x28      4  Code  Gb  usbd_desc.o
+  USBD_FS_SerialStrDescriptor
+                           08002281      0x24      4  Code  Gb  usbd_desc.o
+  USBD_FS_ConfigStrDescriptor
+                           080022a5      0x3c      4  Code  Gb  usbd_desc.o
+  USBD_FS_InterfaceStrDescriptor
+                           080022e1      0x3c      4  Code  Gb  usbd_desc.o
+  Get_SerialNum            0800231d      0x54      4  Code  Lc  usbd_desc.o
+  CDC_Init_FS              08002371      0x28      4  Code  Lc  usbd_cdc_if.o
+  CDC_Control_FS           08002399      0xbc      4  Code  Lc  usbd_cdc_if.o
+  CDC_Receive_FS           08002455      0x30      4  Code  Lc  usbd_cdc_if.o
+  CDC_Transmit_FS          08002485      0x5c      4  Code  Gb  usbd_cdc_if.o
+  ExternalISR20            080024e1      0x10      4  Code  Gb  stm32f3xx_it.o
+  HAL_MspInit              080024f1      0x3c      4  Code  Gb  stm32f3xx_hal_msp.o
+  ADS1255_init             0800252d      0x88      4  Code  Gb  ADS1255.o
+  TLC59208_init            080025b5      0x2c      4  Code  Gb  TLC59208.o
+  TLC59208_writeSingleLED  080025e1      0x74      4  Code  Gb  TLC59208.o
+  PCD_EP_ISR_Handler       08002655     0x674      4  Code  Lc  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Open          08002cc9     0x704      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Close         080033cd     0x414      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Receive       080037e1     0x214      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Transmit      080039f5     0x1c8      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_SetStall      08003bbd     0x154      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_ClrStall      08003d11     0x1b8      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_I2C_Master_Transmit  08003ec9     0x20c      4  Code  Gb  stm32f3xx_hal_i2c.o
+  I2C_IsAcknowledgeFailed  080040d5      0xb8      4  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_TransferConfig       0800418d      0x58      4  Code  Lc  stm32f3xx_hal_i2c.o
+  UART_SetConfig           080041e5     0x2fc      4  Code  Gb  stm32f3xx_hal_uart.o
+  HAL_RCCEx_PeriphCLKConfig
+                           080044e1     0x320      4  Code  Gb  stm32f3xx_hal_rcc_ex.o
+  HAL_GPIO_Init            08004801     0x2e0      4  Code  Gb  stm32f3xx_hal_gpio.o
+  NVIC_SetPriorityGrouping
+                           08004ae1      0x40      4  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_GetPriorityGrouping
+                           08004b21      0x14      4  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_EnableIRQ           08004b35      0x2c      4  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_SetPriority         08004b61      0x50      4  Code  Lc  stm32f3xx_hal_cortex.o
+  SysTick_Config           08004bb1      0x40      4  Code  Lc  stm32f3xx_hal_cortex.o
+  __vfprintf_int_nwp       08004bf1     0x514      4  Code  Gb  libvfprintf_v7em_t_le_eabi.o
+  __vfprintf               08004bf1     0x514      4  Code  Gb  libvfprintf_v7em_t_le_eabi.o
+  aPLLMULFactorTable       080051a4      0x10      4  Cnst  Gb  stm32f3xx_hal_rcc.o
+  aPredivFactorTable       080051b4      0x10      4  Cnst  Gb  stm32f3xx_hal_rcc.o
+  AHBPrescTable            080051c4      0x10      4  Cnst  Gb  system_stm32f3xx.o
+  APBPrescTable            080051d4       0x8      4  Cnst  Gb  system_stm32f3xx.o
+  __RAL_hex_lc             080051dc      0x10      4  Cnst  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  __RAL_hex_uc             080051ec      0x10      4  Cnst  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  USBD_RegisterClass       08005257      0x32      2  Code  Gb  usbd_core.o
+  USBD_Start               08005289      0x16      2  Code  Gb  usbd_core.o
+  USBD_SetClassConfig      0800529f      0x46      2  Code  Gb  usbd_core.o
+  USBD_LL_SetupStage       080052e5      0x92      2  Code  Gb  usbd_core.o
+  USBD_LL_DataOutStage     08005377      0xba      2  Code  Gb  usbd_core.o
+  USBD_LL_DataInStage      08005431     0x122      2  Code  Gb  usbd_core.o
+  USBD_LL_SetSpeed         08005553      0x1a      2  Code  Gb  usbd_core.o
+  USBD_LL_SOF              0800556d      0x32      2  Code  Gb  usbd_core.o
+  USBD_SetAddress          0800559f      0x82      2  Code  Lc  usbd_ctlreq.o
+  USBD_GetConfig           08005621      0x62      2  Code  Lc  usbd_ctlreq.o
+  USBD_GetStatus           08005683      0x52      2  Code  Lc  usbd_ctlreq.o
+  USBD_ClrFeature          080056d5      0x4e      2  Code  Lc  usbd_ctlreq.o
+  USBD_GetString           08005723      0x96      2  Code  Gb  usbd_ctlreq.o
+  USBD_GetLen              080057b9      0x2e      2  Code  Lc  usbd_ctlreq.o
+  USBD_CtlSendData         080057e7      0x3e      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlContinueSendData
+                           08005825      0x26      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlPrepareRx        0800584b      0x42      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlContinueRx       0800588d      0x26      2  Code  Gb  usbd_ioreq.o
+  USBD_CDC_DeInit          080058b3      0x5e      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_ReceivePacket   08005911      0x52      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_EP0_RxReady     08005963      0x4e      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_RegisterInterface
+                           080059b1      0x2a      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_SetTxBuffer     080059db      0x2e      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_SetRxBuffer     08005a09      0x1e      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_TransmitPacket  08005a27      0x52      2  Code  Gb  usbd_cdc.o
+  sprintf                  08005a79      0x2a      2  Code  Wk  libc2.o (libc_v7em_t_le_eabi.a)
+  Error_Handler            08005aa3       0x2      2  Code  Gb  main.o
+  HAL_PCD_SetupStageCallback
+                           08005aa5      0x22      2  Code  Gb  usbd_conf.o
+  HAL_PCD_DataOutStageCallback
+                           08005ac7      0x3a      2  Code  Gb  usbd_conf.o
+  HAL_PCD_SOFCallback      08005b01      0x1a      2  Code  Gb  usbd_conf.o
+  HAL_PCD_ResetCallback    08005b1b      0x3e      2  Code  Gb  usbd_conf.o
+  HAL_PCD_ResumeCallback   08005b59      0x1a      2  Code  Gb  usbd_conf.o
+  USBD_LL_OpenEP           08005b73      0x62      2  Code  Gb  usbd_conf.o
+  USBD_static_free         08005bd5       0xa      2  Code  Gb  usbd_conf.o
+  IntToUnicode             08005bdf      0x86      2  Code  Lc  usbd_desc.o
+  CDC_DeInit_FS            08005c65       0x6      2  Code  Lc  usbd_cdc_if.o
+  HardFault_Handler        08005c6b       0x2      2  Code  Gb  stm32f3xx_it.o
+  MemManage_Handler        08005c6d       0x2      2  Code  Gb  stm32f3xx_it.o
+  BusFault_Handler         08005c6f       0x2      2  Code  Gb  stm32f3xx_it.o
+  UsageFault_Handler       08005c71       0x2      2  Code  Gb  stm32f3xx_it.o
+  SysTick_Handler          08005c73       0xa      2  Code  Gb  stm32f3xx_it.o
+  HAL_PCD_Init             08005c7d     0x1be      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_SetAddress       08005e3b      0x4e      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCDEx_PMAConfig      08005e89      0x8a      2  Code  Gb  stm32f3xx_hal_pcd_ex.o
+  PCD_WritePMA             08005f13      0x7a      2  Code  Gb  stm32f3xx_hal_pcd_ex.o
+  PCD_ReadPMA              08005f8d      0x8e      2  Code  Gb  stm32f3xx_hal_pcd_ex.o
+  I2C_Flush_TXDR           0800601b      0x3e      2  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_WaitOnFlagUntilTimeout
+                           08006059      0x76      2  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_WaitOnTXISFlagUntilTimeout
+                           080060cf      0x7e      2  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_WaitOnSTOPFlagUntilTimeout
+                           0800614d      0x76      2  Code  Lc  stm32f3xx_hal_i2c.o
+  HAL_I2CEx_ConfigDigitalFilter
+                           080061c3      0x92      2  Code  Gb  stm32f3xx_hal_i2c_ex.o
+  HAL_SPI_Init             08006255     0x122      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_SPI_TransmitReceive  08006377     0x40a      2  Code  Gb  stm32f3xx_hal_spi.o
+  SPI_WaitFlagStateUntilTimeout
+                           08006781      0xce      2  Code  Lc  stm32f3xx_hal_spi.o
+  SPI_WaitFifoStateUntilTimeout
+                           0800684f      0xe2      2  Code  Lc  stm32f3xx_hal_spi.o
+  SPI_EndRxTransaction     08006931      0xae      2  Code  Lc  stm32f3xx_hal_spi.o
+  SPI_EndRxTxTransaction   080069df      0x8a      2  Code  Lc  stm32f3xx_hal_spi.o
+  UART_AdvFeatureConfig    08006a69     0x13a      2  Code  Gb  stm32f3xx_hal_uart.o
+  UART_WaitOnFlagUntilTimeout
+                           08006ba3      0x96      2  Code  Gb  stm32f3xx_hal_uart.o
+  HAL_GPIO_TogglePin       08006c39      0x1e      2  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_SYSTICK_Config       08006c57      0x16      2  Code  Gb  stm32f3xx_hal_cortex.o
+  memset                   08006c6d      0x66      2  Code  Wk  libc2_asm.o (libc_v7em_t_le_eabi.a)
+  USBD_Init                08006cd3      0x58      2  Code  Gb  usbd_core.o
+  USBD_RunTestMode         08006d2b       0xc      2  Code  Gb  usbd_core.o
+  USBD_ClrClassConfig      08006d37      0x28      2  Code  Gb  usbd_core.o
+  USBD_LL_Reset            08006d5f      0x5c      2  Code  Gb  usbd_core.o
+  USBD_LL_Suspend          08006dbb      0x20      2  Code  Gb  usbd_core.o
+  USBD_LL_Resume           08006ddb      0x18      2  Code  Gb  usbd_core.o
+  USBD_StdItfReq           08006df3      0x68      2  Code  Gb  usbd_ctlreq.o
+  USBD_StdEPReq            08006e5b     0x1d4      2  Code  Gb  usbd_ctlreq.o
+  USBD_SetFeature          0800702f      0x34      2  Code  Lc  usbd_ctlreq.o
+  USBD_ParseSetupRequest   08007063      0x70      2  Code  Gb  usbd_ctlreq.o
+  USBD_CtlError            080070d3      0x20      2  Code  Gb  usbd_ctlreq.o
+  USBD_CtlSendStatus       080070f3      0x24      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlReceiveStatus    08007117      0x24      2  Code  Gb  usbd_ioreq.o
+  USBD_CDC_Init            0800713b      0xd8      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_DataIn          08007213      0x30      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_DataOut         08007243      0x58      2  Code  Lc  usbd_cdc.o
+  __putc                   0800729b      0x34      2  Code  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  strncmp                  080072cf      0x40      2  Code  Wk  libc2.o (libc_v7em_t_le_eabi.a)
+  HAL_PCD_DataInStageCallback
+                           0800730f      0x38      2  Code  Gb  usbd_conf.o
+  USBD_LL_Start            08007347      0x40      2  Code  Gb  usbd_conf.o
+  USBD_LL_CloseEP          08007387      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_StallEP          080073d3      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_ClearStallEP     0800741f      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_IsStallEP        0800746b      0x54      2  Code  Gb  usbd_conf.o
+  USBD_LL_SetUSBAddress    080074bf      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_Transmit         0800750b      0x58      2  Code  Gb  usbd_conf.o
+  USBD_LL_PrepareReceive   08007563      0x58      2  Code  Gb  usbd_conf.o
+  USBD_LL_GetRxDataSize    080075bb      0x28      2  Code  Gb  usbd_conf.o
+  HAL_PCDEx_SetConnectionState
+                           080075e3      0x10      2  Code  Gb  usbd_conf.o
+  NMI_Handler              080075f3       0x4      2  Code  Gb  stm32f3xx_it.o
+  SVC_Handler              080075f7       0x4      2  Code  Gb  stm32f3xx_it.o
+  DebugMon_Handler         080075fb       0x4      2  Code  Gb  stm32f3xx_it.o
+  PendSV_Handler           080075ff       0x4      2  Code  Gb  stm32f3xx_it.o
+  ADS1255_reset            08007603      0x58      2  Code  Gb  ADS1255.o
+  ADC_read_data            0800765b      0xfc      2  Code  Gb  ADS1255.o
+  HAL_PCD_Start            08007757      0x18      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_IRQHandler       0800776f     0x19c      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_GetRxCount    0800790b      0x2c      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_I2C_Init             08007937     0x11c      2  Code  Gb  stm32f3xx_hal_i2c.o
+  HAL_I2CEx_ConfigAnalogFilter
+                           08007a53      0x8c      2  Code  Gb  stm32f3xx_hal_i2c_ex.o
+  HAL_SPI_Transmit         08007adf     0x2c0      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_SPI_Receive          08007d9f     0x25c      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_UART_Init            08007ffb      0xa0      2  Code  Gb  stm32f3xx_hal_uart.o
+  UART_CheckIdleState      0800809b      0x90      2  Code  Gb  stm32f3xx_hal_uart.o
+  HAL_GPIO_ReadPin         0800812b      0x30      2  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_GPIO_WritePin        0800815b      0x30      2  Code  Gb  stm32f3xx_hal_gpio.o
+  NVIC_EncodePriority      0800818b      0x58      2  Code  Lc  stm32f3xx_hal_cortex.o
+  HAL_NVIC_SetPriorityGrouping
+                           080081e3      0x14      2  Code  Gb  stm32f3xx_hal_cortex.o
+  HAL_NVIC_SetPriority     080081f7      0x38      2  Code  Gb  stm32f3xx_hal_cortex.o
+  HAL_NVIC_EnableIRQ       0800822f      0x1c      2  Code  Gb  stm32f3xx_hal_cortex.o
+  strlen                   0800824b      0x60      2  Code  Wk  libc2_asm.o (libc_v7em_t_le_eabi.a)
+  ctors$$Base              080082aa                   ----  Gb  - Linker created -
+  ctors$$Limit             080082aa                   ----  Gb  - Linker created -
+  __ctors_start__          080082aa                   ----  Gb  - Linker created -
+  __ctors_end__            080082aa                   ----  Gb  - Linker created -
+  __ctors_start            080082aa                   ----  Gb  - Linker created -
+  __ctors_end              080082aa                   ----  Gb  - Linker created -
+  dtors$$Base              080082aa                   ----  Gb  - Linker created -
+  dtors$$Limit             080082aa                   ----  Gb  - Linker created -
+  __dtors_start__          080082aa                   ----  Gb  - Linker created -
+  __dtors_end__            080082aa                   ----  Gb  - Linker created -
+  __dtors_start            080082aa                   ----  Gb  - Linker created -
+  __dtors_end              080082aa                   ----  Gb  - Linker created -
+  exidx$$Base              080082aa                   ----  Gb  - Linker created -
+  exidx$$Limit             080082aa                   ----  Gb  - Linker created -
+  __exidx_start__          080082aa                   ----  Gb  - Linker created -
+  __exidx_end__            080082aa                   ----  Gb  - Linker created -
+  __exidx_start            080082aa                   ----  Gb  - Linker created -
+  __exidx_end              080082aa                   ----  Gb  - Linker created -
+  tdata_load$$Base         080082aa                   ----  Gb  - Linker created -
+  tdata_load$$Limit        080082aa                   ----  Gb  - Linker created -
+  __tdata_load_start__     080082aa                   ----  Gb  - Linker created -
+  __tdata_load_end__       080082aa                   ----  Gb  - Linker created -
+  __tdata_load_start       080082aa                   ----  Gb  - Linker created -
+  __tdata_load_end         080082aa                   ----  Gb  - Linker created -
+  __SEGGER_init_table__    080082ac      0xb0      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_data__     0800835c     0x1fb      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_zero       08008559      0x16      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_copy       0800856f      0x1a      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __FLASH_segment_used_end__
+                           08008588                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_end__
+                           08008588                   ----  Gb  - Linker created -
+  __FLASH_segment_end__    08010000                   ----  Gb  - Linker created -
+  __FLASH1_segment_end__   08010000                   ----  Gb  - Linker created -
+  USBD_CDC_CfgHSDesc       20000000      0x43      4  Data  Gb  usbd_cdc.o
+  vectors_ram$$Base        20000000                   ----  Gb  - Linker created -
+  vectors_ram$$Limit       20000000                   ----  Gb  - Linker created -
+  __vectors_ram_start__    20000000                   ----  Gb  - Linker created -
+  __vectors_ram_end__      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_start      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_end        20000000                   ----  Gb  - Linker created -
+  tbss$$Base               20000000                   ----  Gb  - Linker created -
+  tbss$$Limit              20000000                   ----  Gb  - Linker created -
+  __tbss_start__           20000000                   ----  Gb  - Linker created -
+  __tbss_end__             20000000                   ----  Gb  - Linker created -
+  __tbss_start             20000000                   ----  Gb  - Linker created -
+  __tbss_end               20000000                   ----  Gb  - Linker created -
+  tdata$$Base              20000000                   ----  Gb  - Linker created -
+  tdata$$Limit             20000000                   ----  Gb  - Linker created -
+  __tdata_start__          20000000                   ----  Gb  - Linker created -
+  __tdata_end__            20000000                   ----  Gb  - Linker created -
+  __tdata_start            20000000                   ----  Gb  - Linker created -
+  __tdata_end              20000000                   ----  Gb  - Linker created -
+  tls$$Base                20000000                   ----  Gb  - Linker created -
+  tls$$Limit               20000000                   ----  Gb  - Linker created -
+  __tls_start__            20000000                   ----  Gb  - Linker created -
+  __tls_end__              20000000                   ----  Gb  - Linker created -
+  __tls_start              20000000                   ----  Gb  - Linker created -
+  __tls_end                20000000                   ----  Gb  - Linker created -
+  __RAM_segment_start__    20000000                   ----  Gb  - Linker created -
+  __RAM1_segment_start__   20000000                   ----  Gb  - Linker created -
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  uwTickFreq               20000043       0x1         Data  Gb  stm32f3xx_hal.o
+  USBD_CDC_CfgFSDesc       20000044      0x43      4  Data  Gb  usbd_cdc.o
+  cfgidx.7083              20000087       0x1         Data  Lc  usbd_ctlreq.o
+  USBD_CDC_OtherSpeedCfgDesc
+                           20000088      0x43      4  Data  Gb  usbd_cdc.o
+  ifalt.7078               200000cb       0x1         Data  Lc  usbd_cdc.o
+  USBD_CDC                 200000cc      0x38      4  Data  Gb  usbd_cdc.o
+  FS_Desc                  20000104      0x1c      4  Data  Gb  usbd_desc.o
+  USBD_StringSerial        20000120      0x1a      4  Data  Gb  usbd_desc.o
+  START_MEASUREMENT        2000013a       0x1         Data  Gb  main.o
+  wakeup                   2000013c      0x14      4  Data  Gb  main.o
+  ok                       20000150      0x14      4  Data  Gb  main.o
+  unknown                  20000164      0x14      4  Data  Gb  main.o
+  cmd1                     20000178      0x14      4  Data  Gb  main.o
+  cmd2                     2000018c      0x14      4  Data  Gb  main.o
+  measure_finish           200001a0      0x14      4  Data  Gb  main.o
+  tlc_config               200001b4      0x13      4  Data  Gb  TLC59208.o
+  USBD_FS_DeviceDesc       200001c8      0x12      4  Data  Gb  usbd_desc.o
+  USBD_Interface_fops_FS   200001dc      0x10      4  Data  Gb  usbd_cdc_if.o
+  USBD_CDC_DeviceQualifierDesc
+                           200001ec       0xa      4  Data  Lc  usbd_cdc.o
+  uwTickPrio               200001f8       0x4      4  Data  Gb  stm32f3xx_hal.o
+  SystemCoreClock          200001fc       0x4      4  Data  Gb  system_stm32f3xx.o
+  USBD_LangIDDesc          20000200       0x4      4  Data  Gb  usbd_desc.o
+  hpcd_USB_FS              20000204     0x3a8      4  Data  Gb  usbd_conf.o
+  hUsbDeviceFS             200005ac     0x224      4  Data  Gb  usb_device.o
+  mem.7166                 200007d0     0x220      4  Data  Lc  usbd_conf.o
+  USBD_StrDesc             200009f0     0x200      4  Data  Gb  usbd_desc.o
+  UserRxBufferFS           20000bf0     0x200      4  Data  Gb  usbd_cdc_if.o
+  UserTxBufferFS           20000df0     0x200      4  Data  Gb  usbd_cdc_if.o
+  huart2                   20000ff0      0x70      4  Data  Gb  usart.o
+  output_message           20001060      0x64      4  Data  Gb  main.o
+  hspi3                    200010c4      0x64      4  Data  Gb  spi.o
+  hi2c1                    20001128      0x4c      4  Data  Gb  i2c.o
+  measurements             20001174      0x20      4  Data  Gb  main.o
+  buffer                   20001194       0x9      4  Data  Gb  TLC59208.o
+  uwTick                   200011a0       0x4      4  Data  Gb  stm32f3xx_hal.o
+  __user_format_extender   200011a4       0x4      4  Data  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  heap$$Base               200011a8                   ----  Gb  - Linker created -
+  __heap_start__           200011a8                   ----  Gb  - Linker created -
+  __heap_start             200011a8                   ----  Gb  - Linker created -
+  heap$$Limit              200015a8                   ----  Gb  - Linker created -
+  __heap_end__             200015a8                   ----  Gb  - Linker created -
+  __heap_end               200015a8                   ----  Gb  - Linker created -
+  stack$$Base              20003c00                   ----  Gb  - Linker created -
+  __stack_start__          20003c00                   ----  Gb  - Linker created -
+  __stack_start            20003c00                   ----  Gb  - Linker created -
+  stack$$Limit             20004000                   ----  Gb  - Linker created -
+  __stack_end__            20004000                   ----  Gb  - Linker created -
+  __stack_end              20004000                   ----  Gb  - Linker created -
+  __RAM_segment_used_end__
+                           20004000                   ----  Gb  - Linker created -
+  __RAM_segment_end__      20004000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_end__
+                           20004000                   ----  Gb  - Linker created -
+  __RAM1_segment_end__     20004000                   ----  Gb  - Linker created -
+
+Symbols by name
+
+  Symbol                   Value         Size  Align  Type      Object
+  ------                   -----         ----  -----  ----      ------
+  ADC_read_data            0800765b      0xfc      2  Code  Gb  ADS1255.o
+  ADS1255_init             0800252d      0x88      4  Code  Gb  ADS1255.o
+  ADS1255_reset            08007603      0x58      2  Code  Gb  ADS1255.o
+  AHBPrescTable            080051c4      0x10      4  Cnst  Gb  system_stm32f3xx.o
+  APBPrescTable            080051d4       0x8      4  Cnst  Gb  system_stm32f3xx.o
+  BusFault_Handler         080000c7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  BusFault_Handler         08005c6f       0x2      2  Code  Gb  stm32f3xx_it.o
+  CDC_Control_FS           08002399      0xbc      4  Code  Lc  usbd_cdc_if.o
+  CDC_DeInit_FS            08005c65       0x6      2  Code  Lc  usbd_cdc_if.o
+  CDC_Init_FS              08002371      0x28      4  Code  Lc  usbd_cdc_if.o
+  CDC_Receive_Callback     08001985      0xa0      4  Code  Wk  main.o
+  CDC_Receive_FS           08002455      0x30      4  Code  Lc  usbd_cdc_if.o
+  CDC_Transmit_FS          08002485      0x5c      4  Code  Gb  usbd_cdc_if.o
+  DebugMon_Handler         080000cd      0x64      4  Code  Wk  Cortex_M_Startup.o
+  DebugMon_Handler         080075fb       0x4      2  Code  Gb  stm32f3xx_it.o
+  Error_Handler            08005aa3       0x2      2  Code  Gb  main.o
+  ExternalISR0             080000d3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR1             080000d5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR10            080000e7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR11            080000e9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR12            080000eb      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR13            080000ed      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR14            080000ef      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR15            080000f1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR16            080000f3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR17            080000f5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR18            080000f7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR19            080000f9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR2             080000d7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR20            080000fb      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR20            080024e1      0x10      4  Code  Gb  stm32f3xx_it.o
+  ExternalISR21            080000fd      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR22            080000ff      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR23            08000101      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR24            08000103      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR25            08000105      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR26            08000107      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR27            08000109      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR28            0800010b      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR29            0800010d      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR3             080000d9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR30            0800010f      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR31            08000111      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR4             080000db      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR5             080000dd      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR6             080000df      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR7             080000e1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR8             080000e3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR9             080000e5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  FS_Desc                  20000104      0x1c      4  Data  Gb  usbd_desc.o
+  Get_SerialNum            0800231d      0x54      4  Code  Lc  usbd_desc.o
+  HAL_Delay                08000239      0x44      4  Code  Wk  stm32f3xx_hal.o
+  HAL_GPIO_Init            08004801     0x2e0      4  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_GPIO_ReadPin         0800812b      0x30      2  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_GPIO_TogglePin       08006c39      0x1e      2  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_GPIO_WritePin        0800815b      0x30      2  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_GetTick              0800022d       0xc      4  Code  Wk  stm32f3xx_hal.o
+  HAL_I2CEx_ConfigAnalogFilter
+                           08007a53      0x8c      2  Code  Gb  stm32f3xx_hal_i2c_ex.o
+  HAL_I2CEx_ConfigDigitalFilter
+                           080061c3      0x92      2  Code  Gb  stm32f3xx_hal_i2c_ex.o
+  HAL_I2C_Init             08007937     0x11c      2  Code  Gb  stm32f3xx_hal_i2c.o
+  HAL_I2C_Master_Transmit  08003ec9     0x20c      4  Code  Gb  stm32f3xx_hal_i2c.o
+  HAL_I2C_MspInit          08001d95      0x80      4  Code  Gb  i2c.o
+  HAL_IncTick              08000211      0x1c      4  Code  Wk  stm32f3xx_hal.o
+  HAL_Init                 08000189      0x28      4  Code  Gb  stm32f3xx_hal.o
+  HAL_InitTick             080001b1      0x60      4  Code  Wk  stm32f3xx_hal.o
+  HAL_MspInit              080024f1      0x3c      4  Code  Gb  stm32f3xx_hal_msp.o
+  HAL_NVIC_EnableIRQ       0800822f      0x1c      2  Code  Gb  stm32f3xx_hal_cortex.o
+  HAL_NVIC_SetPriority     080081f7      0x38      2  Code  Gb  stm32f3xx_hal_cortex.o
+  HAL_NVIC_SetPriorityGrouping
+                           080081e3      0x14      2  Code  Gb  stm32f3xx_hal_cortex.o
+  HAL_PCDEx_PMAConfig      08005e89      0x8a      2  Code  Gb  stm32f3xx_hal_pcd_ex.o
+  HAL_PCDEx_SetConnectionState
+                           080075e3      0x10      2  Code  Gb  usbd_conf.o
+  HAL_PCD_DataInStageCallback
+                           0800730f      0x38      2  Code  Gb  usbd_conf.o
+  HAL_PCD_DataOutStageCallback
+                           08005ac7      0x3a      2  Code  Gb  usbd_conf.o
+  HAL_PCD_EP_Close         080033cd     0x414      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_ClrStall      08003d11     0x1b8      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_GetRxCount    0800790b      0x2c      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Open          08002cc9     0x704      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Receive       080037e1     0x214      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_SetStall      08003bbd     0x154      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Transmit      080039f5     0x1c8      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_IRQHandler       0800776f     0x19c      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_Init             08005c7d     0x1be      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_MspInit          08002049      0x48      4  Code  Gb  usbd_conf.o
+  HAL_PCD_ResetCallback    08005b1b      0x3e      2  Code  Gb  usbd_conf.o
+  HAL_PCD_ResumeCallback   08005b59      0x1a      2  Code  Gb  usbd_conf.o
+  HAL_PCD_SOFCallback      08005b01      0x1a      2  Code  Gb  usbd_conf.o
+  HAL_PCD_SetAddress       08005e3b      0x4e      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_SetupStageCallback
+                           08005aa5      0x22      2  Code  Gb  usbd_conf.o
+  HAL_PCD_Start            08007757      0x18      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_SuspendCallback  08002091      0x34      4  Code  Gb  usbd_conf.o
+  HAL_RCCEx_PeriphCLKConfig
+                           080044e1     0x320      4  Code  Gb  stm32f3xx_hal_rcc_ex.o
+  HAL_RCC_ClockConfig      08000e59     0x2f0      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetHCLKFreq      08001279       0xc      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetPCLK1Freq     08001285      0x44      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetPCLK2Freq     080012c9      0x44      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetSysClockFreq  080011ad      0xcc      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_MCOConfig        08001149      0x64      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_OscConfig        0800027d     0xbdc      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_SPI_Init             08006255     0x122      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_SPI_MspInit          08001e8d      0x80      4  Code  Gb  spi.o
+  HAL_SPI_Receive          08007d9f     0x25c      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_SPI_Transmit         08007adf     0x2c0      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_SPI_TransmitReceive  08006377     0x40a      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_SYSTICK_Config       08006c57      0x16      2  Code  Gb  stm32f3xx_hal_cortex.o
+  HAL_UART_Init            08007ffb      0xa0      2  Code  Gb  stm32f3xx_hal_uart.o
+  HAL_UART_MspInit         08001f69      0x80      4  Code  Gb  usart.o
+  HardFault_Handler        080000c3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  HardFault_Handler        08005c6b       0x2      2  Code  Gb  stm32f3xx_it.o
+  I2C_Flush_TXDR           0800601b      0x3e      2  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_IsAcknowledgeFailed  080040d5      0xb8      4  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_TransferConfig       0800418d      0x58      4  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_WaitOnFlagUntilTimeout
+                           08006059      0x76      2  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_WaitOnSTOPFlagUntilTimeout
+                           0800614d      0x76      2  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_WaitOnTXISFlagUntilTimeout
+                           080060cf      0x7e      2  Code  Lc  stm32f3xx_hal_i2c.o
+  IntToUnicode             08005bdf      0x86      2  Code  Lc  usbd_desc.o
+  MX_GPIO_Init             08001c21      0xf8      4  Code  Gb  gpio.o
+  MX_I2C1_Init             08001d19      0x7c      4  Code  Gb  i2c.o
+  MX_SPI3_Init             08001e15      0x78      4  Code  Gb  spi.o
+  MX_USART2_UART_Init      08001f0d      0x5c      4  Code  Gb  usart.o
+  MX_USB_DEVICE_Init       08001fe9      0x60      4  Code  Gb  usb_device.o
+  MemManage_Handler        080000c5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  MemManage_Handler        08005c6d       0x2      2  Code  Gb  stm32f3xx_it.o
+  NMI_Handler              080000c1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  NMI_Handler              080075f3       0x4      2  Code  Gb  stm32f3xx_it.o
+  NVIC_EnableIRQ           08004b35      0x2c      4  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_EncodePriority      0800818b      0x58      2  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_GetPriorityGrouping
+                           08004b21      0x14      4  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_SetPriority         08004b61      0x50      4  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_SetPriorityGrouping
+                           08004ae1      0x40      4  Code  Lc  stm32f3xx_hal_cortex.o
+  PCD_EP_ISR_Handler       08002655     0x674      4  Code  Lc  stm32f3xx_hal_pcd.o
+  PCD_ReadPMA              08005f8d      0x8e      2  Code  Gb  stm32f3xx_hal_pcd_ex.o
+  PCD_WritePMA             08005f13      0x7a      2  Code  Gb  stm32f3xx_hal_pcd_ex.o
+  PendSV_Handler           080000cf      0x64      4  Code  Wk  Cortex_M_Startup.o
+  PendSV_Handler           080075ff       0x4      2  Code  Gb  stm32f3xx_it.o
+  Reset_Handler            08000113      0x64      4  Code  Gb  Cortex_M_Startup.o
+  SPI_EndRxTransaction     08006931      0xae      2  Code  Lc  stm32f3xx_hal_spi.o
+  SPI_EndRxTxTransaction   080069df      0x8a      2  Code  Lc  stm32f3xx_hal_spi.o
+  SPI_WaitFifoStateUntilTimeout
+                           0800684f      0xe2      2  Code  Lc  stm32f3xx_hal_spi.o
+  SPI_WaitFlagStateUntilTimeout
+                           08006781      0xce      2  Code  Lc  stm32f3xx_hal_spi.o
+  START_MEASUREMENT        2000013a       0x1         Data  Gb  main.o
+  SVC_Handler              080000cb      0x64      4  Code  Wk  Cortex_M_Startup.o
+  SVC_Handler              080075f7       0x4      2  Code  Gb  stm32f3xx_it.o
+  SysTick_Config           08004bb1      0x40      4  Code  Lc  stm32f3xx_hal_cortex.o
+  SysTick_Handler          080000d1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  SysTick_Handler          08005c73       0xa      2  Code  Gb  stm32f3xx_it.o
+  SystemClock_Config       080018c1      0xc4      4  Code  Gb  main.o
+  SystemCoreClock          200001fc       0x4      4  Data  Gb  system_stm32f3xx.o
+  SystemInit               0800011f      0x64      4  Code  Wk  Cortex_M_Startup.o
+  SystemInit               0800130d      0x7c      4  Code  Gb  system_stm32f3xx.o
+  TLC59208_init            080025b5      0x2c      4  Code  Gb  TLC59208.o
+  TLC59208_writeSingleLED  080025e1      0x74      4  Code  Gb  TLC59208.o
+  UART_AdvFeatureConfig    08006a69     0x13a      2  Code  Gb  stm32f3xx_hal_uart.o
+  UART_CheckIdleState      0800809b      0x90      2  Code  Gb  stm32f3xx_hal_uart.o
+  UART_SetConfig           080041e5     0x2fc      4  Code  Gb  stm32f3xx_hal_uart.o
+  UART_WaitOnFlagUntilTimeout
+                           08006ba3      0x96      2  Code  Gb  stm32f3xx_hal_uart.o
+  USBD_CDC                 200000cc      0x38      4  Data  Gb  usbd_cdc.o
+  USBD_CDC_CfgFSDesc       20000044      0x43      4  Data  Gb  usbd_cdc.o
+  USBD_CDC_CfgHSDesc       20000000      0x43      4  Data  Gb  usbd_cdc.o
+  USBD_CDC_DataIn          08007213      0x30      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_DataOut         08007243      0x58      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_DeInit          080058b3      0x5e      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_DeviceQualifierDesc
+                           200001ec       0xa      4  Data  Lc  usbd_cdc.o
+  USBD_CDC_EP0_RxReady     08005963      0x4e      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetDeviceQualifierDescriptor
+                           0800182d      0x18      4  Code  Gb  usbd_cdc.o
+  USBD_CDC_GetFSCfgDesc    080017e5      0x18      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetHSCfgDesc    080017fd      0x18      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetOtherSpeedCfgDesc
+                           08001815      0x18      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_Init            0800713b      0xd8      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_OtherSpeedCfgDesc
+                           20000088      0x43      4  Data  Gb  usbd_cdc.o
+  USBD_CDC_ReceivePacket   08005911      0x52      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_RegisterInterface
+                           080059b1      0x2a      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_SetRxBuffer     08005a09      0x1e      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_SetTxBuffer     080059db      0x2e      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_Setup           08001729      0xbc      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_TransmitPacket  08005a27      0x52      2  Code  Gb  usbd_cdc.o
+  USBD_ClrClassConfig      08006d37      0x28      2  Code  Gb  usbd_core.o
+  USBD_ClrFeature          080056d5      0x4e      2  Code  Lc  usbd_ctlreq.o
+  USBD_CtlContinueRx       0800588d      0x26      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlContinueSendData
+                           08005825      0x26      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlError            080070d3      0x20      2  Code  Gb  usbd_ctlreq.o
+  USBD_CtlPrepareRx        0800584b      0x42      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlReceiveStatus    08007117      0x24      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlSendData         080057e7      0x3e      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlSendStatus       080070f3      0x24      2  Code  Gb  usbd_ioreq.o
+  USBD_FS_ConfigStrDescriptor
+                           080022a5      0x3c      4  Code  Gb  usbd_desc.o
+  USBD_FS_DeviceDesc       200001c8      0x12      4  Data  Gb  usbd_desc.o
+  USBD_FS_DeviceDescriptor
+                           080021e5      0x1c      4  Code  Gb  usbd_desc.o
+  USBD_FS_InterfaceStrDescriptor
+                           080022e1      0x3c      4  Code  Gb  usbd_desc.o
+  USBD_FS_LangIDStrDescriptor
+                           08002201      0x1c      4  Code  Gb  usbd_desc.o
+  USBD_FS_ManufacturerStrDescriptor
+                           08002259      0x28      4  Code  Gb  usbd_desc.o
+  USBD_FS_ProductStrDescriptor
+                           0800221d      0x3c      4  Code  Gb  usbd_desc.o
+  USBD_FS_SerialStrDescriptor
+                           08002281      0x24      4  Code  Gb  usbd_desc.o
+  USBD_GetConfig           08005621      0x62      2  Code  Lc  usbd_ctlreq.o
+  USBD_GetDescriptor       08001429     0x1f0      4  Code  Lc  usbd_ctlreq.o
+  USBD_GetLen              080057b9      0x2e      2  Code  Lc  usbd_ctlreq.o
+  USBD_GetStatus           08005683      0x52      2  Code  Lc  usbd_ctlreq.o
+  USBD_GetString           08005723      0x96      2  Code  Gb  usbd_ctlreq.o
+  USBD_Get_USB_Status      08002185      0x60      4  Code  Lc  usbd_conf.o
+  USBD_Init                08006cd3      0x58      2  Code  Gb  usbd_core.o
+  USBD_Interface_fops_FS   200001dc      0x10      4  Data  Gb  usbd_cdc_if.o
+  USBD_LL_ClearStallEP     0800741f      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_CloseEP          08007387      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_DataInStage      08005431     0x122      2  Code  Gb  usbd_core.o
+  USBD_LL_DataOutStage     08005377      0xba      2  Code  Gb  usbd_core.o
+  USBD_LL_GetRxDataSize    080075bb      0x28      2  Code  Gb  usbd_conf.o
+  USBD_LL_Init             080020c5      0xb0      4  Code  Gb  usbd_conf.o
+  USBD_LL_IsStallEP        0800746b      0x54      2  Code  Gb  usbd_conf.o
+  USBD_LL_OpenEP           08005b73      0x62      2  Code  Gb  usbd_conf.o
+  USBD_LL_PrepareReceive   08007563      0x58      2  Code  Gb  usbd_conf.o
+  USBD_LL_Reset            08006d5f      0x5c      2  Code  Gb  usbd_core.o
+  USBD_LL_Resume           08006ddb      0x18      2  Code  Gb  usbd_core.o
+  USBD_LL_SOF              0800556d      0x32      2  Code  Gb  usbd_core.o
+  USBD_LL_SetSpeed         08005553      0x1a      2  Code  Gb  usbd_core.o
+  USBD_LL_SetUSBAddress    080074bf      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_SetupStage       080052e5      0x92      2  Code  Gb  usbd_core.o
+  USBD_LL_StallEP          080073d3      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_Start            08007347      0x40      2  Code  Gb  usbd_conf.o
+  USBD_LL_Suspend          08006dbb      0x20      2  Code  Gb  usbd_core.o
+  USBD_LL_Transmit         0800750b      0x58      2  Code  Gb  usbd_conf.o
+  USBD_LangIDDesc          20000200       0x4      4  Data  Gb  usbd_desc.o
+  USBD_ParseSetupRequest   08007063      0x70      2  Code  Gb  usbd_ctlreq.o
+  USBD_RegisterClass       08005257      0x32      2  Code  Gb  usbd_core.o
+  USBD_RunTestMode         08006d2b       0xc      2  Code  Gb  usbd_core.o
+  USBD_SetAddress          0800559f      0x82      2  Code  Lc  usbd_ctlreq.o
+  USBD_SetClassConfig      0800529f      0x46      2  Code  Gb  usbd_core.o
+  USBD_SetConfig           08001619     0x110      4  Code  Lc  usbd_ctlreq.o
+  USBD_SetFeature          0800702f      0x34      2  Code  Lc  usbd_ctlreq.o
+  USBD_Start               08005289      0x16      2  Code  Gb  usbd_core.o
+  USBD_StdDevReq           08001389      0xa0      4  Code  Gb  usbd_ctlreq.o
+  USBD_StdEPReq            08006e5b     0x1d4      2  Code  Gb  usbd_ctlreq.o
+  USBD_StdItfReq           08006df3      0x68      2  Code  Gb  usbd_ctlreq.o
+  USBD_StrDesc             200009f0     0x200      4  Data  Gb  usbd_desc.o
+  USBD_StringSerial        20000120      0x1a      4  Data  Gb  usbd_desc.o
+  USBD_static_free         08005bd5       0xa      2  Code  Gb  usbd_conf.o
+  USBD_static_malloc       08002175      0x10      4  Code  Gb  usbd_conf.o
+  UsageFault_Handler       080000c9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  UsageFault_Handler       08005c71       0x2      2  Code  Gb  stm32f3xx_it.o
+  UserRxBufferFS           20000bf0     0x200      4  Data  Gb  usbd_cdc_if.o
+  UserTxBufferFS           20000df0     0x200      4  Data  Gb  usbd_cdc_if.o
+  __FLASH1_segment_end__   08010000                   ----  Gb  - Linker created -
+  __FLASH1_segment_size__  00010000                   ----  Gb  - Linker created -
+  __FLASH1_segment_start__
+                           08000000                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_end__
+                           08008588                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_size__
+                           00008588                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_start__
+                           08000000                   ----  Gb  - Linker created -
+  __FLASH_segment_end__    08010000                   ----  Gb  - Linker created -
+  __FLASH_segment_size__   00010000                   ----  Gb  - Linker created -
+  __FLASH_segment_start__  08000000                   ----  Gb  - Linker created -
+  __FLASH_segment_used_end__
+                           08008588                   ----  Gb  - Linker created -
+  __FLASH_segment_used_size__
+                           00008588                   ----  Gb  - Linker created -
+  __FLASH_segment_used_start__
+                           08000000                   ----  Gb  - Linker created -
+  __HEAPSIZE__             00000400                   ----  Gb  - Linker created -
+  __RAL_hex_lc             080051dc      0x10      4  Cnst  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  __RAL_hex_uc             080051ec      0x10      4  Cnst  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  __RAM1_segment_end__     20004000                   ----  Gb  - Linker created -
+  __RAM1_segment_size__    00004000                   ----  Gb  - Linker created -
+  __RAM1_segment_start__   20000000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_end__
+                           20004000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_size__
+                           00004000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __RAM_segment_end__      20004000                   ----  Gb  - Linker created -
+  __RAM_segment_size__     00004000                   ----  Gb  - Linker created -
+  __RAM_segment_start__    20000000                   ----  Gb  - Linker created -
+  __RAM_segment_used_end__
+                           20004000                   ----  Gb  - Linker created -
+  __RAM_segment_used_size__
+                           00004000                   ----  Gb  - Linker created -
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __SEGGER_init_copy       0800856f      0x1a      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_data__     0800835c     0x1fb      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_table__    080082ac      0xb0      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_zero       08008559      0x16      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  - Linker created -
+  __STACKSIZE__            00000400                   ----  Gb  - Linker created -
+  __ctors_end              080082aa                   ----  Gb  - Linker created -
+  __ctors_end__            080082aa                   ----  Gb  - Linker created -
+  __ctors_size             00000000                   ----  Gb  - Linker created -
+  __ctors_size__           00000000                   ----  Gb  - Linker created -
+  __ctors_start            080082aa                   ----  Gb  - Linker created -
+  __ctors_start__          080082aa                   ----  Gb  - Linker created -
+  __dtors_end              080082aa                   ----  Gb  - Linker created -
+  __dtors_end__            080082aa                   ----  Gb  - Linker created -
+  __dtors_size             00000000                   ----  Gb  - Linker created -
+  __dtors_size__           00000000                   ----  Gb  - Linker created -
+  __dtors_start            080082aa                   ----  Gb  - Linker created -
+  __dtors_start__          080082aa                   ----  Gb  - Linker created -
+  __exidx_end              080082aa                   ----  Gb  - Linker created -
+  __exidx_end__            080082aa                   ----  Gb  - Linker created -
+  __exidx_size             00000000                   ----  Gb  - Linker created -
+  __exidx_size__           00000000                   ----  Gb  - Linker created -
+  __exidx_start            080082aa                   ----  Gb  - Linker created -
+  __exidx_start__          080082aa                   ----  Gb  - Linker created -
+  __heap_end               200015a8                   ----  Gb  - Linker created -
+  __heap_end__             200015a8                   ----  Gb  - Linker created -
+  __heap_size              00000400                   ----  Gb  - Linker created -
+  __heap_size__            00000400                   ----  Gb  - Linker created -
+  __heap_start             200011a8                   ----  Gb  - Linker created -
+  __heap_start__           200011a8                   ----  Gb  - Linker created -
+  __putc                   0800729b      0x34      2  Code  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  __stack_end              20004000                   ----  Gb  - Linker created -
+  __stack_end__            20004000                   ----  Gb  - Linker created -
+  __stack_size             00000400                   ----  Gb  - Linker created -
+  __stack_size__           00000400                   ----  Gb  - Linker created -
+  __stack_start            20003c00                   ----  Gb  - Linker created -
+  __stack_start__          20003c00                   ----  Gb  - Linker created -
+  __tbss_end               20000000                   ----  Gb  - Linker created -
+  __tbss_end__             20000000                   ----  Gb  - Linker created -
+  __tbss_size              00000000                   ----  Gb  - Linker created -
+  __tbss_size__            00000000                   ----  Gb  - Linker created -
+  __tbss_start             20000000                   ----  Gb  - Linker created -
+  __tbss_start__           20000000                   ----  Gb  - Linker created -
+  __tdata_end              20000000                   ----  Gb  - Linker created -
+  __tdata_end__            20000000                   ----  Gb  - Linker created -
+  __tdata_load_end         080082aa                   ----  Gb  - Linker created -
+  __tdata_load_end__       080082aa                   ----  Gb  - Linker created -
+  __tdata_load_size        00000000                   ----  Gb  - Linker created -
+  __tdata_load_size__      00000000                   ----  Gb  - Linker created -
+  __tdata_load_start       080082aa                   ----  Gb  - Linker created -
+  __tdata_load_start__     080082aa                   ----  Gb  - Linker created -
+  __tdata_size             00000000                   ----  Gb  - Linker created -
+  __tdata_size__           00000000                   ----  Gb  - Linker created -
+  __tdata_start            20000000                   ----  Gb  - Linker created -
+  __tdata_start__          20000000                   ----  Gb  - Linker created -
+  __tls_end                20000000                   ----  Gb  - Linker created -
+  __tls_end__              20000000                   ----  Gb  - Linker created -
+  __tls_size               00000000                   ----  Gb  - Linker created -
+  __tls_size__             00000000                   ----  Gb  - Linker created -
+  __tls_start              20000000                   ----  Gb  - Linker created -
+  __tls_start__            20000000                   ----  Gb  - Linker created -
+  __user_format_extender   200011a4       0x4      4  Data  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  __vectors_end            080000c0                   ----  Gb  - Linker created -
+  __vectors_end__          080000c0                   ----  Gb  - Linker created -
+  __vectors_ram_end        20000000                   ----  Gb  - Linker created -
+  __vectors_ram_end__      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_size       00000000                   ----  Gb  - Linker created -
+  __vectors_ram_size__     00000000                   ----  Gb  - Linker created -
+  __vectors_ram_start      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_start__    20000000                   ----  Gb  - Linker created -
+  __vectors_size           000000c0                   ----  Gb  - Linker created -
+  __vectors_size__         000000c0                   ----  Gb  - Linker created -
+  __vectors_start          08000000                   ----  Gb  - Linker created -
+  __vectors_start__        08000000                   ----  Gb  - Linker created -
+  __vfprintf               08004bf1     0x514      4  Code  Gb  libvfprintf_v7em_t_le_eabi.o
+  __vfprintf_int_nwp       08004bf1     0x514      4  Code  Gb  libvfprintf_v7em_t_le_eabi.o
+  _start                   08000125      0x64      4  Code  Gb  SEGGER_THUMB_Startup.o
+  _vectors                 08000000      0xc0      2  Code  Gb  Cortex_M_Startup.o
+  _vectors_end             080000c0      0xc0      2  Code  Lc  Cortex_M_Startup.o
+  aPLLMULFactorTable       080051a4      0x10      4  Cnst  Gb  stm32f3xx_hal_rcc.o
+  aPredivFactorTable       080051b4      0x10      4  Cnst  Gb  stm32f3xx_hal_rcc.o
+  buffer                   20001194       0x9      4  Data  Gb  TLC59208.o
+  cfgidx.7083              20000087       0x1         Data  Lc  usbd_ctlreq.o
+  cmd1                     20000178      0x14      4  Data  Gb  main.o
+  cmd2                     2000018c      0x14      4  Data  Gb  main.o
+  ctor_end                 0800015c      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_loop                0800014c      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctors$$Base              080082aa                   ----  Gb  - Linker created -
+  ctors$$Length            00000000                   ----  Gb  - Linker created -
+  ctors$$Limit             080082aa                   ----  Gb  - Linker created -
+  dtors$$Base              080082aa                   ----  Gb  - Linker created -
+  dtors$$Length            00000000                   ----  Gb  - Linker created -
+  dtors$$Limit             080082aa                   ----  Gb  - Linker created -
+  exidx$$Base              080082aa                   ----  Gb  - Linker created -
+  exidx$$Length            00000000                   ----  Gb  - Linker created -
+  exidx$$Limit             080082aa                   ----  Gb  - Linker created -
+  exit                     0800016b      0x64      4  Code  Wk  SEGGER_THUMB_Startup.o
+  exit_loop                0800016a      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  hUsbDeviceFS             200005ac     0x224      4  Data  Gb  usb_device.o
+  heap$$Base               200011a8                   ----  Gb  - Linker created -
+  heap$$Length             00000400                   ----  Gb  - Linker created -
+  heap$$Limit              200015a8                   ----  Gb  - Linker created -
+  hi2c1                    20001128      0x4c      4  Data  Gb  i2c.o
+  hpcd_USB_FS              20000204     0x3a8      4  Data  Gb  usbd_conf.o
+  hspi3                    200010c4      0x64      4  Data  Gb  spi.o
+  huart2                   20000ff0      0x70      4  Data  Gb  usart.o
+  ifalt.7078               200000cb       0x1         Data  Lc  usbd_cdc.o
+  main                     08001845      0x7c      4  Code  Gb  main.o
+  measurePlastic           08001a25     0x1fc      4  Code  Gb  main.o
+  measure_finish           200001a0      0x14      4  Data  Gb  main.o
+  measurements             20001174      0x20      4  Data  Gb  main.o
+  mem.7166                 200007d0     0x220      4  Data  Lc  usbd_conf.o
+  memset                   08006c6d      0x66      2  Code  Wk  libc2_asm.o (libc_v7em_t_le_eabi.a)
+  ok                       20000150      0x14      4  Data  Gb  main.o
+  output_message           20001060      0x64      4  Data  Gb  main.o
+  reset_handler            08000113      0x64      4  Code  Gb  Cortex_M_Startup.o
+  sprintf                  08005a79      0x2a      2  Code  Wk  libc2.o (libc_v7em_t_le_eabi.a)
+  stack$$Base              20003c00                   ----  Gb  - Linker created -
+  stack$$Length            00000400                   ----  Gb  - Linker created -
+  stack$$Limit             20004000                   ----  Gb  - Linker created -
+  start                    08000163      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  strlen                   0800824b      0x60      2  Code  Wk  libc2_asm.o (libc_v7em_t_le_eabi.a)
+  strncmp                  080072cf      0x40      2  Code  Wk  libc2.o (libc_v7em_t_le_eabi.a)
+  tbss$$Base               20000000                   ----  Gb  - Linker created -
+  tbss$$Length             00000000                   ----  Gb  - Linker created -
+  tbss$$Limit              20000000                   ----  Gb  - Linker created -
+  tdata$$Base              20000000                   ----  Gb  - Linker created -
+  tdata$$Length            00000000                   ----  Gb  - Linker created -
+  tdata$$Limit             20000000                   ----  Gb  - Linker created -
+  tdata_load$$Base         080082aa                   ----  Gb  - Linker created -
+  tdata_load$$Length       00000000                   ----  Gb  - Linker created -
+  tdata_load$$Limit        080082aa                   ----  Gb  - Linker created -
+  tlc_config               200001b4      0x13      4  Data  Gb  TLC59208.o
+  tls$$Base                20000000                   ----  Gb  - Linker created -
+  tls$$Length              00000000                   ----  Gb  - Linker created -
+  tls$$Limit               20000000                   ----  Gb  - Linker created -
+  unknown                  20000164      0x14      4  Data  Gb  main.o
+  uwTick                   200011a0       0x4      4  Data  Gb  stm32f3xx_hal.o
+  uwTickFreq               20000043       0x1         Data  Gb  stm32f3xx_hal.o
+  uwTickPrio               200001f8       0x4      4  Data  Gb  stm32f3xx_hal.o
+  vectors$$Base            08000000                   ----  Gb  - Linker created -
+  vectors$$Length          000000c0                   ----  Gb  - Linker created -
+  vectors$$Limit           080000c0                   ----  Gb  - Linker created -
+  vectors_ram$$Base        20000000                   ----  Gb  - Linker created -
+  vectors_ram$$Length      00000000                   ----  Gb  - Linker created -
+  vectors_ram$$Limit       20000000                   ----  Gb  - Linker created -
+  wakeup                   2000013c      0x14      4  Data  Gb  main.o
+
+Symbols by file then by name
+
+  Symbol                   Value         Size  Align  Type      Object
+  ------                   -----         ----  -----  ----      ------
+  __FLASH1_segment_end__   08010000                   ----  Gb  - Linker created -
+  __FLASH1_segment_size__  00010000                   ----  Gb  - Linker created -
+  __FLASH1_segment_start__
+                           08000000                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_end__
+                           08008588                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_size__
+                           00008588                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_start__
+                           08000000                   ----  Gb  - Linker created -
+  __FLASH_segment_end__    08010000                   ----  Gb  - Linker created -
+  __FLASH_segment_size__   00010000                   ----  Gb  - Linker created -
+  __FLASH_segment_start__  08000000                   ----  Gb  - Linker created -
+  __FLASH_segment_used_end__
+                           08008588                   ----  Gb  - Linker created -
+  __FLASH_segment_used_size__
+                           00008588                   ----  Gb  - Linker created -
+  __FLASH_segment_used_start__
+                           08000000                   ----  Gb  - Linker created -
+  __HEAPSIZE__             00000400                   ----  Gb  - Linker created -
+  __RAM1_segment_end__     20004000                   ----  Gb  - Linker created -
+  __RAM1_segment_size__    00004000                   ----  Gb  - Linker created -
+  __RAM1_segment_start__   20000000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_end__
+                           20004000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_size__
+                           00004000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __RAM_segment_end__      20004000                   ----  Gb  - Linker created -
+  __RAM_segment_size__     00004000                   ----  Gb  - Linker created -
+  __RAM_segment_start__    20000000                   ----  Gb  - Linker created -
+  __RAM_segment_used_end__
+                           20004000                   ----  Gb  - Linker created -
+  __RAM_segment_used_size__
+                           00004000                   ----  Gb  - Linker created -
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __SEGGER_init_data__     0800835c     0x1fb      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_table__    080082ac      0xb0      4  Cnst  Lc  - Linker created -
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  - Linker created -
+  __STACKSIZE__            00000400                   ----  Gb  - Linker created -
+  __ctors_end              080082aa                   ----  Gb  - Linker created -
+  __ctors_end__            080082aa                   ----  Gb  - Linker created -
+  __ctors_size             00000000                   ----  Gb  - Linker created -
+  __ctors_size__           00000000                   ----  Gb  - Linker created -
+  __ctors_start            080082aa                   ----  Gb  - Linker created -
+  __ctors_start__          080082aa                   ----  Gb  - Linker created -
+  __dtors_end              080082aa                   ----  Gb  - Linker created -
+  __dtors_end__            080082aa                   ----  Gb  - Linker created -
+  __dtors_size             00000000                   ----  Gb  - Linker created -
+  __dtors_size__           00000000                   ----  Gb  - Linker created -
+  __dtors_start            080082aa                   ----  Gb  - Linker created -
+  __dtors_start__          080082aa                   ----  Gb  - Linker created -
+  __exidx_end              080082aa                   ----  Gb  - Linker created -
+  __exidx_end__            080082aa                   ----  Gb  - Linker created -
+  __exidx_size             00000000                   ----  Gb  - Linker created -
+  __exidx_size__           00000000                   ----  Gb  - Linker created -
+  __exidx_start            080082aa                   ----  Gb  - Linker created -
+  __exidx_start__          080082aa                   ----  Gb  - Linker created -
+  __heap_end               200015a8                   ----  Gb  - Linker created -
+  __heap_end__             200015a8                   ----  Gb  - Linker created -
+  __heap_size              00000400                   ----  Gb  - Linker created -
+  __heap_size__            00000400                   ----  Gb  - Linker created -
+  __heap_start             200011a8                   ----  Gb  - Linker created -
+  __heap_start__           200011a8                   ----  Gb  - Linker created -
+  __stack_end              20004000                   ----  Gb  - Linker created -
+  __stack_end__            20004000                   ----  Gb  - Linker created -
+  __stack_size             00000400                   ----  Gb  - Linker created -
+  __stack_size__           00000400                   ----  Gb  - Linker created -
+  __stack_start            20003c00                   ----  Gb  - Linker created -
+  __stack_start__          20003c00                   ----  Gb  - Linker created -
+  __tbss_end               20000000                   ----  Gb  - Linker created -
+  __tbss_end__             20000000                   ----  Gb  - Linker created -
+  __tbss_size              00000000                   ----  Gb  - Linker created -
+  __tbss_size__            00000000                   ----  Gb  - Linker created -
+  __tbss_start             20000000                   ----  Gb  - Linker created -
+  __tbss_start__           20000000                   ----  Gb  - Linker created -
+  __tdata_end              20000000                   ----  Gb  - Linker created -
+  __tdata_end__            20000000                   ----  Gb  - Linker created -
+  __tdata_load_end         080082aa                   ----  Gb  - Linker created -
+  __tdata_load_end__       080082aa                   ----  Gb  - Linker created -
+  __tdata_load_size        00000000                   ----  Gb  - Linker created -
+  __tdata_load_size__      00000000                   ----  Gb  - Linker created -
+  __tdata_load_start       080082aa                   ----  Gb  - Linker created -
+  __tdata_load_start__     080082aa                   ----  Gb  - Linker created -
+  __tdata_size             00000000                   ----  Gb  - Linker created -
+  __tdata_size__           00000000                   ----  Gb  - Linker created -
+  __tdata_start            20000000                   ----  Gb  - Linker created -
+  __tdata_start__          20000000                   ----  Gb  - Linker created -
+  __tls_end                20000000                   ----  Gb  - Linker created -
+  __tls_end__              20000000                   ----  Gb  - Linker created -
+  __tls_size               00000000                   ----  Gb  - Linker created -
+  __tls_size__             00000000                   ----  Gb  - Linker created -
+  __tls_start              20000000                   ----  Gb  - Linker created -
+  __tls_start__            20000000                   ----  Gb  - Linker created -
+  __vectors_end            080000c0                   ----  Gb  - Linker created -
+  __vectors_end__          080000c0                   ----  Gb  - Linker created -
+  __vectors_ram_end        20000000                   ----  Gb  - Linker created -
+  __vectors_ram_end__      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_size       00000000                   ----  Gb  - Linker created -
+  __vectors_ram_size__     00000000                   ----  Gb  - Linker created -
+  __vectors_ram_start      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_start__    20000000                   ----  Gb  - Linker created -
+  __vectors_size           000000c0                   ----  Gb  - Linker created -
+  __vectors_size__         000000c0                   ----  Gb  - Linker created -
+  __vectors_start          08000000                   ----  Gb  - Linker created -
+  __vectors_start__        08000000                   ----  Gb  - Linker created -
+  ctors$$Base              080082aa                   ----  Gb  - Linker created -
+  ctors$$Length            00000000                   ----  Gb  - Linker created -
+  ctors$$Limit             080082aa                   ----  Gb  - Linker created -
+  dtors$$Base              080082aa                   ----  Gb  - Linker created -
+  dtors$$Length            00000000                   ----  Gb  - Linker created -
+  dtors$$Limit             080082aa                   ----  Gb  - Linker created -
+  exidx$$Base              080082aa                   ----  Gb  - Linker created -
+  exidx$$Length            00000000                   ----  Gb  - Linker created -
+  exidx$$Limit             080082aa                   ----  Gb  - Linker created -
+  heap$$Base               200011a8                   ----  Gb  - Linker created -
+  heap$$Length             00000400                   ----  Gb  - Linker created -
+  heap$$Limit              200015a8                   ----  Gb  - Linker created -
+  stack$$Base              20003c00                   ----  Gb  - Linker created -
+  stack$$Length            00000400                   ----  Gb  - Linker created -
+  stack$$Limit             20004000                   ----  Gb  - Linker created -
+  tbss$$Base               20000000                   ----  Gb  - Linker created -
+  tbss$$Length             00000000                   ----  Gb  - Linker created -
+  tbss$$Limit              20000000                   ----  Gb  - Linker created -
+  tdata$$Base              20000000                   ----  Gb  - Linker created -
+  tdata$$Length            00000000                   ----  Gb  - Linker created -
+  tdata$$Limit             20000000                   ----  Gb  - Linker created -
+  tdata_load$$Base         080082aa                   ----  Gb  - Linker created -
+  tdata_load$$Length       00000000                   ----  Gb  - Linker created -
+  tdata_load$$Limit        080082aa                   ----  Gb  - Linker created -
+  tls$$Base                20000000                   ----  Gb  - Linker created -
+  tls$$Length              00000000                   ----  Gb  - Linker created -
+  tls$$Limit               20000000                   ----  Gb  - Linker created -
+  vectors$$Base            08000000                   ----  Gb  - Linker created -
+  vectors$$Length          000000c0                   ----  Gb  - Linker created -
+  vectors$$Limit           080000c0                   ----  Gb  - Linker created -
+  vectors_ram$$Base        20000000                   ----  Gb  - Linker created -
+  vectors_ram$$Length      00000000                   ----  Gb  - Linker created -
+  vectors_ram$$Limit       20000000                   ----  Gb  - Linker created -
+  ADC_read_data            0800765b      0xfc      2  Code  Gb  ADS1255.o
+  ADS1255_init             0800252d      0x88      4  Code  Gb  ADS1255.o
+  ADS1255_reset            08007603      0x58      2  Code  Gb  ADS1255.o
+  BusFault_Handler         080000c7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  DebugMon_Handler         080000cd      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR0             080000d3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR1             080000d5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR10            080000e7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR11            080000e9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR12            080000eb      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR13            080000ed      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR14            080000ef      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR15            080000f1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR16            080000f3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR17            080000f5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR18            080000f7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR19            080000f9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR2             080000d7      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR20            080000fb      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR21            080000fd      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR22            080000ff      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR23            08000101      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR24            08000103      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR25            08000105      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR26            08000107      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR27            08000109      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR28            0800010b      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR29            0800010d      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR3             080000d9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR30            0800010f      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR31            08000111      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR4             080000db      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR5             080000dd      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR6             080000df      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR7             080000e1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR8             080000e3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  ExternalISR9             080000e5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  HardFault_Handler        080000c3      0x64      4  Code  Wk  Cortex_M_Startup.o
+  MemManage_Handler        080000c5      0x64      4  Code  Wk  Cortex_M_Startup.o
+  NMI_Handler              080000c1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  PendSV_Handler           080000cf      0x64      4  Code  Wk  Cortex_M_Startup.o
+  Reset_Handler            08000113      0x64      4  Code  Gb  Cortex_M_Startup.o
+  SVC_Handler              080000cb      0x64      4  Code  Wk  Cortex_M_Startup.o
+  SysTick_Handler          080000d1      0x64      4  Code  Wk  Cortex_M_Startup.o
+  SystemInit               0800011f      0x64      4  Code  Wk  Cortex_M_Startup.o
+  UsageFault_Handler       080000c9      0x64      4  Code  Wk  Cortex_M_Startup.o
+  _vectors                 08000000      0xc0      2  Code  Gb  Cortex_M_Startup.o
+  _vectors_end             080000c0      0xc0      2  Code  Lc  Cortex_M_Startup.o
+  reset_handler            08000113      0x64      4  Code  Gb  Cortex_M_Startup.o
+  __SEGGER_init_copy       0800856f      0x1a      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_zero       08008559      0x16      2  Code  Gb  SEGGER_THUMB_Startup.o
+  _start                   08000125      0x64      4  Code  Gb  SEGGER_THUMB_Startup.o
+  ctor_end                 0800015c      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_loop                0800014c      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit                     0800016b      0x64      4  Code  Wk  SEGGER_THUMB_Startup.o
+  exit_loop                0800016a      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  start                    08000163      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  TLC59208_init            080025b5      0x2c      4  Code  Gb  TLC59208.o
+  TLC59208_writeSingleLED  080025e1      0x74      4  Code  Gb  TLC59208.o
+  buffer                   20001194       0x9      4  Data  Gb  TLC59208.o
+  tlc_config               200001b4      0x13      4  Data  Gb  TLC59208.o
+  MX_GPIO_Init             08001c21      0xf8      4  Code  Gb  gpio.o
+  HAL_I2C_MspInit          08001d95      0x80      4  Code  Gb  i2c.o
+  MX_I2C1_Init             08001d19      0x7c      4  Code  Gb  i2c.o
+  hi2c1                    20001128      0x4c      4  Data  Gb  i2c.o
+  __RAL_hex_lc             080051dc      0x10      4  Cnst  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  __RAL_hex_uc             080051ec      0x10      4  Cnst  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  __putc                   0800729b      0x34      2  Code  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  __user_format_extender   200011a4       0x4      4  Data  Gb  libc2.o (libc_v7em_t_le_eabi.a)
+  sprintf                  08005a79      0x2a      2  Code  Wk  libc2.o (libc_v7em_t_le_eabi.a)
+  strncmp                  080072cf      0x40      2  Code  Wk  libc2.o (libc_v7em_t_le_eabi.a)
+  memset                   08006c6d      0x66      2  Code  Wk  libc2_asm.o (libc_v7em_t_le_eabi.a)
+  strlen                   0800824b      0x60      2  Code  Wk  libc2_asm.o (libc_v7em_t_le_eabi.a)
+  __vfprintf               08004bf1     0x514      4  Code  Gb  libvfprintf_v7em_t_le_eabi.o
+  __vfprintf_int_nwp       08004bf1     0x514      4  Code  Gb  libvfprintf_v7em_t_le_eabi.o
+  CDC_Receive_Callback     08001985      0xa0      4  Code  Wk  main.o
+  Error_Handler            08005aa3       0x2      2  Code  Gb  main.o
+  START_MEASUREMENT        2000013a       0x1         Data  Gb  main.o
+  SystemClock_Config       080018c1      0xc4      4  Code  Gb  main.o
+  cmd1                     20000178      0x14      4  Data  Gb  main.o
+  cmd2                     2000018c      0x14      4  Data  Gb  main.o
+  main                     08001845      0x7c      4  Code  Gb  main.o
+  measurePlastic           08001a25     0x1fc      4  Code  Gb  main.o
+  measure_finish           200001a0      0x14      4  Data  Gb  main.o
+  measurements             20001174      0x20      4  Data  Gb  main.o
+  ok                       20000150      0x14      4  Data  Gb  main.o
+  output_message           20001060      0x64      4  Data  Gb  main.o
+  unknown                  20000164      0x14      4  Data  Gb  main.o
+  wakeup                   2000013c      0x14      4  Data  Gb  main.o
+  HAL_SPI_MspInit          08001e8d      0x80      4  Code  Gb  spi.o
+  MX_SPI3_Init             08001e15      0x78      4  Code  Gb  spi.o
+  hspi3                    200010c4      0x64      4  Data  Gb  spi.o
+  HAL_Delay                08000239      0x44      4  Code  Wk  stm32f3xx_hal.o
+  HAL_GetTick              0800022d       0xc      4  Code  Wk  stm32f3xx_hal.o
+  HAL_IncTick              08000211      0x1c      4  Code  Wk  stm32f3xx_hal.o
+  HAL_Init                 08000189      0x28      4  Code  Gb  stm32f3xx_hal.o
+  HAL_InitTick             080001b1      0x60      4  Code  Wk  stm32f3xx_hal.o
+  uwTick                   200011a0       0x4      4  Data  Gb  stm32f3xx_hal.o
+  uwTickFreq               20000043       0x1         Data  Gb  stm32f3xx_hal.o
+  uwTickPrio               200001f8       0x4      4  Data  Gb  stm32f3xx_hal.o
+  HAL_NVIC_EnableIRQ       0800822f      0x1c      2  Code  Gb  stm32f3xx_hal_cortex.o
+  HAL_NVIC_SetPriority     080081f7      0x38      2  Code  Gb  stm32f3xx_hal_cortex.o
+  HAL_NVIC_SetPriorityGrouping
+                           080081e3      0x14      2  Code  Gb  stm32f3xx_hal_cortex.o
+  HAL_SYSTICK_Config       08006c57      0x16      2  Code  Gb  stm32f3xx_hal_cortex.o
+  NVIC_EnableIRQ           08004b35      0x2c      4  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_EncodePriority      0800818b      0x58      2  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_GetPriorityGrouping
+                           08004b21      0x14      4  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_SetPriority         08004b61      0x50      4  Code  Lc  stm32f3xx_hal_cortex.o
+  NVIC_SetPriorityGrouping
+                           08004ae1      0x40      4  Code  Lc  stm32f3xx_hal_cortex.o
+  SysTick_Config           08004bb1      0x40      4  Code  Lc  stm32f3xx_hal_cortex.o
+  HAL_GPIO_Init            08004801     0x2e0      4  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_GPIO_ReadPin         0800812b      0x30      2  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_GPIO_TogglePin       08006c39      0x1e      2  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_GPIO_WritePin        0800815b      0x30      2  Code  Gb  stm32f3xx_hal_gpio.o
+  HAL_I2C_Init             08007937     0x11c      2  Code  Gb  stm32f3xx_hal_i2c.o
+  HAL_I2C_Master_Transmit  08003ec9     0x20c      4  Code  Gb  stm32f3xx_hal_i2c.o
+  I2C_Flush_TXDR           0800601b      0x3e      2  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_IsAcknowledgeFailed  080040d5      0xb8      4  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_TransferConfig       0800418d      0x58      4  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_WaitOnFlagUntilTimeout
+                           08006059      0x76      2  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_WaitOnSTOPFlagUntilTimeout
+                           0800614d      0x76      2  Code  Lc  stm32f3xx_hal_i2c.o
+  I2C_WaitOnTXISFlagUntilTimeout
+                           080060cf      0x7e      2  Code  Lc  stm32f3xx_hal_i2c.o
+  HAL_I2CEx_ConfigAnalogFilter
+                           08007a53      0x8c      2  Code  Gb  stm32f3xx_hal_i2c_ex.o
+  HAL_I2CEx_ConfigDigitalFilter
+                           080061c3      0x92      2  Code  Gb  stm32f3xx_hal_i2c_ex.o
+  HAL_MspInit              080024f1      0x3c      4  Code  Gb  stm32f3xx_hal_msp.o
+  HAL_PCD_EP_Close         080033cd     0x414      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_ClrStall      08003d11     0x1b8      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_GetRxCount    0800790b      0x2c      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Open          08002cc9     0x704      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Receive       080037e1     0x214      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_SetStall      08003bbd     0x154      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_EP_Transmit      080039f5     0x1c8      4  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_IRQHandler       0800776f     0x19c      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_Init             08005c7d     0x1be      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_SetAddress       08005e3b      0x4e      2  Code  Gb  stm32f3xx_hal_pcd.o
+  HAL_PCD_Start            08007757      0x18      2  Code  Gb  stm32f3xx_hal_pcd.o
+  PCD_EP_ISR_Handler       08002655     0x674      4  Code  Lc  stm32f3xx_hal_pcd.o
+  HAL_PCDEx_PMAConfig      08005e89      0x8a      2  Code  Gb  stm32f3xx_hal_pcd_ex.o
+  PCD_ReadPMA              08005f8d      0x8e      2  Code  Gb  stm32f3xx_hal_pcd_ex.o
+  PCD_WritePMA             08005f13      0x7a      2  Code  Gb  stm32f3xx_hal_pcd_ex.o
+  HAL_RCC_ClockConfig      08000e59     0x2f0      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetHCLKFreq      08001279       0xc      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetPCLK1Freq     08001285      0x44      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetPCLK2Freq     080012c9      0x44      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_GetSysClockFreq  080011ad      0xcc      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_MCOConfig        08001149      0x64      4  Code  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCC_OscConfig        0800027d     0xbdc      4  Code  Gb  stm32f3xx_hal_rcc.o
+  aPLLMULFactorTable       080051a4      0x10      4  Cnst  Gb  stm32f3xx_hal_rcc.o
+  aPredivFactorTable       080051b4      0x10      4  Cnst  Gb  stm32f3xx_hal_rcc.o
+  HAL_RCCEx_PeriphCLKConfig
+                           080044e1     0x320      4  Code  Gb  stm32f3xx_hal_rcc_ex.o
+  HAL_SPI_Init             08006255     0x122      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_SPI_Receive          08007d9f     0x25c      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_SPI_Transmit         08007adf     0x2c0      2  Code  Gb  stm32f3xx_hal_spi.o
+  HAL_SPI_TransmitReceive  08006377     0x40a      2  Code  Gb  stm32f3xx_hal_spi.o
+  SPI_EndRxTransaction     08006931      0xae      2  Code  Lc  stm32f3xx_hal_spi.o
+  SPI_EndRxTxTransaction   080069df      0x8a      2  Code  Lc  stm32f3xx_hal_spi.o
+  SPI_WaitFifoStateUntilTimeout
+                           0800684f      0xe2      2  Code  Lc  stm32f3xx_hal_spi.o
+  SPI_WaitFlagStateUntilTimeout
+                           08006781      0xce      2  Code  Lc  stm32f3xx_hal_spi.o
+  HAL_UART_Init            08007ffb      0xa0      2  Code  Gb  stm32f3xx_hal_uart.o
+  UART_AdvFeatureConfig    08006a69     0x13a      2  Code  Gb  stm32f3xx_hal_uart.o
+  UART_CheckIdleState      0800809b      0x90      2  Code  Gb  stm32f3xx_hal_uart.o
+  UART_SetConfig           080041e5     0x2fc      4  Code  Gb  stm32f3xx_hal_uart.o
+  UART_WaitOnFlagUntilTimeout
+                           08006ba3      0x96      2  Code  Gb  stm32f3xx_hal_uart.o
+  BusFault_Handler         08005c6f       0x2      2  Code  Gb  stm32f3xx_it.o
+  DebugMon_Handler         080075fb       0x4      2  Code  Gb  stm32f3xx_it.o
+  ExternalISR20            080024e1      0x10      4  Code  Gb  stm32f3xx_it.o
+  HardFault_Handler        08005c6b       0x2      2  Code  Gb  stm32f3xx_it.o
+  MemManage_Handler        08005c6d       0x2      2  Code  Gb  stm32f3xx_it.o
+  NMI_Handler              080075f3       0x4      2  Code  Gb  stm32f3xx_it.o
+  PendSV_Handler           080075ff       0x4      2  Code  Gb  stm32f3xx_it.o
+  SVC_Handler              080075f7       0x4      2  Code  Gb  stm32f3xx_it.o
+  SysTick_Handler          08005c73       0xa      2  Code  Gb  stm32f3xx_it.o
+  UsageFault_Handler       08005c71       0x2      2  Code  Gb  stm32f3xx_it.o
+  AHBPrescTable            080051c4      0x10      4  Cnst  Gb  system_stm32f3xx.o
+  APBPrescTable            080051d4       0x8      4  Cnst  Gb  system_stm32f3xx.o
+  SystemCoreClock          200001fc       0x4      4  Data  Gb  system_stm32f3xx.o
+  SystemInit               0800130d      0x7c      4  Code  Gb  system_stm32f3xx.o
+  HAL_UART_MspInit         08001f69      0x80      4  Code  Gb  usart.o
+  MX_USART2_UART_Init      08001f0d      0x5c      4  Code  Gb  usart.o
+  huart2                   20000ff0      0x70      4  Data  Gb  usart.o
+  MX_USB_DEVICE_Init       08001fe9      0x60      4  Code  Gb  usb_device.o
+  hUsbDeviceFS             200005ac     0x224      4  Data  Gb  usb_device.o
+  USBD_CDC                 200000cc      0x38      4  Data  Gb  usbd_cdc.o
+  USBD_CDC_CfgFSDesc       20000044      0x43      4  Data  Gb  usbd_cdc.o
+  USBD_CDC_CfgHSDesc       20000000      0x43      4  Data  Gb  usbd_cdc.o
+  USBD_CDC_DataIn          08007213      0x30      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_DataOut         08007243      0x58      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_DeInit          080058b3      0x5e      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_DeviceQualifierDesc
+                           200001ec       0xa      4  Data  Lc  usbd_cdc.o
+  USBD_CDC_EP0_RxReady     08005963      0x4e      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetDeviceQualifierDescriptor
+                           0800182d      0x18      4  Code  Gb  usbd_cdc.o
+  USBD_CDC_GetFSCfgDesc    080017e5      0x18      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetHSCfgDesc    080017fd      0x18      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_GetOtherSpeedCfgDesc
+                           08001815      0x18      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_Init            0800713b      0xd8      2  Code  Lc  usbd_cdc.o
+  USBD_CDC_OtherSpeedCfgDesc
+                           20000088      0x43      4  Data  Gb  usbd_cdc.o
+  USBD_CDC_ReceivePacket   08005911      0x52      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_RegisterInterface
+                           080059b1      0x2a      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_SetRxBuffer     08005a09      0x1e      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_SetTxBuffer     080059db      0x2e      2  Code  Gb  usbd_cdc.o
+  USBD_CDC_Setup           08001729      0xbc      4  Code  Lc  usbd_cdc.o
+  USBD_CDC_TransmitPacket  08005a27      0x52      2  Code  Gb  usbd_cdc.o
+  ifalt.7078               200000cb       0x1         Data  Lc  usbd_cdc.o
+  CDC_Control_FS           08002399      0xbc      4  Code  Lc  usbd_cdc_if.o
+  CDC_DeInit_FS            08005c65       0x6      2  Code  Lc  usbd_cdc_if.o
+  CDC_Init_FS              08002371      0x28      4  Code  Lc  usbd_cdc_if.o
+  CDC_Receive_FS           08002455      0x30      4  Code  Lc  usbd_cdc_if.o
+  CDC_Transmit_FS          08002485      0x5c      4  Code  Gb  usbd_cdc_if.o
+  USBD_Interface_fops_FS   200001dc      0x10      4  Data  Gb  usbd_cdc_if.o
+  UserRxBufferFS           20000bf0     0x200      4  Data  Gb  usbd_cdc_if.o
+  UserTxBufferFS           20000df0     0x200      4  Data  Gb  usbd_cdc_if.o
+  HAL_PCDEx_SetConnectionState
+                           080075e3      0x10      2  Code  Gb  usbd_conf.o
+  HAL_PCD_DataInStageCallback
+                           0800730f      0x38      2  Code  Gb  usbd_conf.o
+  HAL_PCD_DataOutStageCallback
+                           08005ac7      0x3a      2  Code  Gb  usbd_conf.o
+  HAL_PCD_MspInit          08002049      0x48      4  Code  Gb  usbd_conf.o
+  HAL_PCD_ResetCallback    08005b1b      0x3e      2  Code  Gb  usbd_conf.o
+  HAL_PCD_ResumeCallback   08005b59      0x1a      2  Code  Gb  usbd_conf.o
+  HAL_PCD_SOFCallback      08005b01      0x1a      2  Code  Gb  usbd_conf.o
+  HAL_PCD_SetupStageCallback
+                           08005aa5      0x22      2  Code  Gb  usbd_conf.o
+  HAL_PCD_SuspendCallback  08002091      0x34      4  Code  Gb  usbd_conf.o
+  USBD_Get_USB_Status      08002185      0x60      4  Code  Lc  usbd_conf.o
+  USBD_LL_ClearStallEP     0800741f      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_CloseEP          08007387      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_GetRxDataSize    080075bb      0x28      2  Code  Gb  usbd_conf.o
+  USBD_LL_Init             080020c5      0xb0      4  Code  Gb  usbd_conf.o
+  USBD_LL_IsStallEP        0800746b      0x54      2  Code  Gb  usbd_conf.o
+  USBD_LL_OpenEP           08005b73      0x62      2  Code  Gb  usbd_conf.o
+  USBD_LL_PrepareReceive   08007563      0x58      2  Code  Gb  usbd_conf.o
+  USBD_LL_SetUSBAddress    080074bf      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_StallEP          080073d3      0x4c      2  Code  Gb  usbd_conf.o
+  USBD_LL_Start            08007347      0x40      2  Code  Gb  usbd_conf.o
+  USBD_LL_Transmit         0800750b      0x58      2  Code  Gb  usbd_conf.o
+  USBD_static_free         08005bd5       0xa      2  Code  Gb  usbd_conf.o
+  USBD_static_malloc       08002175      0x10      4  Code  Gb  usbd_conf.o
+  hpcd_USB_FS              20000204     0x3a8      4  Data  Gb  usbd_conf.o
+  mem.7166                 200007d0     0x220      4  Data  Lc  usbd_conf.o
+  USBD_ClrClassConfig      08006d37      0x28      2  Code  Gb  usbd_core.o
+  USBD_Init                08006cd3      0x58      2  Code  Gb  usbd_core.o
+  USBD_LL_DataInStage      08005431     0x122      2  Code  Gb  usbd_core.o
+  USBD_LL_DataOutStage     08005377      0xba      2  Code  Gb  usbd_core.o
+  USBD_LL_Reset            08006d5f      0x5c      2  Code  Gb  usbd_core.o
+  USBD_LL_Resume           08006ddb      0x18      2  Code  Gb  usbd_core.o
+  USBD_LL_SOF              0800556d      0x32      2  Code  Gb  usbd_core.o
+  USBD_LL_SetSpeed         08005553      0x1a      2  Code  Gb  usbd_core.o
+  USBD_LL_SetupStage       080052e5      0x92      2  Code  Gb  usbd_core.o
+  USBD_LL_Suspend          08006dbb      0x20      2  Code  Gb  usbd_core.o
+  USBD_RegisterClass       08005257      0x32      2  Code  Gb  usbd_core.o
+  USBD_RunTestMode         08006d2b       0xc      2  Code  Gb  usbd_core.o
+  USBD_SetClassConfig      0800529f      0x46      2  Code  Gb  usbd_core.o
+  USBD_Start               08005289      0x16      2  Code  Gb  usbd_core.o
+  USBD_ClrFeature          080056d5      0x4e      2  Code  Lc  usbd_ctlreq.o
+  USBD_CtlError            080070d3      0x20      2  Code  Gb  usbd_ctlreq.o
+  USBD_GetConfig           08005621      0x62      2  Code  Lc  usbd_ctlreq.o
+  USBD_GetDescriptor       08001429     0x1f0      4  Code  Lc  usbd_ctlreq.o
+  USBD_GetLen              080057b9      0x2e      2  Code  Lc  usbd_ctlreq.o
+  USBD_GetStatus           08005683      0x52      2  Code  Lc  usbd_ctlreq.o
+  USBD_GetString           08005723      0x96      2  Code  Gb  usbd_ctlreq.o
+  USBD_ParseSetupRequest   08007063      0x70      2  Code  Gb  usbd_ctlreq.o
+  USBD_SetAddress          0800559f      0x82      2  Code  Lc  usbd_ctlreq.o
+  USBD_SetConfig           08001619     0x110      4  Code  Lc  usbd_ctlreq.o
+  USBD_SetFeature          0800702f      0x34      2  Code  Lc  usbd_ctlreq.o
+  USBD_StdDevReq           08001389      0xa0      4  Code  Gb  usbd_ctlreq.o
+  USBD_StdEPReq            08006e5b     0x1d4      2  Code  Gb  usbd_ctlreq.o
+  USBD_StdItfReq           08006df3      0x68      2  Code  Gb  usbd_ctlreq.o
+  cfgidx.7083              20000087       0x1         Data  Lc  usbd_ctlreq.o
+  FS_Desc                  20000104      0x1c      4  Data  Gb  usbd_desc.o
+  Get_SerialNum            0800231d      0x54      4  Code  Lc  usbd_desc.o
+  IntToUnicode             08005bdf      0x86      2  Code  Lc  usbd_desc.o
+  USBD_FS_ConfigStrDescriptor
+                           080022a5      0x3c      4  Code  Gb  usbd_desc.o
+  USBD_FS_DeviceDesc       200001c8      0x12      4  Data  Gb  usbd_desc.o
+  USBD_FS_DeviceDescriptor
+                           080021e5      0x1c      4  Code  Gb  usbd_desc.o
+  USBD_FS_InterfaceStrDescriptor
+                           080022e1      0x3c      4  Code  Gb  usbd_desc.o
+  USBD_FS_LangIDStrDescriptor
+                           08002201      0x1c      4  Code  Gb  usbd_desc.o
+  USBD_FS_ManufacturerStrDescriptor
+                           08002259      0x28      4  Code  Gb  usbd_desc.o
+  USBD_FS_ProductStrDescriptor
+                           0800221d      0x3c      4  Code  Gb  usbd_desc.o
+  USBD_FS_SerialStrDescriptor
+                           08002281      0x24      4  Code  Gb  usbd_desc.o
+  USBD_LangIDDesc          20000200       0x4      4  Data  Gb  usbd_desc.o
+  USBD_StrDesc             200009f0     0x200      4  Data  Gb  usbd_desc.o
+  USBD_StringSerial        20000120      0x1a      4  Data  Gb  usbd_desc.o
+  USBD_CtlContinueRx       0800588d      0x26      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlContinueSendData
+                           08005825      0x26      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlPrepareRx        0800584b      0x42      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlReceiveStatus    08007117      0x24      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlSendData         080057e7      0x3e      2  Code  Gb  usbd_ioreq.o
+  USBD_CtlSendStatus       080070f3      0x24      2  Code  Gb  usbd_ioreq.o
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                  LINK SUMMARY                                   ***
+***                                                                                 ***
+***************************************************************************************
+
+Link complete: 0 errors, 0 warnings, 0 remarks
+
+  Name             Range           Size       Allocated         Used   Loading  (Alignment loss)
+  ---------- -------- -------- --------   -------- -------- --------   -------  ----------------
+  FLASH      08000000 0800ffff    65536   08000000 08008587    34184    52.16%         3   0.01%
+  RAM        20000000 20003fff    16384   20000000 20003fff    16384   100.00%      9825  59.97%
+
+Section composition:
+
+     33160  RX       507  RW
+      1021  RO      6052  ZI
+  ------------   -----------
+     34181 ROM      6559 RAM
