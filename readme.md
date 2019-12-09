@@ -15,5 +15,4 @@ A guide on how to get started with the build of your own reremeter.
 - Visualize results in an [UI](./webapp).
 
 ### Notes
-The reremeter hardware project and according software interfaces are designed and developed by Armin Straller. It is a part of [RealRecycling](https://re-re.org) by Bernhard Gessler and Armin Straller. 
-
+The reremeter project is a part of [RealRecycling](https://re-re.org) by Armin Straller and Bernhard Gessler. 
