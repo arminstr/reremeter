@@ -1,3 +1,3 @@
 # reremeter machine learning and interface scripts
 
-This directory contians the python scripts used to commuinicate with the reremeter. Additionaly the machine learning model is trained and predictions can be made. The scripts have an interface to a Firebase Realtime Database. The according configs have to be updated and a device id has to be set to get the predictions working with the [webapp](../webapp/readme.md).
+This directory contians the python scripts used to commuinicate with the reremeter. Additionaly the machine learning model is trained and predictions can be made. The scripts have an interface to a Firebase Realtime Database. The according configs have to be updated and a device id has to be set to get the predictions working with the [webapp](../webapp).
