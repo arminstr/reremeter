@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -79,574 +79,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="spectrometer">
-<packages>
-<package name="SOP65P780X200-20" urn="urn:adsk.eagle:footprint:11858370/1">
-<description>20-SOP, 0.65 mm pitch, 7.80 mm span, 7.20 X 5.30 X 2.00 mm body
-&lt;p&gt;20-pin SOP package with 0.65 mm pitch, 7.80 mm span with body size 7.20 X 5.30 X 2.00 mm&lt;/p&gt;</description>
-<circle x="-3.7269" y="3.6866" radius="0.25" width="0" layer="21"/>
-<wire x1="-2.8" y1="3.4366" x2="-2.8" y2="3.75" width="0.12" layer="21"/>
-<wire x1="-2.8" y1="3.75" x2="2.8" y2="3.75" width="0.12" layer="21"/>
-<wire x1="2.8" y1="3.75" x2="2.8" y2="3.4366" width="0.12" layer="21"/>
-<wire x1="-2.8" y1="-3.4366" x2="-2.8" y2="-3.75" width="0.12" layer="21"/>
-<wire x1="-2.8" y1="-3.75" x2="2.8" y2="-3.75" width="0.12" layer="21"/>
-<wire x1="2.8" y1="-3.75" x2="2.8" y2="-3.4366" width="0.12" layer="21"/>
-<wire x1="2.8" y1="-3.75" x2="-2.8" y2="-3.75" width="0.12" layer="51"/>
-<wire x1="-2.8" y1="-3.75" x2="-2.8" y2="3.75" width="0.12" layer="51"/>
-<wire x1="-2.8" y1="3.75" x2="2.8" y2="3.75" width="0.12" layer="51"/>
-<wire x1="2.8" y1="3.75" x2="2.8" y2="-3.75" width="0.12" layer="51"/>
-<smd name="1" x="-3.6529" y="2.925" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="2" x="-3.6529" y="2.275" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="3" x="-3.6529" y="1.625" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="4" x="-3.6529" y="0.975" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="5" x="-3.6529" y="0.325" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="6" x="-3.6529" y="-0.325" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="7" x="-3.6529" y="-0.975" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="8" x="-3.6529" y="-1.625" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="9" x="-3.6529" y="-2.275" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="10" x="-3.6529" y="-2.925" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="11" x="3.6529" y="-2.925" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="12" x="3.6529" y="-2.275" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="13" x="3.6529" y="-1.625" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="14" x="3.6529" y="-0.975" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="15" x="3.6529" y="-0.325" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="16" x="3.6529" y="0.325" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="17" x="3.6529" y="0.975" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="18" x="3.6529" y="1.625" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="19" x="3.6529" y="2.275" dx="2.002" dy="0.5152" layer="1"/>
-<smd name="20" x="3.6529" y="2.925" dx="2.002" dy="0.5152" layer="1"/>
-<text x="0" y="4.5716" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-4.385" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="SOP65P490X110-8" urn="urn:adsk.eagle:footprint:11858795/1">
-<description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
-&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
-<circle x="-2.2175" y="1.7197" radius="0.25" width="0" layer="21"/>
-<wire x1="-1.55" y1="1.4697" x2="-1.55" y2="1.55" width="0.12" layer="21"/>
-<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.12" layer="21"/>
-<wire x1="1.55" y1="1.55" x2="1.55" y2="1.4697" width="0.12" layer="21"/>
-<wire x1="-1.55" y1="-1.4697" x2="-1.55" y2="-1.55" width="0.12" layer="21"/>
-<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.12" layer="21"/>
-<wire x1="1.55" y1="-1.55" x2="1.55" y2="-1.4697" width="0.12" layer="21"/>
-<wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.12" layer="51"/>
-<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.12" layer="51"/>
-<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.12" layer="51"/>
-<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.12" layer="51"/>
-<smd name="1" x="-2.1496" y="0.975" dx="1.4709" dy="0.4815" layer="1"/>
-<smd name="2" x="-2.1496" y="0.325" dx="1.4709" dy="0.4815" layer="1"/>
-<smd name="3" x="-2.1496" y="-0.325" dx="1.4709" dy="0.4815" layer="1"/>
-<smd name="4" x="-2.1496" y="-0.975" dx="1.4709" dy="0.4815" layer="1"/>
-<smd name="5" x="2.1496" y="-0.975" dx="1.4709" dy="0.4815" layer="1"/>
-<smd name="6" x="2.1496" y="-0.325" dx="1.4709" dy="0.4815" layer="1"/>
-<smd name="7" x="2.1496" y="0.325" dx="1.4709" dy="0.4815" layer="1"/>
-<smd name="8" x="2.1496" y="0.975" dx="1.4709" dy="0.4815" layer="1"/>
-<text x="0" y="2.6047" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.185" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="LEDC3316X110" urn="urn:adsk.eagle:footprint:11861023/1">
-<description>Chip, 3.30 X 1.60 X 1.10 mm body
-&lt;p&gt;Chip package with body size 3.30 X 1.60 X 1.10 mm&lt;/p&gt;</description>
-<wire x1="1.7" y1="1.2199" x2="-2.5186" y2="1.2199" width="0.12" layer="21"/>
-<wire x1="-2.5186" y1="1.2199" x2="-2.5186" y2="-1.2199" width="0.12" layer="21"/>
-<wire x1="-2.5186" y1="-1.2199" x2="1.7" y2="-1.2199" width="0.12" layer="21"/>
-<wire x1="1.7" y1="-0.8" x2="-1.7" y2="-0.8" width="0.12" layer="51"/>
-<wire x1="-1.7" y1="-0.8" x2="-1.7" y2="0.8" width="0.12" layer="51"/>
-<wire x1="-1.7" y1="0.8" x2="1.7" y2="0.8" width="0.12" layer="51"/>
-<wire x1="1.7" y1="0.8" x2="1.7" y2="-0.8" width="0.12" layer="51"/>
-<smd name="1" x="-1.65" y="0" dx="1.2291" dy="1.8118" layer="1"/>
-<smd name="2" x="1.65" y="0" dx="1.2291" dy="1.8118" layer="1"/>
-<text x="0" y="1.8549" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.8549" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="QFN50P500X500X60-33T350" urn="urn:adsk.eagle:footprint:11863143/1">
-<description>32-QFN, 0.50 mm pitch, 5.00 X 5.00 X 0.60 mm body, 3.50 X 3.50 mm thermal pad
-&lt;p&gt;32-pin QFN package with 0.50 mm pitch with body size 5.00 X 5.00 X 0.60 mm and thermal pad size 3.50 X 3.50 mm&lt;/p&gt;</description>
-<circle x="-3.054" y="2.379" radius="0.25" width="0" layer="21"/>
-<wire x1="-2.55" y1="2.129" x2="-2.55" y2="2.55" width="0.12" layer="21"/>
-<wire x1="-2.55" y1="2.55" x2="-2.129" y2="2.55" width="0.12" layer="21"/>
-<wire x1="2.55" y1="2.129" x2="2.55" y2="2.55" width="0.12" layer="21"/>
-<wire x1="2.55" y1="2.55" x2="2.129" y2="2.55" width="0.12" layer="21"/>
-<wire x1="2.55" y1="-2.129" x2="2.55" y2="-2.55" width="0.12" layer="21"/>
-<wire x1="2.55" y1="-2.55" x2="2.129" y2="-2.55" width="0.12" layer="21"/>
-<wire x1="-2.55" y1="-2.129" x2="-2.55" y2="-2.55" width="0.12" layer="21"/>
-<wire x1="-2.55" y1="-2.55" x2="-2.129" y2="-2.55" width="0.12" layer="21"/>
-<wire x1="2.55" y1="-2.55" x2="-2.55" y2="-2.55" width="0.12" layer="51"/>
-<wire x1="-2.55" y1="-2.55" x2="-2.55" y2="2.55" width="0.12" layer="51"/>
-<wire x1="-2.55" y1="2.55" x2="2.55" y2="2.55" width="0.12" layer="51"/>
-<wire x1="2.55" y1="2.55" x2="2.55" y2="-2.55" width="0.12" layer="51"/>
-<smd name="1" x="-2.4846" y="1.75" dx="0.96" dy="0.25" layer="1"/>
-<smd name="2" x="-2.4846" y="1.25" dx="0.96" dy="0.25" layer="1"/>
-<smd name="3" x="-2.4846" y="0.75" dx="0.96" dy="0.25" layer="1"/>
-<smd name="4" x="-2.4846" y="0.25" dx="0.96" dy="0.25" layer="1"/>
-<smd name="5" x="-2.4846" y="-0.25" dx="0.96" dy="0.25" layer="1"/>
-<smd name="6" x="-2.4846" y="-0.75" dx="0.96" dy="0.25" layer="1"/>
-<smd name="7" x="-2.4846" y="-1.25" dx="0.96" dy="0.25" layer="1"/>
-<smd name="8" x="-2.4846" y="-1.75" dx="0.96" dy="0.25" layer="1"/>
-<smd name="9" x="-1.75" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="10" x="-1.25" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="11" x="-0.75" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="12" x="-0.25" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="13" x="0.25" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="14" x="0.75" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="15" x="1.25" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="16" x="1.75" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="17" x="2.4846" y="-1.75" dx="0.96" dy="0.25" layer="1"/>
-<smd name="18" x="2.4846" y="-1.25" dx="0.96" dy="0.25" layer="1"/>
-<smd name="19" x="2.4846" y="-0.75" dx="0.96" dy="0.25" layer="1"/>
-<smd name="20" x="2.4846" y="-0.25" dx="0.96" dy="0.25" layer="1"/>
-<smd name="21" x="2.4846" y="0.25" dx="0.96" dy="0.25" layer="1"/>
-<smd name="22" x="2.4846" y="0.75" dx="0.96" dy="0.25" layer="1"/>
-<smd name="23" x="2.4846" y="1.25" dx="0.96" dy="0.25" layer="1"/>
-<smd name="24" x="2.4846" y="1.75" dx="0.96" dy="0.25" layer="1"/>
-<smd name="25" x="1.75" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="26" x="1.25" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="27" x="0.75" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="28" x="0.25" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="29" x="-0.25" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="30" x="-0.75" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="31" x="-1.25" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="32" x="-1.75" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
-<smd name="33" x="0" y="0" dx="3.5" dy="3.5" layer="1" thermals="no"/>
-<text x="0" y="3.5996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.5996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="SOP65P640X120-16" urn="urn:adsk.eagle:footprint:11867968/1">
-<description>16-SOP, 0.65 mm pitch, 6.40 mm span, 5.00 X 4.40 X 1.20 mm body
-&lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.40 mm span with body size 5.00 X 4.40 X 1.20 mm&lt;/p&gt;</description>
-<circle x="-3.0538" y="3.0024" radius="0.25" width="0" layer="21"/>
-<wire x1="-2.25" y1="2.8124" x2="2.25" y2="2.8124" width="0.12" layer="21"/>
-<wire x1="-2.25" y1="-2.8124" x2="2.25" y2="-2.8124" width="0.12" layer="21"/>
-<wire x1="2.25" y1="-2.55" x2="-2.25" y2="-2.55" width="0.12" layer="51"/>
-<wire x1="-2.25" y1="-2.55" x2="-2.25" y2="2.55" width="0.12" layer="51"/>
-<wire x1="-2.25" y1="2.55" x2="2.25" y2="2.55" width="0.12" layer="51"/>
-<wire x1="2.25" y1="2.55" x2="2.25" y2="-2.55" width="0.12" layer="51"/>
-<smd name="1" x="-2.9217" y="2.275" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="2" x="-2.9217" y="1.625" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="3" x="-2.9217" y="0.975" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="4" x="-2.9217" y="0.325" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="5" x="-2.9217" y="-0.325" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="6" x="-2.9217" y="-0.975" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="7" x="-2.9217" y="-1.625" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="8" x="-2.9217" y="-2.275" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="9" x="2.9217" y="-2.275" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="10" x="2.9217" y="-1.625" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="11" x="2.9217" y="-0.975" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="12" x="2.9217" y="-0.325" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="13" x="2.9217" y="0.325" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="14" x="2.9217" y="0.975" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="15" x="2.9217" y="1.625" dx="1.8719" dy="0.4468" layer="1"/>
-<smd name="16" x="2.9217" y="2.275" dx="1.8719" dy="0.4468" layer="1"/>
-<text x="0" y="3.8874" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.4474" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="SOP65P780X200-20" urn="urn:adsk.eagle:package:11858354/1" type="model">
-<description>20-SOP, 0.65 mm pitch, 7.80 mm span, 7.20 X 5.30 X 2.00 mm body
-&lt;p&gt;20-pin SOP package with 0.65 mm pitch, 7.80 mm span with body size 7.20 X 5.30 X 2.00 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOP65P780X200-20"/>
-</packageinstances>
-</package3d>
-<package3d name="SOP65P490X110-8" urn="urn:adsk.eagle:package:11858781/1" type="model">
-<description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
-&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOP65P490X110-8"/>
-</packageinstances>
-</package3d>
-<package3d name="LEDC3316X110" urn="urn:adsk.eagle:package:11861022/1" type="model">
-<description>Chip, 3.30 X 1.60 X 1.10 mm body
-&lt;p&gt;Chip package with body size 3.30 X 1.60 X 1.10 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="LEDC3316X110"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN50P500X500X60-33T350" urn="urn:adsk.eagle:package:11863136/1" type="model">
-<description>32-QFN, 0.50 mm pitch, 5.00 X 5.00 X 0.60 mm body, 3.50 X 3.50 mm thermal pad
-&lt;p&gt;32-pin QFN package with 0.50 mm pitch with body size 5.00 X 5.00 X 0.60 mm and thermal pad size 3.50 X 3.50 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="QFN50P500X500X60-33T350"/>
-</packageinstances>
-</package3d>
-<package3d name="SOP65P640X120-16" urn="urn:adsk.eagle:package:11867276/1" type="model">
-<description>16-SOP, 0.65 mm pitch, 6.40 mm span, 5.00 X 4.40 X 1.20 mm body
-&lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.40 mm span with body size 5.00 X 4.40 X 1.20 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOP65P640X120-16"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="ADS1255">
-<wire x1="0" y1="0" x2="78.74" y2="0" width="0.254" layer="94"/>
-<wire x1="78.74" y1="0" x2="78.74" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="78.74" y1="-40.64" x2="0" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="0" y1="-40.64" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="AIN1" x="-5.08" y="-5.08" length="middle"/>
-<pin name="AIN0" x="-5.08" y="-25.4" length="middle"/>
-<pin name="AINCOM" x="-5.08" y="-35.56" length="middle"/>
-<pin name="AVDD" x="12.7" y="5.08" length="middle" rot="R270"/>
-<pin name="DVDD" x="17.78" y="5.08" length="middle" rot="R270"/>
-<pin name="D0" x="60.96" y="5.08" length="middle" rot="R270"/>
-<pin name="D1" x="50.8" y="5.08" length="middle" rot="R270"/>
-<pin name="AGND" x="12.7" y="-45.72" length="middle" rot="R90"/>
-<pin name="DGND" x="17.78" y="-45.72" length="middle" rot="R90"/>
-<pin name="VREF+" x="22.86" y="-45.72" length="middle" rot="R90"/>
-<pin name="VREF-" x="35.56" y="-45.72" length="middle" rot="R90"/>
-<pin name="XTAL2" x="43.18" y="-45.72" length="middle" rot="R90"/>
-<pin name="XTAL1" x="60.96" y="-45.72" length="middle" rot="R90"/>
-<pin name="/DRDY" x="83.82" y="-5.08" length="middle" rot="R180"/>
-<pin name="DOUT" x="83.82" y="-10.16" length="middle" rot="R180"/>
-<pin name="DIN" x="83.82" y="-15.24" length="middle" rot="R180"/>
-<pin name="SCLK" x="83.82" y="-20.32" length="middle" rot="R180"/>
-<pin name="/CS" x="83.82" y="-25.4" length="middle" rot="R180"/>
-<pin name="/RESET" x="83.82" y="-30.48" length="middle" rot="R180"/>
-<pin name="/SYNC" x="83.82" y="-35.56" length="middle" rot="R180"/>
-<text x="71.12" y="5.08" size="1.27" layer="95">&gt;NAME</text>
-<text x="71.12" y="2.54" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="OPAMP_POWER">
-<pin name="IN1" x="-5.08" y="-2.54" visible="pad" length="middle"/>
-<pin name="IN2" x="-5.08" y="-7.62" visible="pad" length="middle"/>
-<pin name="OUT1" x="12.7" y="-5.08" visible="pad" length="middle" rot="R180"/>
-<pin name="VDD" x="2.54" y="2.54" visible="pad" length="short" rot="R270"/>
-<pin name="GND" x="2.54" y="-12.7" visible="pad" length="short" rot="R90"/>
-<text x="7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="7.62" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="1.778" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-7.62" x2="1.778" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-7.112" x2="1.27" y2="-8.128" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-1.651" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-10.16" x2="2.54" y2="-8.509" width="0.1524" layer="94"/>
-</symbol>
-<symbol name="REF50XX">
-<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="VIN" x="-5.08" y="-2.54" length="middle"/>
-<pin name="VOUT" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="TEMP" x="-5.08" y="-7.62" length="middle"/>
-<pin name="GND" x="-5.08" y="-12.7" length="middle"/>
-<pin name="TRIM" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="PHOTODIODE">
-<pin name="ANODE" x="0" y="2.54" visible="off" length="short" rot="R270"/>
-<pin name="CATHODE" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.032" y1="-2.54" x2="1.016" y2="-1.524" width="0.127" layer="94"/>
-<wire x1="1.016" y1="-1.524" x2="1.016" y2="-1.778" width="0.127" layer="94"/>
-<wire x1="1.016" y1="-1.778" x2="1.27" y2="-1.524" width="0.127" layer="94"/>
-<wire x1="1.27" y1="-1.524" x2="1.016" y2="-1.524" width="0.127" layer="94"/>
-<wire x1="2.54" y1="-1.778" x2="1.524" y2="-0.762" width="0.127" layer="94"/>
-<wire x1="1.524" y1="-1.016" x2="1.524" y2="-0.762" width="0.127" layer="94"/>
-<wire x1="1.524" y1="-0.762" x2="1.778" y2="-0.762" width="0.127" layer="94"/>
-<wire x1="1.778" y1="-0.762" x2="1.524" y2="-1.016" width="0.127" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="OPAMP">
-<pin name="IN1" x="-5.08" y="-2.54" visible="pad" length="middle"/>
-<pin name="IN2" x="-5.08" y="-7.62" visible="pad" length="middle"/>
-<pin name="OUT1" x="12.7" y="-5.08" visible="pad" length="middle" rot="R180"/>
-<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="1.778" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-7.62" x2="1.778" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-7.112" x2="1.27" y2="-8.128" width="0.254" layer="94"/>
-</symbol>
-<symbol name="STM32F302K8U6">
-<wire x1="0" y1="0" x2="30.48" y2="0" width="0.254" layer="94"/>
-<wire x1="30.48" y1="0" x2="30.48" y2="-91.44" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-91.44" x2="0" y2="-91.44" width="0.254" layer="94"/>
-<wire x1="0" y1="-91.44" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="VDD_1" x="-5.08" y="-5.08" length="middle"/>
-<pin name="PF0/OSC_IN" x="-5.08" y="-10.16" length="middle"/>
-<pin name="PF1/OSC_OUT" x="-5.08" y="-15.24" length="middle"/>
-<pin name="NRST" x="-5.08" y="-20.32" length="middle"/>
-<pin name="VDDA/VREF+" x="-5.08" y="-25.4" length="middle"/>
-<pin name="VSSA/VREF-" x="-5.08" y="-30.48" length="middle"/>
-<pin name="PA0" x="-5.08" y="-35.56" length="middle"/>
-<pin name="PA1" x="-5.08" y="-40.64" length="middle"/>
-<pin name="PA2" x="-5.08" y="-45.72" length="middle"/>
-<pin name="PA3" x="-5.08" y="-50.8" length="middle"/>
-<pin name="PA4" x="-5.08" y="-55.88" length="middle"/>
-<pin name="PA5" x="-5.08" y="-60.96" length="middle"/>
-<pin name="PA6" x="-5.08" y="-66.04" length="middle"/>
-<pin name="PA7" x="-5.08" y="-71.12" length="middle"/>
-<pin name="PB0" x="-5.08" y="-76.2" length="middle"/>
-<pin name="VSS_2" x="-5.08" y="-81.28" length="middle"/>
-<pin name="VDD_2" x="35.56" y="-81.28" length="middle" rot="R180"/>
-<pin name="PA8" x="35.56" y="-76.2" length="middle" rot="R180"/>
-<pin name="PA9" x="35.56" y="-71.12" length="middle" rot="R180"/>
-<pin name="PA10" x="35.56" y="-66.04" length="middle" rot="R180"/>
-<pin name="PA11" x="35.56" y="-60.96" length="middle" rot="R180"/>
-<pin name="PA12" x="35.56" y="-55.88" length="middle" rot="R180"/>
-<pin name="PA13" x="35.56" y="-50.8" length="middle" rot="R180"/>
-<pin name="PA14" x="35.56" y="-45.72" length="middle" rot="R180"/>
-<pin name="PA15" x="35.56" y="-40.64" length="middle" rot="R180"/>
-<pin name="PB3" x="35.56" y="-35.56" length="middle" rot="R180"/>
-<pin name="PB4" x="35.56" y="-30.48" length="middle" rot="R180"/>
-<pin name="PB5" x="35.56" y="-25.4" length="middle" rot="R180"/>
-<pin name="PB6" x="35.56" y="-20.32" length="middle" rot="R180"/>
-<pin name="PB7" x="35.56" y="-15.24" length="middle" rot="R180"/>
-<pin name="BOOT0" x="35.56" y="-10.16" length="middle" rot="R180"/>
-<pin name="VSS_1" x="35.56" y="-5.08" length="middle" rot="R180"/>
-<pin name="PAD" x="15.24" y="-96.52" length="middle" rot="R90"/>
-<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="TLC59208F">
-<wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="22.86" y2="-43.18" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-43.18" x2="0" y2="-43.18" width="0.254" layer="94"/>
-<wire x1="0" y1="-43.18" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="SCL" x="-5.08" y="-2.54" length="middle"/>
-<pin name="SDA" x="-5.08" y="-7.62" length="middle"/>
-<pin name="NRST" x="-5.08" y="-12.7" length="middle"/>
-<pin name="A0" x="-5.08" y="-17.78" length="middle"/>
-<pin name="A1" x="-5.08" y="-22.86" length="middle"/>
-<pin name="A2" x="-5.08" y="-27.94" length="middle"/>
-<pin name="VDD" x="-5.08" y="-33.02" length="middle"/>
-<pin name="GND" x="-5.08" y="-38.1" length="middle"/>
-<pin name="OUT0" x="27.94" y="-38.1" length="middle" rot="R180"/>
-<pin name="OUT1" x="27.94" y="-33.02" length="middle" rot="R180"/>
-<pin name="OUT2" x="27.94" y="-27.94" length="middle" rot="R180"/>
-<pin name="OUT3" x="27.94" y="-22.86" length="middle" rot="R180"/>
-<pin name="OUT4" x="27.94" y="-17.78" length="middle" rot="R180"/>
-<pin name="OUT5" x="27.94" y="-12.7" length="middle" rot="R180"/>
-<pin name="OUT6" x="27.94" y="-7.62" length="middle" rot="R180"/>
-<pin name="OUT7" x="27.94" y="-2.54" length="middle" rot="R180"/>
-<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ADS1255" prefix="U">
-<gates>
-<gate name="G$1" symbol="ADS1255" x="0" y="0"/>
-</gates>
-<devices>
-<device name="TSSOP" package="SOP65P780X200-20">
-<connects>
-<connect gate="G$1" pin="/CS" pad="14"/>
-<connect gate="G$1" pin="/DRDY" pad="15"/>
-<connect gate="G$1" pin="/RESET" pad="9"/>
-<connect gate="G$1" pin="/SYNC" pad="8"/>
-<connect gate="G$1" pin="AGND" pad="2"/>
-<connect gate="G$1" pin="AIN0" pad="6"/>
-<connect gate="G$1" pin="AIN1" pad="7"/>
-<connect gate="G$1" pin="AINCOM" pad="5"/>
-<connect gate="G$1" pin="AVDD" pad="1"/>
-<connect gate="G$1" pin="D0" pad="19"/>
-<connect gate="G$1" pin="D1" pad="20"/>
-<connect gate="G$1" pin="DGND" pad="11"/>
-<connect gate="G$1" pin="DIN" pad="17"/>
-<connect gate="G$1" pin="DOUT" pad="16"/>
-<connect gate="G$1" pin="DVDD" pad="10"/>
-<connect gate="G$1" pin="SCLK" pad="18"/>
-<connect gate="G$1" pin="VREF+" pad="4"/>
-<connect gate="G$1" pin="VREF-" pad="3"/>
-<connect gate="G$1" pin="XTAL1" pad="13"/>
-<connect gate="G$1" pin="XTAL2" pad="12"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11858354/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OPA350" prefix="U">
-<gates>
-<gate name="G$1" symbol="OPAMP_POWER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PDSO-8" package="SOP65P490X110-8">
-<connects>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="IN1" pad="2"/>
-<connect gate="G$1" pin="IN2" pad="3"/>
-<connect gate="G$1" pin="OUT1" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="7"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11858781/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="REF5025" prefix="U">
-<gates>
-<gate name="G$1" symbol="REF50XX" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PDSO-8" package="SOP65P490X110-8">
-<connects>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="TEMP" pad="3"/>
-<connect gate="G$1" pin="TRIM" pad="5"/>
-<connect gate="G$1" pin="VIN" pad="2"/>
-<connect gate="G$1" pin="VOUT" pad="6"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11858781/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SD003-151-001" prefix="D">
-<description>Surface-Mount InGaAs Photodetector</description>
-<gates>
-<gate name="G$1" symbol="PHOTODIODE" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="SMD" package="LEDC3316X110">
-<connects>
-<connect gate="G$1" pin="ANODE" pad="2"/>
-<connect gate="G$1" pin="CATHODE" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11861022/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="OPA2376" prefix="U">
-<gates>
-<gate name="A" symbol="OPAMP" x="0" y="0"/>
-<gate name="B" symbol="OPAMP_POWER" x="0" y="-38.1"/>
-</gates>
-<devices>
-<device name="PDSO-8" package="SOP65P490X110-8">
-<connects>
-<connect gate="A" pin="IN1" pad="2"/>
-<connect gate="A" pin="IN2" pad="3"/>
-<connect gate="A" pin="OUT1" pad="1"/>
-<connect gate="B" pin="GND" pad="4"/>
-<connect gate="B" pin="IN1" pad="6"/>
-<connect gate="B" pin="IN2" pad="5"/>
-<connect gate="B" pin="OUT1" pad="7"/>
-<connect gate="B" pin="VDD" pad="8"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11858781/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="STM32F302K8U6" prefix="U">
-<gates>
-<gate name="G$1" symbol="STM32F302K8U6" x="0" y="0"/>
-</gates>
-<devices>
-<device name="UFQFPN32" package="QFN50P500X500X60-33T350">
-<connects>
-<connect gate="G$1" pin="BOOT0" pad="31"/>
-<connect gate="G$1" pin="NRST" pad="4"/>
-<connect gate="G$1" pin="PA0" pad="7"/>
-<connect gate="G$1" pin="PA1" pad="8"/>
-<connect gate="G$1" pin="PA10" pad="20"/>
-<connect gate="G$1" pin="PA11" pad="21"/>
-<connect gate="G$1" pin="PA12" pad="22"/>
-<connect gate="G$1" pin="PA13" pad="23"/>
-<connect gate="G$1" pin="PA14" pad="24"/>
-<connect gate="G$1" pin="PA15" pad="25"/>
-<connect gate="G$1" pin="PA2" pad="9"/>
-<connect gate="G$1" pin="PA3" pad="10"/>
-<connect gate="G$1" pin="PA4" pad="11"/>
-<connect gate="G$1" pin="PA5" pad="12"/>
-<connect gate="G$1" pin="PA6" pad="13"/>
-<connect gate="G$1" pin="PA7" pad="14"/>
-<connect gate="G$1" pin="PA8" pad="18"/>
-<connect gate="G$1" pin="PA9" pad="19"/>
-<connect gate="G$1" pin="PAD" pad="33"/>
-<connect gate="G$1" pin="PB0" pad="15"/>
-<connect gate="G$1" pin="PB3" pad="26"/>
-<connect gate="G$1" pin="PB4" pad="27"/>
-<connect gate="G$1" pin="PB5" pad="28"/>
-<connect gate="G$1" pin="PB6" pad="29"/>
-<connect gate="G$1" pin="PB7" pad="30"/>
-<connect gate="G$1" pin="PF0/OSC_IN" pad="2"/>
-<connect gate="G$1" pin="PF1/OSC_OUT" pad="3"/>
-<connect gate="G$1" pin="VDDA/VREF+" pad="5"/>
-<connect gate="G$1" pin="VDD_1" pad="1"/>
-<connect gate="G$1" pin="VDD_2" pad="17"/>
-<connect gate="G$1" pin="VSSA/VREF-" pad="6"/>
-<connect gate="G$1" pin="VSS_1" pad="32"/>
-<connect gate="G$1" pin="VSS_2" pad="16"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11863136/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TLC59208F" prefix="U">
-<description>TLC59208F 8-Bit Fm+ I2C Bus LED Driver</description>
-<gates>
-<gate name="G$1" symbol="TLC59208F" x="0" y="0"/>
-</gates>
-<devices>
-<device name="TSSOP-16" package="SOP65P640X120-16">
-<connects>
-<connect gate="G$1" pin="A0" pad="1"/>
-<connect gate="G$1" pin="A1" pad="2"/>
-<connect gate="G$1" pin="A2" pad="3"/>
-<connect gate="G$1" pin="GND" pad="8"/>
-<connect gate="G$1" pin="NRST" pad="13"/>
-<connect gate="G$1" pin="OUT0" pad="4"/>
-<connect gate="G$1" pin="OUT1" pad="5"/>
-<connect gate="G$1" pin="OUT2" pad="6"/>
-<connect gate="G$1" pin="OUT3" pad="7"/>
-<connect gate="G$1" pin="OUT4" pad="9"/>
-<connect gate="G$1" pin="OUT5" pad="10"/>
-<connect gate="G$1" pin="OUT6" pad="11"/>
-<connect gate="G$1" pin="OUT7" pad="12"/>
-<connect gate="G$1" pin="SCL" pad="14"/>
-<connect gate="G$1" pin="SDA" pad="15"/>
-<connect gate="G$1" pin="VDD" pad="16"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11867276/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="IQD-Frequency-Products" urn="urn:adsk.eagle:library:90">
 <description>&lt;b&gt;Crystals and Oscillators&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by IQD Frequency Products&lt;/author&gt;</description>
@@ -814,7 +246,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CRYSTALS-GND-LID" urn="urn:adsk.eagle:component:3383/1" prefix="X" library_version="1">
+<deviceset name="CRYSTALS-GND-LID" urn="urn:adsk.eagle:component:3383/2" prefix="X" library_version="2">
 <description>&lt;b&gt;CRYSTALS WITH CAN GROUNDED&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="Q-SHIELD2" x="0" y="0"/>
@@ -831,7 +263,9 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3361/1"/>
 </package3dinstances>
 <technologies>
-<technology name="12SMX-B"/>
+<technology name="12SMX-B">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-CFPX-104" package="5.2X3.4-4-PAD">
@@ -845,7 +279,9 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3369/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-CFPX-180" package="3.4X2.7-4-PAD">
@@ -859,7 +295,9 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3367/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-CFPX-181" package="2.5X2-4-PAD">
@@ -873,7 +311,9 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3371/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-CFPX-218" package="2.6X2.1-4-PAD">
@@ -887,7 +327,9 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3366/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-IQXC-42" package="2.0X1.6-4-PAD">
@@ -901,7 +343,9 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3370/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6244,7 +5688,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/45" prefix="C" uservalue="yes" library_version="10">
+<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/46" prefix="C" uservalue="yes" library_version="11">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="C-EU" x="0" y="0"/>
@@ -6260,6 +5704,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="18" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6274,6 +5719,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6288,6 +5734,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="73" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6302,6 +5749,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="88" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6316,6 +5764,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="54" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6330,6 +5779,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6344,6 +5794,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6358,6 +5809,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6372,6 +5824,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6386,6 +5839,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6400,6 +5854,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6414,6 +5869,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6428,6 +5884,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6442,6 +5899,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6456,6 +5914,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6470,6 +5929,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="56" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6484,6 +5944,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="65" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6498,6 +5959,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="14" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6512,6 +5974,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6526,6 +5989,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="16" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6540,6 +6004,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6554,6 +6019,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6568,6 +6034,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6582,6 +6049,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6596,6 +6064,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6610,6 +6079,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6624,6 +6094,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="33" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6638,6 +6109,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="29" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6652,6 +6124,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6666,6 +6139,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="9" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6680,6 +6154,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6694,6 +6169,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6708,6 +6184,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6722,6 +6199,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6736,6 +6214,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6750,6 +6229,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6764,6 +6244,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6778,6 +6259,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6792,6 +6274,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6806,6 +6289,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6820,6 +6304,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6834,6 +6319,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6848,6 +6334,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6862,6 +6349,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6876,6 +6364,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6890,6 +6379,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6904,6 +6394,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6918,6 +6409,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6932,6 +6424,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6946,6 +6439,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6960,6 +6454,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6974,6 +6469,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -6988,6 +6484,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7002,6 +6499,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7016,6 +6514,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7030,6 +6529,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7044,6 +6544,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7058,6 +6559,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7072,6 +6574,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7086,6 +6589,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7100,6 +6604,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7114,6 +6619,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7128,6 +6634,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7142,6 +6649,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7156,6 +6664,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7170,6 +6679,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="15" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7184,6 +6694,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="30" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7198,6 +6709,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="52" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7212,6 +6724,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="13" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7226,6 +6739,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7240,6 +6754,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7254,6 +6769,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7268,6 +6784,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7282,6 +6799,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7296,6 +6814,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7310,6 +6829,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7324,6 +6844,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7338,6 +6859,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -7352,13 +6874,20 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
 </deviceset>
-<deviceset name="R-EU_" urn="urn:adsk.eagle:component:23791/20" prefix="R" uservalue="yes" library_version="10">
+<deviceset name="R-EU_" urn="urn:adsk.eagle:component:23791/21" prefix="R" uservalue="yes" library_version="11">
 <description>&lt;B&gt;RESISTOR&lt;/B&gt;, European symbol</description>
 <gates>
 <gate name="G$1" symbol="R-EU" x="0" y="0"/>
@@ -7374,6 +6903,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7388,6 +6918,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="70" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7402,6 +6933,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="86" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7416,6 +6948,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7430,6 +6963,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="41" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7444,6 +6978,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7458,6 +6993,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7472,6 +7008,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7486,6 +7023,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7500,6 +7038,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7514,6 +7053,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7528,6 +7068,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7542,6 +7083,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7556,6 +7098,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7570,6 +7113,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7584,6 +7128,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="5" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7598,6 +7143,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7612,6 +7158,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7626,6 +7173,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7640,6 +7188,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7654,6 +7203,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7668,6 +7218,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7682,6 +7233,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="45" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7696,6 +7248,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="17" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7710,6 +7263,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7724,6 +7278,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7738,6 +7293,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7752,6 +7308,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7766,6 +7323,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7780,6 +7338,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7794,6 +7353,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="35" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7808,6 +7368,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="79" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7822,6 +7383,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="11" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7836,6 +7398,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="81" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7850,6 +7413,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="9" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7864,6 +7428,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7878,6 +7443,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="17" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7892,6 +7458,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7906,6 +7473,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="46" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7920,6 +7488,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7934,6 +7503,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="6" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7948,6 +7518,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7962,6 +7533,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="5" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7976,6 +7548,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -7990,6 +7563,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8004,6 +7578,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8018,6 +7593,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8032,6 +7608,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8046,6 +7623,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8060,6 +7638,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8074,6 +7653,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8088,6 +7668,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8102,6 +7683,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8116,6 +7698,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8130,6 +7713,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8144,6 +7728,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8158,6 +7743,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8172,6 +7758,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8186,6 +7773,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8200,6 +7788,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8214,6 +7803,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8228,6 +7818,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8242,6 +7833,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8256,6 +7848,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8270,6 +7863,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8284,6 +7878,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8298,6 +7893,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8312,6 +7908,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8326,6 +7923,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8340,6 +7938,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8354,6 +7953,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8368,6 +7968,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8382,6 +7983,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8396,6 +7998,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8410,6 +8013,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8424,6 +8028,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8438,6 +8043,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8452,6 +8058,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8466,6 +8073,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8480,6 +8088,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8494,6 +8103,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8508,6 +8118,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8522,6 +8133,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8536,6 +8148,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8550,6 +8163,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
@@ -8564,11 +8178,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="R" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
 </deviceset>
 </devicesets>
 </library>
@@ -8691,558 +8312,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="EMCComponents (rev19c)">
-<description>&lt;BR&gt;Wurth Elektronik - EMC Components, Power Magnetics, Signal &amp; Communications&lt;br&gt;&lt;Hr&gt;
-&lt;BR&gt;&lt;BR&gt; 
-&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
-&lt;TR&gt;   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------------------------&lt;BR&gt;
-&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
-  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
-&lt;BR&gt;
-      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  
-&lt;/TABLE&gt;
-&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
-
-&lt;HR&gt;&lt;BR&gt;
-&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
-EMC &amp; Inductive Solutions&lt;br&gt;
-
-Max-Eyth-Str.1&lt;br&gt;
-D-74638 Waldenburg&lt;br&gt;
-&lt;br&gt;
-Tel: +49 (0)7942-945-0&lt;br&gt;
-Fax:+49 (0)7942-945-5000&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
-&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
-&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
-Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
-that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
-Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
-
-&lt;HR&gt;
-Eagle Version 6, Library Revision 2019c, 2019-04-11&lt;br&gt;
-
-&lt;HR&gt;
-Copyright: Würth Elektronik</description>
-<packages>
-<package name="WE-CBF_0603(W=2.2)">
-<smd name="1" x="-0.725" y="0" dx="0.75" dy="0.7" layer="1"/>
-<smd name="2" x="0.725" y="0" dx="0.75" dy="0.7" layer="1"/>
-<wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
-<text x="-0.57" y="0.82" size="0.254" layer="25">&gt;NAME</text>
-<text x="-0.57" y="-1.07" size="0.254" layer="27">&gt;VALUE</text>
-<wire x1="-0.8" y1="-0.4" x2="-0.2" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="-0.2" y1="-0.4" x2="0.2" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="0.4" x2="-0.2" y2="0.4" width="0.127" layer="51"/>
-<wire x1="-0.2" y1="0.4" x2="0.2" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.2" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
-<polygon width="0.127" layer="39">
-<vertex x="-1.35" y="0.65"/>
-<vertex x="1.35" y="0.65"/>
-<vertex x="1.35" y="-0.65"/>
-<vertex x="-1.35" y="-0.65"/>
-</polygon>
-</package>
-<package name="WE-CBF_0603(W=2.6)">
-<smd name="1" x="-0.825" y="0" dx="0.95" dy="0.7" layer="1"/>
-<smd name="2" x="0.825" y="0" dx="0.95" dy="0.7" layer="1"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
-<text x="-0.52" y="0.87" size="0.254" layer="25">&gt;NAME</text>
-<text x="-0.72" y="-1.02" size="0.254" layer="27">&gt;VALUE</text>
-<wire x1="-0.8" y1="0.4" x2="-0.2" y2="0.4" width="0.127" layer="51"/>
-<wire x1="-0.2" y1="0.4" x2="0.2" y2="0.4" width="0.127" layer="21"/>
-<wire x1="0.2" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.2" y2="-0.4" width="0.127" layer="51"/>
-<wire x1="-0.2" y1="-0.4" x2="0.2" y2="-0.4" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
-<polygon width="0.127" layer="39">
-<vertex x="-1.55" y="0.65"/>
-<vertex x="1.55" y="0.65"/>
-<vertex x="1.55" y="-0.65"/>
-<vertex x="-1.55" y="-0.65"/>
-</polygon>
-</package>
-<package name="WE-TVS_SOT23-6L">
-<description>TVS Diode Array WE-TVS</description>
-<wire x1="-0.8" y1="1.45" x2="-0.8" y2="-1.45" width="0.1" layer="51"/>
-<wire x1="-0.8" y1="-1.45" x2="0.8" y2="-1.45" width="0.1" layer="51"/>
-<wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.1" layer="51"/>
-<wire x1="0.8" y1="1.45" x2="-0.8" y2="1.45" width="0.1" layer="51"/>
-<smd name="6" x="1.25" y="0.95" dx="0.6" dy="1.1" layer="1" rot="R270"/>
-<smd name="5" x="1.25" y="0" dx="0.6" dy="1.1" layer="1" rot="R270"/>
-<smd name="4" x="1.25" y="-0.95" dx="0.6" dy="1.1" layer="1" rot="R270"/>
-<smd name="3" x="-1.25" y="-0.95" dx="0.6" dy="1.1" layer="1" rot="R270"/>
-<smd name="1" x="-1.25" y="0.95" dx="0.6" dy="1.1" layer="1" rot="R270"/>
-<smd name="2" x="-1.25" y="0" dx="0.6" dy="1.1" layer="1" rot="R270"/>
-<text x="-0.005" y="2.252" size="0.6096" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="-1.645" y="-2.602" size="0.6096" layer="27">&gt;VALUE</text>
-<rectangle x1="0.925" y1="0.625" x2="1.425" y2="1.275" layer="51" rot="R270"/>
-<rectangle x1="0.925" y1="-1.28" x2="1.425" y2="-0.63" layer="51" rot="R270"/>
-<rectangle x1="0.9123" y1="-0.3148" x2="1.4123" y2="0.3352" layer="51" rot="R270"/>
-<rectangle x1="-1.4118" y1="-0.3275" x2="-0.9118" y2="0.3225" layer="51" rot="R270"/>
-<rectangle x1="-1.3991" y1="-1.28" x2="-0.8991" y2="-0.63" layer="51" rot="R270"/>
-<rectangle x1="-1.4118" y1="0.625" x2="-0.9118" y2="1.275" layer="51" rot="R270"/>
-<rectangle x1="-1.4118" y1="-1.28" x2="-0.9118" y2="-0.63" layer="51" rot="R270"/>
-<circle x="-1.433" y="1.665" radius="0.05" width="0.1" layer="21"/>
-<wire x1="-0.9" y1="1.55" x2="0.9" y2="1.55" width="0.2" layer="21"/>
-<wire x1="-0.9" y1="-1.55" x2="0.9" y2="-1.55" width="0.2" layer="21"/>
-<polygon width="0.1" layer="39" spacing="0.2">
-<vertex x="-2" y="1.75"/>
-<vertex x="2" y="1.75"/>
-<vertex x="2" y="-1.75"/>
-<vertex x="-2" y="-1.75"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="L">
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
-<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
-<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="-2.54" y="5.08" size="1.27" layer="95">&gt;Name</text>
-<text x="-2.54" y="-2.54" size="1.27" layer="96">&gt;Value</text>
-<wire x1="-5.08" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<circle x="-7.62" y="1.27" radius="0.0254" width="0.635" layer="94"/>
-</symbol>
-<symbol name="WE-TVS_6RTR4FD-1">
-<wire x1="-1.524" y1="2.54" x2="-2.032" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.667" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-2.54" x2="-2.032" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.667" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="3.175" y1="2.54" x2="3.175" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.175" y1="0" x2="3.175" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.635" x2="1.778" y2="-1.143" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0.635" x2="0.762" y2="1.143" width="0.254" layer="94"/>
-<wire x1="4.191" y1="0" x2="3.175" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.175" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="2.54" x2="-0.254" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="-2.54" x2="-0.254" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.032" y1="2.54" x2="-2.032" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="5.08" x2="0.635" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="-2.54" x2="0.635" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.667" y1="3.175" x2="2.667" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.667" y1="2.54" x2="2.667" y2="1.905" width="0.254" layer="94"/>
-<wire x1="2.667" y1="-1.905" x2="2.667" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.667" y1="-2.54" x2="2.667" y2="-3.175" width="0.254" layer="94"/>
-<wire x1="-0.127" y1="-1.905" x2="-0.127" y2="-3.175" width="0.254" layer="94"/>
-<wire x1="-0.127" y1="3.175" x2="-0.127" y2="1.905" width="0.254" layer="94"/>
-<wire x1="4.064" y1="-0.635" x2="4.064" y2="0.635" width="0.254" layer="94"/>
-<text x="-2.69" y="7.41" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.26" y="-9.02" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VDD" x="7.62" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
-<pin name="I/O1" x="-5.08" y="5.08" visible="pad" length="short"/>
-<pin name="I/O2" x="-5.08" y="-5.08" visible="pad" length="short"/>
-<pin name="GND" x="-5.08" y="0" visible="pad" length="short" direction="pwr"/>
-<polygon width="0.254" layer="94">
-<vertex x="0" y="0.635"/>
-<vertex x="1.27" y="0"/>
-<vertex x="0" y="-0.635"/>
-</polygon>
-<circle x="3.175" y="0" radius="0.381" width="0" layer="94"/>
-<circle x="0.635" y="2.54" radius="0.381" width="0" layer="94"/>
-<circle x="0.635" y="-2.54" radius="0.381" width="0" layer="94"/>
-<circle x="-2.032" y="0" radius="0.381" width="0" layer="94"/>
-<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="1.397" y="3.175"/>
-<vertex x="2.667" y="2.54"/>
-<vertex x="1.397" y="1.905"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="1.397" y="-1.905"/>
-<vertex x="2.667" y="-2.54"/>
-<vertex x="1.397" y="-3.175"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="-1.397" y="-1.905"/>
-<vertex x="-0.127" y="-2.54"/>
-<vertex x="-1.397" y="-3.175"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="-1.397" y="3.175"/>
-<vertex x="-0.127" y="2.54"/>
-<vertex x="-1.397" y="1.905"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="5.334" y="-0.635"/>
-<vertex x="4.064" y="0"/>
-<vertex x="5.334" y="0.635"/>
-</polygon>
-<wire x1="6.477" y1="5.842" x2="6.477" y2="-5.842" width="0.254" layer="94" style="shortdash"/>
-<wire x1="6.477" y1="-5.842" x2="-2.54" y2="-5.842" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="-5.842" x2="-2.54" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="0" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="5.08" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="5.842" width="0.254" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="5.842" x2="6.477" y2="5.842" width="0.254" layer="94" style="shortdash"/>
-<text x="7.055" y="-1.542" size="0.4064" layer="94">VDD</text>
-<text x="-3.86" y="4.448" size="0.4064" layer="94">I/O1</text>
-<text x="-4.01" y="-0.692" size="0.4064" layer="94">GND</text>
-<text x="-3.88" y="-5.812" size="0.4064" layer="94">I/O2</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="WE-CBF_0603" prefix="L" uservalue="yes">
-<description>&lt;b&gt; WE-CBF SMD EMI Suppression Ferrite Bead
-&lt;br&gt;
-&lt;br&gt; Characteristics
-&lt;br&gt;
-&lt;br&gt;&lt;/b&gt; Reliable Ni-Sn electrodes
-&lt;br&gt;
-&lt;br&gt; High rated current up to 6 A
-&lt;br&gt;
-&lt;br&gt; Operating temperature: –55 ºC to +125 ºC
-&lt;br&gt;
-&lt;br&gt;&lt;b&gt; Applications
-&lt;br&gt;
-&lt;br&gt;&lt;/b&gt; Perfect as data lined filter and for uncoupling of distribution voltage
-&lt;br&gt;
-&lt;br&gt;&lt;b&gt;Variant abbreviation&lt;/b&gt;&lt;br&gt;
-WB means WIDE BAND&lt;br&gt;
-HS means HIGH SPEED&lt;br&gt;
-HC means HIGH CURRENT&lt;br&gt;
-
-&lt;br&gt;&lt;a href="http://katalog.we-online.de/media/images/v2/Family_WE-CBF.jpg" title="Enlarge picture"&gt;
-&lt;img src="http://katalog.we-online.de/media/images/v2/Family_WE-CBF.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
-Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WE-CBF"&gt;http://katalog.we-online.de/en/pbs/WE-CBF&lt;/a&gt;&lt;p&gt;
-
-Updated on 2014-06-19&lt;br&gt;
-2014 (C) Wurth Elektronik</description>
-<gates>
-<gate name="G$1" symbol="L" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_WB_HS" package="WE-CBF_0603(W=2.2)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_74279260">
-<attribute name="WE-NUMBER" value="74279260/40Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792605">
-<attribute name="WE-NUMBER" value="742792605/33Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792606">
-<attribute name="WE-NUMBER" value="742792606/120Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792607">
-<attribute name="WE-NUMBER" value="742792607/68Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792608">
-<attribute name="WE-NUMBER" value="742792608/47Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_74279261">
-<attribute name="WE-NUMBER" value="74279261/80Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_74279262">
-<attribute name="WE-NUMBER" value="74279262/120Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792620">
-<attribute name="WE-NUMBER" value="742792620/100Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792621">
-<attribute name="WE-NUMBER" value="742792621/140Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792622">
-<attribute name="WE-NUMBER" value="742792622/180Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_74279263">
-<attribute name="WE-NUMBER" value="74279263/220Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792631">
-<attribute name="WE-NUMBER" value="742792631/240Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_74279264">
-<attribute name="WE-NUMBER" value="74279264/300Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792640">
-<attribute name="WE-NUMBER" value="742792640/300Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792642">
-<attribute name="WE-NUMBER" value="742792642/470Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792643">
-<attribute name="WE-NUMBER" value="742792643/470Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_74279265">
-<attribute name="WE-NUMBER" value="74279265/600Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792651">
-<attribute name="WE-NUMBER" value="742792651/600Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792653">
-<attribute name="WE-NUMBER" value="742792653/600Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792656">
-<attribute name="WE-NUMBER" value="742792656/750Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_74279266">
-<attribute name="WE-NUMBER" value="74279266/1000Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792662">
-<attribute name="WE-NUMBER" value="742792662/1000Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792663">
-<attribute name="WE-NUMBER" value="742792663/1000Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792664">
-<attribute name="WE-NUMBER" value="742792664/1000Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_74279267">
-<attribute name="WE-NUMBER" value="74279267/60Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_74279268">
-<attribute name="WE-NUMBER" value="74279268/15Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_74279269">
-<attribute name="WE-NUMBER" value="74279269/1200Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792691">
-<attribute name="WE-NUMBER" value="742792691/1500Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792692">
-<attribute name="WE-NUMBER" value="742792692/1800Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792693">
-<attribute name="WE-NUMBER" value="742792693/2200Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792695">
-<attribute name="WE-NUMBER" value="742792695/2500Ω(Z@100MHz)" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_HC" package="WE-CBF_0603(W=2.6)">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="_742792601">
-<attribute name="WE-NUMBER" value="742792601/30Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792602">
-<attribute name="WE-NUMBER" value="742792602/60Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792603">
-<attribute name="WE-NUMBER" value="742792603/28Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792604">
-<attribute name="WE-NUMBER" value="742792604/22Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792609">
-<attribute name="WE-NUMBER" value="742792609/30Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792624">
-<attribute name="WE-NUMBER" value="742792624/180Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792625">
-<attribute name="WE-NUMBER" value="742792625/120Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792641">
-<attribute name="WE-NUMBER" value="742792641/300Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792645">
-<attribute name="WE-NUMBER" value="742795645/470Ω(Z@100MHz)" constant="no"/>
-</technology>
-<technology name="_742792651">
-<attribute name="WE-NUMBER" value="742792651/600Ω(Z@100MHz)" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="WE-TVS_SOT23-6L_82400102" prefix="D">
-<description>&lt;b&gt;WE-TVS TVS Diode – High Speed Series
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;b&gt; Characteristics
-&lt;br&gt;
-&lt;br&gt;&lt;/b&gt;&lt;/b&gt; Low clamping voltage
-&lt;br&gt;
-&lt;br&gt;Sturdy design
-&lt;br&gt;Very low capacitance
-&lt;br&gt;Flow Thru Design for a simple layout
-&lt;br&gt;Rail to Rail protection
-&lt;br&gt;Epoxy flame resistant UL94-V0
-&lt;br&gt;RoHS, REACH and free of halogens
-&lt;br&gt;
-&lt;br&gt;&lt;b&gt; Applications
-&lt;br&gt;
-&lt;br&gt;&lt;/b&gt; Very fast data lines
-&lt;br&gt;
-&lt;br&gt; USB 2.0
-&lt;br&gt;
-&lt;br&gt; Ethernet
-&lt;br&gt;
-&lt;br&gt; PoE
-&lt;br&gt;
-&lt;br&gt; VGA
-&lt;br&gt;
-&lt;br&gt; Sim Cards
-&lt;br&gt;
-&lt;br&gt; Keypads
-
-&lt;br&gt;
-&lt;br&gt;&lt;b&gt;Application Notes &lt;/b&gt;
-&lt;br&gt;
-&lt;br&gt;ANP002 The Protection of USB 2.0 Applications
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;a href="https://katalog.we-online.de/media/images/v2/Family_WE-TVS_HIGHSPEED.jpg" title="Enlarge picture"&gt;
-&lt;img src="https://katalog.we-online.de/media/images/v2/Family_WE-TVS_HIGHSPEED.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
-Details see: &lt;a href="https://katalog.we-online.de/en/pbs/WE-TVS-HS/82400274"&gt;https://katalog.we-online.de/en/pbs/WE-TVS-HS/82400274&lt;/a&gt;&lt;p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;/b&gt;Updated  by  Dan Xu 2014-07-11&lt;br&gt;
-&lt;/b&gt;2014 (C) Wurth Elektronik</description>
-<gates>
-<gate name="G$1" symbol="WE-TVS_6RTR4FD-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="WE-TVS_SOT23-6L">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="I/O1" pad="1 6"/>
-<connect gate="G$1" pin="I/O2" pad="3 4"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="VALUE" value="5Vdc/2pF" constant="no"/>
-<attribute name="WE-NUMBER" value="82400102" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="BMAS" urn="urn:adsk.eagle:library:8795504">
-<packages>
-<package name="CORTEX-M-CON-10P" urn="urn:adsk.eagle:footprint:8951897/1" library_version="26" library_locally_modified="yes">
-<smd name="P$1" x="0" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-<smd name="P$3" x="1.27" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-<smd name="P$4" x="1.27" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-<smd name="P$5" x="2.54" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-<smd name="P$6" x="2.54" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-<smd name="P$7" x="3.81" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-<smd name="P$8" x="3.81" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-<smd name="P$9" x="5.08" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-<smd name="P$10" x="5.08" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="CORTEX-M-CON-10P" urn="urn:adsk.eagle:package:8951899/2" type="model" library_version="26" library_locally_modified="yes">
-<packageinstances>
-<packageinstance name="CORTEX-M-CON-10P"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="CORTEX-MDEBUG" urn="urn:adsk.eagle:symbol:8951898/2" library_version="26" library_locally_modified="yes">
-<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="1" x="-5.08" y="-2.54" visible="pin" length="middle"/>
-<pin name="3" x="-5.08" y="-5.08" visible="pin" length="middle"/>
-<pin name="5" x="-5.08" y="-7.62" visible="pin" length="middle"/>
-<pin name="7" x="-5.08" y="-10.16" visible="pin" length="middle"/>
-<pin name="9" x="-5.08" y="-12.7" visible="pin" length="middle"/>
-<pin name="2" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="4" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="6" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="8" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="10" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<text x="0" y="-17.78" size="1.778" layer="97">FTSH-105-01-F-DV-007-K </text>
-<text x="0" y="0" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CORTEX-MDEBUG-10P" urn="urn:adsk.eagle:component:8951900/3" prefix="X1" library_version="26" library_locally_modified="yes">
-<gates>
-<gate name="G$1" symbol="CORTEX-MDEBUG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CORTEX-M-CON-10P">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="10" pad="P$10"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="6" pad="P$6"/>
-<connect gate="G$1" pin="7" pad="P$7"/>
-<connect gate="G$1" pin="8" pad="P$8"/>
-<connect gate="G$1" pin="9" pad="P$9"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:8951899/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -10635,7 +9704,7 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED" urn="urn:adsk.eagle:component:15916/9" prefix="LED" uservalue="yes" library_version="4">
+<deviceset name="LED" urn="urn:adsk.eagle:component:15916/10" prefix="LED" uservalue="yes" library_version="5">
 <description>&lt;b&gt;LED&lt;/b&gt;&lt;p&gt;
 &lt;u&gt;OSRAM&lt;/u&gt;:&lt;br&gt;
 
@@ -10724,7 +9793,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15796/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="20" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="LD260" package="LD260">
@@ -10736,7 +9807,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15794/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SQR2X5" package="LED2X5">
@@ -10748,7 +9821,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15800/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3MM" package="LED3MM">
@@ -10760,7 +9835,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15797/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="97" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="5MM" package="LED5MM">
@@ -10772,7 +9849,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15799/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="93" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="LSU260" package="LSU260">
@@ -10784,7 +9863,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15805/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="LZR181" package="LZR181">
@@ -10796,7 +9877,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15808/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="B152" package="Q62902-B152">
@@ -10808,7 +9891,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15803/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="B153" package="Q62902-B153">
@@ -10820,7 +9905,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15804/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="B155" package="Q62902-B155">
@@ -10832,7 +9919,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15807/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="B156" package="Q62902-B156">
@@ -10844,7 +9933,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15806/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SFH480" package="SFH480">
@@ -10856,7 +9947,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15809/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SFH482" package="SFH482">
@@ -10868,7 +9961,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15795/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SQR5.7X3.2" package="U57X32">
@@ -10880,7 +9975,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15789/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="IRL80A" package="IRL80A">
@@ -10892,7 +9989,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15810/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="P-LCC-2" package="P-LCC-2">
@@ -10904,7 +10003,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15817/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="MINI-TOP" package="OSRAM-MINI-TOP-LED">
@@ -10916,7 +10017,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15811/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SIDELED" package="OSRAM-SIDELED">
@@ -10928,7 +10031,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15812/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMART-LED" package="SMART-LED">
@@ -10940,7 +10045,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15814/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="P-LCC-2-BACK" package="P-LCC-2-TOPLED-RG">
@@ -10952,7 +10059,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15813/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="MICRO-SIDELED" package="MICRO-SIDELED">
@@ -10964,7 +10073,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15815/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="P-LCC-4" package="P-LCC-4">
@@ -10976,7 +10087,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15816/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIP-LED0603" package="CHIP-LED0603">
@@ -10988,7 +10101,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15819/3"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="26" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIP-LED0805" package="CHIP-LED0805">
@@ -11000,7 +10115,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15818/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="68" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TOPLED-SANTANA" package="MINI-TOPLED-SANTANA">
@@ -11012,7 +10129,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15820/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_0805" package="CHIPLED_0805">
@@ -11024,7 +10143,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15821/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="52" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_1206" package="CHIPLED_1206">
@@ -11036,7 +10157,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15823/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="28" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED_0603" package="CHIPLED_0603">
@@ -11048,7 +10171,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15822/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="28" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="CHIPLED-0603-TTW" package="CHIPLED-0603-TTW">
@@ -11060,7 +10185,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15824/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="" package="SMARTLED-TTW">
@@ -11072,7 +10199,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15825/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-LUMILED+" package="LUMILED+">
@@ -11084,7 +10213,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15826/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-LUMILED" package="LUMILED">
@@ -11096,7 +10227,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15827/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="10MM" package="LED10MM">
@@ -11108,7 +10241,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15828/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="KA-3528ASYC" package="KA-3528ASYC">
@@ -11120,7 +10255,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15831/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SML0805" package="SML0805">
@@ -11132,7 +10269,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15830/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="17" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SML1206" package="SML1206">
@@ -11144,7 +10283,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15829/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="6" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SML0603" package="SML0603">
@@ -11156,7 +10297,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15832/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="17" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11398,7 +10541,7 @@ Source: www.kingbright.com</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MOUNT-HOLE" urn="urn:adsk.eagle:component:14301/1" prefix="H" library_version="1">
+<deviceset name="MOUNT-HOLE" urn="urn:adsk.eagle:component:14301/2" prefix="H" library_version="2">
 <description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; with drill center marker</description>
 <gates>
 <gate name="G$1" symbol="MOUNT-HOLE" x="0" y="0"/>
@@ -11409,7 +10552,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14271/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="15" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.0" package="3,0">
@@ -11417,7 +10562,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14277/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.3" package="3,3">
@@ -11425,7 +10572,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14278/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.6" package="3,6">
@@ -11433,7 +10582,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14272/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.1" package="4,1">
@@ -11441,7 +10592,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14273/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.5" package="4,5">
@@ -11449,7 +10602,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14274/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="5.0" package="5,0">
@@ -11457,7 +10612,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14276/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.2" package="3,2">
@@ -11465,7 +10622,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14275/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="7" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4.3" package="4,3">
@@ -11473,7 +10632,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14289/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="5.5" package="5,5">
@@ -11481,7 +10642,9 @@ Source: www.kingbright.com</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14279/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11592,7 +10755,7 @@ Source: http://cds.linear.com/docs/Datasheet/1763ff.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LT1763" urn="urn:adsk.eagle:component:16113/1" prefix="IC" library_version="3">
+<deviceset name="LT1763" urn="urn:adsk.eagle:component:16113/2" prefix="IC" library_version="4">
 <description>&lt;b&gt;500mA, Low Noise, LDO Micropower Regulators&lt;/b&gt;&lt;p&gt;
 Source: http://cds.linear.com/docs/Datasheet/1763ff.pdf</description>
 <gates>
@@ -11620,84 +10783,98 @@ Source: http://cds.linear.com/docs/Datasheet/1763ff.pdf</description>
 <attribute name="MPN" value="LT1763CDE" constant="no"/>
 <attribute name="OC_FARNELL" value="1273613" constant="no"/>
 <attribute name="OC_NEWARK" value="57M6014" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="CDE-1.5">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763CDE-1.5" constant="no"/>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="57M6015" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="CDE-1.8">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763CDE-1.8" constant="no"/>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="57M6019" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="CDE-2.5">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763CDE-2.5" constant="no"/>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="57M6023" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="CDE-3">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763CDE-3" constant="no"/>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="57M6027" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="CDE-3.3">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763CDE-3.3" constant="no"/>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="57M6028" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="CDE-5">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763CDE-5" constant="no"/>
 <attribute name="OC_FARNELL" value="1556468" constant="no"/>
 <attribute name="OC_NEWARK" value="57M6035" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="IDE">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763IDE#PBF" constant="no"/>
 <attribute name="OC_FARNELL" value="1839216" constant="no"/>
 <attribute name="OC_NEWARK" value="51R1532" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="IDE-1.5">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763IDE-1.5#PBF" constant="no"/>
 <attribute name="OC_FARNELL" value="1783317" constant="no"/>
 <attribute name="OC_NEWARK" value="51R1526" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="IDE-1.8">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763IDE-1.8#PBF" constant="no"/>
 <attribute name="OC_FARNELL" value="1783318" constant="no"/>
 <attribute name="OC_NEWARK" value="51R1527" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="IDE-2.5">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763IDE-2.5#PBF" constant="no"/>
 <attribute name="OC_FARNELL" value="1783319" constant="no"/>
 <attribute name="OC_NEWARK" value="51R1528" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="IDE-3">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763IDE-3#PBF" constant="no"/>
 <attribute name="OC_FARNELL" value="1839220" constant="no"/>
 <attribute name="OC_NEWARK" value="51R1530" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="IDE-3.3">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763IDE-3.3#PBF" constant="no"/>
 <attribute name="OC_FARNELL" value="1783320" constant="no"/>
 <attribute name="OC_NEWARK" value="51R1529" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="IDE-5">
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="LT1763IDE-5#PBF" constant="no"/>
 <attribute name="OC_FARNELL" value="1839222" constant="no"/>
 <attribute name="OC_NEWARK" value="51R1531" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11850,12 +11027,226 @@ DIN A4, landscape with location and doc. field</description>
 <vertex x="0.012" y="0.0053"/>
 </polygon>
 </package>
+<package name="CORTEX-M-CON-10P" urn="urn:adsk.eagle:footprint:8951897/1" library_version="3">
+<smd name="P$1" x="0" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+<smd name="P$3" x="1.27" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+<smd name="P$4" x="1.27" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+<smd name="P$5" x="2.54" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+<smd name="P$6" x="2.54" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+<smd name="P$7" x="3.81" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+<smd name="P$8" x="3.81" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+<smd name="P$9" x="5.08" y="0" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+<smd name="P$10" x="5.08" y="4.064" dx="2.794" dy="0.7366" layer="1" rot="R90"/>
+</package>
+<package name="QFN50P500X500X60-33T350" urn="urn:adsk.eagle:footprint:11863143/2" library_version="3">
+<description>32-QFN, 0.50 mm pitch, 5.00 X 5.00 X 0.60 mm body, 3.50 X 3.50 mm thermal pad
+&lt;p&gt;32-pin QFN package with 0.50 mm pitch with body size 5.00 X 5.00 X 0.60 mm and thermal pad size 3.50 X 3.50 mm&lt;/p&gt;</description>
+<circle x="-3.054" y="2.379" radius="0.25" width="0" layer="21"/>
+<wire x1="-2.55" y1="2.129" x2="-2.55" y2="2.55" width="0.12" layer="21"/>
+<wire x1="-2.55" y1="2.55" x2="-2.129" y2="2.55" width="0.12" layer="21"/>
+<wire x1="2.55" y1="2.129" x2="2.55" y2="2.55" width="0.12" layer="21"/>
+<wire x1="2.55" y1="2.55" x2="2.129" y2="2.55" width="0.12" layer="21"/>
+<wire x1="2.55" y1="-2.129" x2="2.55" y2="-2.55" width="0.12" layer="21"/>
+<wire x1="2.55" y1="-2.55" x2="2.129" y2="-2.55" width="0.12" layer="21"/>
+<wire x1="-2.55" y1="-2.129" x2="-2.55" y2="-2.55" width="0.12" layer="21"/>
+<wire x1="-2.55" y1="-2.55" x2="-2.129" y2="-2.55" width="0.12" layer="21"/>
+<wire x1="2.55" y1="-2.55" x2="-2.55" y2="-2.55" width="0.12" layer="51"/>
+<wire x1="-2.55" y1="-2.55" x2="-2.55" y2="2.55" width="0.12" layer="51"/>
+<wire x1="-2.55" y1="2.55" x2="2.55" y2="2.55" width="0.12" layer="51"/>
+<wire x1="2.55" y1="2.55" x2="2.55" y2="-2.55" width="0.12" layer="51"/>
+<smd name="1" x="-2.4846" y="1.75" dx="0.96" dy="0.25" layer="1"/>
+<smd name="2" x="-2.4846" y="1.25" dx="0.96" dy="0.25" layer="1"/>
+<smd name="3" x="-2.4846" y="0.75" dx="0.96" dy="0.25" layer="1"/>
+<smd name="4" x="-2.4846" y="0.25" dx="0.96" dy="0.25" layer="1"/>
+<smd name="5" x="-2.4846" y="-0.25" dx="0.96" dy="0.25" layer="1"/>
+<smd name="6" x="-2.4846" y="-0.75" dx="0.96" dy="0.25" layer="1"/>
+<smd name="7" x="-2.4846" y="-1.25" dx="0.96" dy="0.25" layer="1"/>
+<smd name="8" x="-2.4846" y="-1.75" dx="0.96" dy="0.25" layer="1"/>
+<smd name="9" x="-1.75" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="10" x="-1.25" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="11" x="-0.75" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="12" x="-0.25" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="13" x="0.25" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="14" x="0.75" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="15" x="1.25" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="16" x="1.75" y="-2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="17" x="2.4846" y="-1.75" dx="0.96" dy="0.25" layer="1"/>
+<smd name="18" x="2.4846" y="-1.25" dx="0.96" dy="0.25" layer="1"/>
+<smd name="19" x="2.4846" y="-0.75" dx="0.96" dy="0.25" layer="1"/>
+<smd name="20" x="2.4846" y="-0.25" dx="0.96" dy="0.25" layer="1"/>
+<smd name="21" x="2.4846" y="0.25" dx="0.96" dy="0.25" layer="1"/>
+<smd name="22" x="2.4846" y="0.75" dx="0.96" dy="0.25" layer="1"/>
+<smd name="23" x="2.4846" y="1.25" dx="0.96" dy="0.25" layer="1"/>
+<smd name="24" x="2.4846" y="1.75" dx="0.96" dy="0.25" layer="1"/>
+<smd name="25" x="1.75" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="26" x="1.25" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="27" x="0.75" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="28" x="0.25" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="29" x="-0.25" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="30" x="-0.75" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="31" x="-1.25" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="32" x="-1.75" y="2.4846" dx="0.96" dy="0.25" layer="1" rot="R90"/>
+<smd name="33" x="0" y="0" dx="3.5" dy="3.5" layer="1" thermals="no" cream="no"/>
+<text x="0" y="3.5996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.5996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.5" y1="0.5" x2="-0.5" y2="1.5" layer="31"/>
+<rectangle x1="0.5" y1="0.5" x2="1.5" y2="1.5" layer="31"/>
+<rectangle x1="-1.5" y1="-1.5" x2="-0.5" y2="-0.5" layer="31"/>
+<rectangle x1="0.5" y1="-1.5" x2="1.5" y2="-0.5" layer="31"/>
+</package>
+<package name="SOP65P490X110-8" urn="urn:adsk.eagle:footprint:11858795/1" library_version="3">
+<description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
+&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
+<circle x="-2.2175" y="1.7197" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.55" y1="1.4697" x2="-1.55" y2="1.55" width="0.12" layer="21"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.12" layer="21"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="1.4697" width="0.12" layer="21"/>
+<wire x1="-1.55" y1="-1.4697" x2="-1.55" y2="-1.55" width="0.12" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.12" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="1.55" y2="-1.4697" width="0.12" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.12" layer="51"/>
+<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.12" layer="51"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.12" layer="51"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.12" layer="51"/>
+<smd name="1" x="-2.1496" y="0.975" dx="1.4709" dy="0.4815" layer="1"/>
+<smd name="2" x="-2.1496" y="0.325" dx="1.4709" dy="0.4815" layer="1"/>
+<smd name="3" x="-2.1496" y="-0.325" dx="1.4709" dy="0.4815" layer="1"/>
+<smd name="4" x="-2.1496" y="-0.975" dx="1.4709" dy="0.4815" layer="1"/>
+<smd name="5" x="2.1496" y="-0.975" dx="1.4709" dy="0.4815" layer="1"/>
+<smd name="6" x="2.1496" y="-0.325" dx="1.4709" dy="0.4815" layer="1"/>
+<smd name="7" x="2.1496" y="0.325" dx="1.4709" dy="0.4815" layer="1"/>
+<smd name="8" x="2.1496" y="0.975" dx="1.4709" dy="0.4815" layer="1"/>
+<text x="0" y="2.6047" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.185" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOP65P780X200-20" urn="urn:adsk.eagle:footprint:11858370/1" library_version="3">
+<description>20-SOP, 0.65 mm pitch, 7.80 mm span, 7.20 X 5.30 X 2.00 mm body
+&lt;p&gt;20-pin SOP package with 0.65 mm pitch, 7.80 mm span with body size 7.20 X 5.30 X 2.00 mm&lt;/p&gt;</description>
+<circle x="-3.7269" y="3.6866" radius="0.25" width="0" layer="21"/>
+<wire x1="-2.8" y1="3.4366" x2="-2.8" y2="3.75" width="0.12" layer="21"/>
+<wire x1="-2.8" y1="3.75" x2="2.8" y2="3.75" width="0.12" layer="21"/>
+<wire x1="2.8" y1="3.75" x2="2.8" y2="3.4366" width="0.12" layer="21"/>
+<wire x1="-2.8" y1="-3.4366" x2="-2.8" y2="-3.75" width="0.12" layer="21"/>
+<wire x1="-2.8" y1="-3.75" x2="2.8" y2="-3.75" width="0.12" layer="21"/>
+<wire x1="2.8" y1="-3.75" x2="2.8" y2="-3.4366" width="0.12" layer="21"/>
+<wire x1="2.8" y1="-3.75" x2="-2.8" y2="-3.75" width="0.12" layer="51"/>
+<wire x1="-2.8" y1="-3.75" x2="-2.8" y2="3.75" width="0.12" layer="51"/>
+<wire x1="-2.8" y1="3.75" x2="2.8" y2="3.75" width="0.12" layer="51"/>
+<wire x1="2.8" y1="3.75" x2="2.8" y2="-3.75" width="0.12" layer="51"/>
+<smd name="1" x="-3.6529" y="2.925" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="2" x="-3.6529" y="2.275" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="3" x="-3.6529" y="1.625" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="4" x="-3.6529" y="0.975" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="5" x="-3.6529" y="0.325" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="6" x="-3.6529" y="-0.325" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="7" x="-3.6529" y="-0.975" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="8" x="-3.6529" y="-1.625" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="9" x="-3.6529" y="-2.275" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="10" x="-3.6529" y="-2.925" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="11" x="3.6529" y="-2.925" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="12" x="3.6529" y="-2.275" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="13" x="3.6529" y="-1.625" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="14" x="3.6529" y="-0.975" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="15" x="3.6529" y="-0.325" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="16" x="3.6529" y="0.325" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="17" x="3.6529" y="0.975" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="18" x="3.6529" y="1.625" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="19" x="3.6529" y="2.275" dx="2.002" dy="0.5152" layer="1"/>
+<smd name="20" x="3.6529" y="2.925" dx="2.002" dy="0.5152" layer="1"/>
+<text x="0" y="4.5716" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.385" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOP65P640X120-16" urn="urn:adsk.eagle:footprint:11867968/1" library_version="3">
+<description>16-SOP, 0.65 mm pitch, 6.40 mm span, 5.00 X 4.40 X 1.20 mm body
+&lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.40 mm span with body size 5.00 X 4.40 X 1.20 mm&lt;/p&gt;</description>
+<circle x="-3.0538" y="3.0024" radius="0.25" width="0" layer="21"/>
+<wire x1="-2.25" y1="2.8124" x2="2.25" y2="2.8124" width="0.12" layer="21"/>
+<wire x1="-2.25" y1="-2.8124" x2="2.25" y2="-2.8124" width="0.12" layer="21"/>
+<wire x1="2.25" y1="-2.55" x2="-2.25" y2="-2.55" width="0.12" layer="51"/>
+<wire x1="-2.25" y1="-2.55" x2="-2.25" y2="2.55" width="0.12" layer="51"/>
+<wire x1="-2.25" y1="2.55" x2="2.25" y2="2.55" width="0.12" layer="51"/>
+<wire x1="2.25" y1="2.55" x2="2.25" y2="-2.55" width="0.12" layer="51"/>
+<smd name="1" x="-2.9217" y="2.275" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="2" x="-2.9217" y="1.625" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="3" x="-2.9217" y="0.975" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="4" x="-2.9217" y="0.325" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="5" x="-2.9217" y="-0.325" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="6" x="-2.9217" y="-0.975" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="7" x="-2.9217" y="-1.625" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="8" x="-2.9217" y="-2.275" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="9" x="2.9217" y="-2.275" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="10" x="2.9217" y="-1.625" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="11" x="2.9217" y="-0.975" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="12" x="2.9217" y="-0.325" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="13" x="2.9217" y="0.325" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="14" x="2.9217" y="0.975" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="15" x="2.9217" y="1.625" dx="1.8719" dy="0.4468" layer="1"/>
+<smd name="16" x="2.9217" y="2.275" dx="1.8719" dy="0.4468" layer="1"/>
+<text x="0" y="3.8874" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.4474" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="LEDC3316X110" urn="urn:adsk.eagle:footprint:11861023/1" library_version="3">
+<description>Chip, 3.30 X 1.60 X 1.10 mm body
+&lt;p&gt;Chip package with body size 3.30 X 1.60 X 1.10 mm&lt;/p&gt;</description>
+<wire x1="1.7" y1="1.2199" x2="-2.5186" y2="1.2199" width="0.12" layer="21"/>
+<wire x1="-2.5186" y1="1.2199" x2="-2.5186" y2="-1.2199" width="0.12" layer="21"/>
+<wire x1="-2.5186" y1="-1.2199" x2="1.7" y2="-1.2199" width="0.12" layer="21"/>
+<wire x1="1.7" y1="-0.8" x2="-1.7" y2="-0.8" width="0.12" layer="51"/>
+<wire x1="-1.7" y1="-0.8" x2="-1.7" y2="0.8" width="0.12" layer="51"/>
+<wire x1="-1.7" y1="0.8" x2="1.7" y2="0.8" width="0.12" layer="51"/>
+<wire x1="1.7" y1="0.8" x2="1.7" y2="-0.8" width="0.12" layer="51"/>
+<smd name="1" x="-1.65" y="0" dx="1.2291" dy="1.8118" layer="1"/>
+<smd name="2" x="1.65" y="0" dx="1.2291" dy="1.8118" layer="1"/>
+<text x="0" y="1.8549" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.8549" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="USBC_HORZONTAL_WE" urn="urn:adsk.eagle:package:11973817/2" type="model" library_version="1" library_locally_modified="yes">
 <description>USB 3.1 TYPE C RECEPTACLE - HORIZONTAL THT/SMT</description>
 <packageinstances>
 <packageinstance name="USBC_HORZONTAL_WE"/>
+</packageinstances>
+</package3d>
+<package3d name="CORTEX-M-CON-10P" urn="urn:adsk.eagle:package:8951899/2" type="model" library_version="3">
+<packageinstances>
+<packageinstance name="CORTEX-M-CON-10P"/>
+</packageinstances>
+</package3d>
+<package3d name="QFN50P500X500X60-33T350" urn="urn:adsk.eagle:package:11863136/2" type="model" library_version="3">
+<description>32-QFN, 0.50 mm pitch, 5.00 X 5.00 X 0.60 mm body, 3.50 X 3.50 mm thermal pad
+&lt;p&gt;32-pin QFN package with 0.50 mm pitch with body size 5.00 X 5.00 X 0.60 mm and thermal pad size 3.50 X 3.50 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="QFN50P500X500X60-33T350"/>
+</packageinstances>
+</package3d>
+<package3d name="SOP65P490X110-8" urn="urn:adsk.eagle:package:11858781/1" type="model" library_version="3">
+<description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
+&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOP65P490X110-8"/>
+</packageinstances>
+</package3d>
+<package3d name="SOP65P780X200-20" urn="urn:adsk.eagle:package:11858354/1" type="model" library_version="3">
+<description>20-SOP, 0.65 mm pitch, 7.80 mm span, 7.20 X 5.30 X 2.00 mm body
+&lt;p&gt;20-pin SOP package with 0.65 mm pitch, 7.80 mm span with body size 7.20 X 5.30 X 2.00 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOP65P780X200-20"/>
+</packageinstances>
+</package3d>
+<package3d name="SOP65P640X120-16" urn="urn:adsk.eagle:package:11867276/1" type="model" library_version="3">
+<description>16-SOP, 0.65 mm pitch, 6.40 mm span, 5.00 X 4.40 X 1.20 mm body
+&lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.40 mm span with body size 5.00 X 4.40 X 1.20 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOP65P640X120-16"/>
+</packageinstances>
+</package3d>
+<package3d name="LEDC3316X110" urn="urn:adsk.eagle:package:11861022/1" type="model" library_version="3">
+<description>Chip, 3.30 X 1.60 X 1.10 mm body
+&lt;p&gt;Chip package with body size 3.30 X 1.60 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="LEDC3316X110"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -11895,9 +11286,181 @@ DIN A4, landscape with location and doc. field</description>
 <symbol name="SHIELD" urn="urn:adsk.eagle:symbol:11973808/1" library_version="1" library_locally_modified="yes">
 <pin name="SHIELD" x="-5.08" y="0" length="middle"/>
 </symbol>
+<symbol name="CORTEX-MDEBUG" urn="urn:adsk.eagle:symbol:22988140/1" library_version="3">
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="-2.54" visible="pin" length="middle"/>
+<pin name="3" x="-5.08" y="-5.08" visible="pin" length="middle"/>
+<pin name="5" x="-5.08" y="-7.62" visible="pin" length="middle"/>
+<pin name="7" x="-5.08" y="-10.16" visible="pin" length="middle"/>
+<pin name="9" x="-5.08" y="-12.7" visible="pin" length="middle"/>
+<pin name="2" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="4" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="6" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="8" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="10" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<text x="0" y="-17.78" size="1.778" layer="97">FTSH-105-01-F-DV-007-K </text>
+<text x="0" y="0" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="STM32F302K8U6" urn="urn:adsk.eagle:symbol:11973811/1" library_version="3">
+<wire x1="0" y1="0" x2="30.48" y2="0" width="0.254" layer="94"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-91.44" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-91.44" x2="0" y2="-91.44" width="0.254" layer="94"/>
+<wire x1="0" y1="-91.44" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VDD_1" x="-5.08" y="-5.08" length="middle"/>
+<pin name="PF0/OSC_IN" x="-5.08" y="-10.16" length="middle"/>
+<pin name="PF1/OSC_OUT" x="-5.08" y="-15.24" length="middle"/>
+<pin name="NRST" x="-5.08" y="-20.32" length="middle"/>
+<pin name="VDDA/VREF+" x="-5.08" y="-25.4" length="middle"/>
+<pin name="VSSA/VREF-" x="-5.08" y="-30.48" length="middle"/>
+<pin name="PA0" x="-5.08" y="-35.56" length="middle"/>
+<pin name="PA1" x="-5.08" y="-40.64" length="middle"/>
+<pin name="PA2" x="-5.08" y="-45.72" length="middle"/>
+<pin name="PA3" x="-5.08" y="-50.8" length="middle"/>
+<pin name="PA4" x="-5.08" y="-55.88" length="middle"/>
+<pin name="PA5" x="-5.08" y="-60.96" length="middle"/>
+<pin name="PA6" x="-5.08" y="-66.04" length="middle"/>
+<pin name="PA7" x="-5.08" y="-71.12" length="middle"/>
+<pin name="PB0" x="-5.08" y="-76.2" length="middle"/>
+<pin name="VSS_2" x="-5.08" y="-81.28" length="middle"/>
+<pin name="VDD_2" x="35.56" y="-81.28" length="middle" rot="R180"/>
+<pin name="PA8" x="35.56" y="-76.2" length="middle" rot="R180"/>
+<pin name="PA9" x="35.56" y="-71.12" length="middle" rot="R180"/>
+<pin name="PA10" x="35.56" y="-66.04" length="middle" rot="R180"/>
+<pin name="PA11" x="35.56" y="-60.96" length="middle" rot="R180"/>
+<pin name="PA12" x="35.56" y="-55.88" length="middle" rot="R180"/>
+<pin name="PA13" x="35.56" y="-50.8" length="middle" rot="R180"/>
+<pin name="PA14" x="35.56" y="-45.72" length="middle" rot="R180"/>
+<pin name="PA15" x="35.56" y="-40.64" length="middle" rot="R180"/>
+<pin name="PB3" x="35.56" y="-35.56" length="middle" rot="R180"/>
+<pin name="PB4" x="35.56" y="-30.48" length="middle" rot="R180"/>
+<pin name="PB5" x="35.56" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB6" x="35.56" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB7" x="35.56" y="-15.24" length="middle" rot="R180"/>
+<pin name="BOOT0" x="35.56" y="-10.16" length="middle" rot="R180"/>
+<pin name="VSS_1" x="35.56" y="-5.08" length="middle" rot="R180"/>
+<pin name="PAD" x="15.24" y="-96.52" length="middle" rot="R90"/>
+<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="OPAMP" urn="urn:adsk.eagle:symbol:11973815/1" library_version="3">
+<pin name="IN1" x="-5.08" y="-2.54" visible="pad" length="middle"/>
+<pin name="IN2" x="-5.08" y="-7.62" visible="pad" length="middle"/>
+<pin name="OUT1" x="12.7" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="1.778" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-7.62" x2="1.778" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-7.112" x2="1.27" y2="-8.128" width="0.254" layer="94"/>
+</symbol>
+<symbol name="OPAMP_POWER" urn="urn:adsk.eagle:symbol:11973814/1" library_version="3">
+<pin name="IN1" x="-5.08" y="-2.54" visible="pad" length="middle"/>
+<pin name="IN2" x="-5.08" y="-7.62" visible="pad" length="middle"/>
+<pin name="OUT1" x="12.7" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="VDD" x="2.54" y="2.54" visible="pad" length="short" rot="R270"/>
+<pin name="GND" x="2.54" y="-12.7" visible="pad" length="short" rot="R90"/>
+<text x="7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="1.778" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-7.62" x2="1.778" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-7.112" x2="1.27" y2="-8.128" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.651" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="-8.509" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="REF50XX" urn="urn:adsk.eagle:symbol:11973813/1" library_version="3">
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VIN" x="-5.08" y="-2.54" length="middle"/>
+<pin name="VOUT" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="TEMP" x="-5.08" y="-7.62" length="middle"/>
+<pin name="GND" x="-5.08" y="-12.7" length="middle"/>
+<pin name="TRIM" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ADS1255" urn="urn:adsk.eagle:symbol:11973816/1" library_version="3">
+<wire x1="0" y1="0" x2="78.74" y2="0" width="0.254" layer="94"/>
+<wire x1="78.74" y1="0" x2="78.74" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="78.74" y1="-40.64" x2="0" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="-40.64" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="AIN1" x="-5.08" y="-5.08" length="middle"/>
+<pin name="AIN0" x="-5.08" y="-25.4" length="middle"/>
+<pin name="AINCOM" x="-5.08" y="-35.56" length="middle"/>
+<pin name="AVDD" x="12.7" y="5.08" length="middle" rot="R270"/>
+<pin name="DVDD" x="17.78" y="5.08" length="middle" rot="R270"/>
+<pin name="D0" x="60.96" y="5.08" length="middle" rot="R270"/>
+<pin name="D1" x="50.8" y="5.08" length="middle" rot="R270"/>
+<pin name="AGND" x="12.7" y="-45.72" length="middle" rot="R90"/>
+<pin name="DGND" x="17.78" y="-45.72" length="middle" rot="R90"/>
+<pin name="VREF+" x="22.86" y="-45.72" length="middle" rot="R90"/>
+<pin name="VREF-" x="35.56" y="-45.72" length="middle" rot="R90"/>
+<pin name="XTAL2" x="43.18" y="-45.72" length="middle" rot="R90"/>
+<pin name="XTAL1" x="60.96" y="-45.72" length="middle" rot="R90"/>
+<pin name="/DRDY" x="83.82" y="-5.08" length="middle" rot="R180"/>
+<pin name="DOUT" x="83.82" y="-10.16" length="middle" rot="R180"/>
+<pin name="DIN" x="83.82" y="-15.24" length="middle" rot="R180"/>
+<pin name="SCLK" x="83.82" y="-20.32" length="middle" rot="R180"/>
+<pin name="/CS" x="83.82" y="-25.4" length="middle" rot="R180"/>
+<pin name="/RESET" x="83.82" y="-30.48" length="middle" rot="R180"/>
+<pin name="/SYNC" x="83.82" y="-35.56" length="middle" rot="R180"/>
+<text x="71.12" y="5.08" size="1.27" layer="95">&gt;NAME</text>
+<text x="71.12" y="2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="TLC59208F" urn="urn:adsk.eagle:symbol:11973810/1" library_version="3">
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-43.18" x2="0" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="0" y1="-43.18" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SCL" x="-5.08" y="-2.54" length="middle"/>
+<pin name="SDA" x="-5.08" y="-7.62" length="middle"/>
+<pin name="NRST" x="-5.08" y="-12.7" length="middle"/>
+<pin name="A0" x="-5.08" y="-17.78" length="middle"/>
+<pin name="A1" x="-5.08" y="-22.86" length="middle"/>
+<pin name="A2" x="-5.08" y="-27.94" length="middle"/>
+<pin name="VDD" x="-5.08" y="-33.02" length="middle"/>
+<pin name="GND" x="-5.08" y="-38.1" length="middle"/>
+<pin name="OUT0" x="27.94" y="-38.1" length="middle" rot="R180"/>
+<pin name="OUT1" x="27.94" y="-33.02" length="middle" rot="R180"/>
+<pin name="OUT2" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="OUT3" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<pin name="OUT4" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="OUT5" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="OUT6" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="OUT7" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="PHOTODIODE" urn="urn:adsk.eagle:symbol:11973812/1" library_version="3">
+<pin name="ANODE" x="0" y="2.54" visible="off" length="short" rot="R270"/>
+<pin name="CATHODE" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-2.54" x2="1.016" y2="-1.524" width="0.127" layer="94"/>
+<wire x1="1.016" y1="-1.524" x2="1.016" y2="-1.778" width="0.127" layer="94"/>
+<wire x1="1.016" y1="-1.778" x2="1.27" y2="-1.524" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-1.524" x2="1.016" y2="-1.524" width="0.127" layer="94"/>
+<wire x1="2.54" y1="-1.778" x2="1.524" y2="-0.762" width="0.127" layer="94"/>
+<wire x1="1.524" y1="-1.016" x2="1.524" y2="-0.762" width="0.127" layer="94"/>
+<wire x1="1.524" y1="-0.762" x2="1.778" y2="-0.762" width="0.127" layer="94"/>
+<wire x1="1.778" y1="-0.762" x2="1.524" y2="-1.016" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="632723300011" urn="urn:adsk.eagle:component:11973818/1" locally_modified="yes" prefix="X" library_version="1" library_locally_modified="yes">
+<deviceset name="632723300011" urn="urn:adsk.eagle:component:11973818/2" prefix="X" library_version="3">
 <gates>
 <gate name="USBC" symbol="632723X00011" x="0" y="0"/>
 <gate name="G$2" symbol="SHIELD" x="35.56" y="-35.56"/>
@@ -11940,6 +11503,1242 @@ DIN A4, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CORTEX-MDEBUG-10P" urn="urn:adsk.eagle:component:22988141/1" prefix="X1" library_version="3">
+<gates>
+<gate name="G$1" symbol="CORTEX-MDEBUG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CORTEX-M-CON-10P">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="10" pad="P$10"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+<connect gate="G$1" pin="9" pad="P$9"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8951899/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32F302K8U6" urn="urn:adsk.eagle:component:11973820/2" prefix="U" library_version="3">
+<gates>
+<gate name="G$1" symbol="STM32F302K8U6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="UFQFPN32" package="QFN50P500X500X60-33T350">
+<connects>
+<connect gate="G$1" pin="BOOT0" pad="31"/>
+<connect gate="G$1" pin="NRST" pad="4"/>
+<connect gate="G$1" pin="PA0" pad="7"/>
+<connect gate="G$1" pin="PA1" pad="8"/>
+<connect gate="G$1" pin="PA10" pad="20"/>
+<connect gate="G$1" pin="PA11" pad="21"/>
+<connect gate="G$1" pin="PA12" pad="22"/>
+<connect gate="G$1" pin="PA13" pad="23"/>
+<connect gate="G$1" pin="PA14" pad="24"/>
+<connect gate="G$1" pin="PA15" pad="25"/>
+<connect gate="G$1" pin="PA2" pad="9"/>
+<connect gate="G$1" pin="PA3" pad="10"/>
+<connect gate="G$1" pin="PA4" pad="11"/>
+<connect gate="G$1" pin="PA5" pad="12"/>
+<connect gate="G$1" pin="PA6" pad="13"/>
+<connect gate="G$1" pin="PA7" pad="14"/>
+<connect gate="G$1" pin="PA8" pad="18"/>
+<connect gate="G$1" pin="PA9" pad="19"/>
+<connect gate="G$1" pin="PAD" pad="33"/>
+<connect gate="G$1" pin="PB0" pad="15"/>
+<connect gate="G$1" pin="PB3" pad="26"/>
+<connect gate="G$1" pin="PB4" pad="27"/>
+<connect gate="G$1" pin="PB5" pad="28"/>
+<connect gate="G$1" pin="PB6" pad="29"/>
+<connect gate="G$1" pin="PB7" pad="30"/>
+<connect gate="G$1" pin="PF0/OSC_IN" pad="2"/>
+<connect gate="G$1" pin="PF1/OSC_OUT" pad="3"/>
+<connect gate="G$1" pin="VDDA/VREF+" pad="5"/>
+<connect gate="G$1" pin="VDD_1" pad="1"/>
+<connect gate="G$1" pin="VDD_2" pad="17"/>
+<connect gate="G$1" pin="VSSA/VREF-" pad="6"/>
+<connect gate="G$1" pin="VSS_1" pad="32"/>
+<connect gate="G$1" pin="VSS_2" pad="16"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11863136/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA2376" urn="urn:adsk.eagle:component:11973824/1" prefix="U" library_version="3">
+<gates>
+<gate name="A" symbol="OPAMP" x="0" y="0"/>
+<gate name="B" symbol="OPAMP_POWER" x="0" y="-38.1"/>
+</gates>
+<devices>
+<device name="PDSO-8" package="SOP65P490X110-8">
+<connects>
+<connect gate="A" pin="IN1" pad="2"/>
+<connect gate="A" pin="IN2" pad="3"/>
+<connect gate="A" pin="OUT1" pad="1"/>
+<connect gate="B" pin="GND" pad="4"/>
+<connect gate="B" pin="IN1" pad="6"/>
+<connect gate="B" pin="IN2" pad="5"/>
+<connect gate="B" pin="OUT1" pad="7"/>
+<connect gate="B" pin="VDD" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11858781/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="REF5025" urn="urn:adsk.eagle:component:11973822/1" prefix="U" library_version="3">
+<gates>
+<gate name="G$1" symbol="REF50XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PDSO-8" package="SOP65P490X110-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="TEMP" pad="3"/>
+<connect gate="G$1" pin="TRIM" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11858781/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA350" urn="urn:adsk.eagle:component:11973823/1" prefix="U" library_version="3">
+<gates>
+<gate name="G$1" symbol="OPAMP_POWER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PDSO-8" package="SOP65P490X110-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="IN1" pad="2"/>
+<connect gate="G$1" pin="IN2" pad="3"/>
+<connect gate="G$1" pin="OUT1" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11858781/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADS1255" urn="urn:adsk.eagle:component:11973825/1" prefix="U" library_version="3">
+<gates>
+<gate name="G$1" symbol="ADS1255" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TSSOP" package="SOP65P780X200-20">
+<connects>
+<connect gate="G$1" pin="/CS" pad="14"/>
+<connect gate="G$1" pin="/DRDY" pad="15"/>
+<connect gate="G$1" pin="/RESET" pad="9"/>
+<connect gate="G$1" pin="/SYNC" pad="8"/>
+<connect gate="G$1" pin="AGND" pad="2"/>
+<connect gate="G$1" pin="AIN0" pad="6"/>
+<connect gate="G$1" pin="AIN1" pad="7"/>
+<connect gate="G$1" pin="AINCOM" pad="5"/>
+<connect gate="G$1" pin="AVDD" pad="1"/>
+<connect gate="G$1" pin="D0" pad="19"/>
+<connect gate="G$1" pin="D1" pad="20"/>
+<connect gate="G$1" pin="DGND" pad="11"/>
+<connect gate="G$1" pin="DIN" pad="17"/>
+<connect gate="G$1" pin="DOUT" pad="16"/>
+<connect gate="G$1" pin="DVDD" pad="10"/>
+<connect gate="G$1" pin="SCLK" pad="18"/>
+<connect gate="G$1" pin="VREF+" pad="4"/>
+<connect gate="G$1" pin="VREF-" pad="3"/>
+<connect gate="G$1" pin="XTAL1" pad="13"/>
+<connect gate="G$1" pin="XTAL2" pad="12"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11858354/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLC59208F" urn="urn:adsk.eagle:component:11973819/1" prefix="U" library_version="3">
+<description>TLC59208F 8-Bit Fm+ I2C Bus LED Driver</description>
+<gates>
+<gate name="G$1" symbol="TLC59208F" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TSSOP-16" package="SOP65P640X120-16">
+<connects>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="NRST" pad="13"/>
+<connect gate="G$1" pin="OUT0" pad="4"/>
+<connect gate="G$1" pin="OUT1" pad="5"/>
+<connect gate="G$1" pin="OUT2" pad="6"/>
+<connect gate="G$1" pin="OUT3" pad="7"/>
+<connect gate="G$1" pin="OUT4" pad="9"/>
+<connect gate="G$1" pin="OUT5" pad="10"/>
+<connect gate="G$1" pin="OUT6" pad="11"/>
+<connect gate="G$1" pin="OUT7" pad="12"/>
+<connect gate="G$1" pin="SCL" pad="14"/>
+<connect gate="G$1" pin="SDA" pad="15"/>
+<connect gate="G$1" pin="VDD" pad="16"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11867276/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SD003-151-001" urn="urn:adsk.eagle:component:11973821/1" prefix="D" library_version="3">
+<description>Surface-Mount InGaAs Photodetector</description>
+<gates>
+<gate name="G$1" symbol="PHOTODIODE" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="SMD" package="LEDC3316X110">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="2"/>
+<connect gate="G$1" pin="CATHODE" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11861022/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Wurth_EMC Components_WE-CBF" urn="urn:adsk.eagle:library:14283147">
+<description>&lt;BR&gt;Wurth Elektronik - EMC Components - Ferrites For PCB Assembly - WE-CBF&lt;br&gt;&lt;Hr&gt;
+
+&lt;BR&gt;
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-5000&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;
+&lt;HR&gt;
+&lt;br&gt;Eagle Version 9, Library Revision 2019b, 2019-12-02&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="WE-CBF_0603(W=2.2)" urn="urn:adsk.eagle:footprint:7784322/3" library_version="2">
+<description>&lt;b&gt;WE-CBF SMT EMI Suppression Ferrite Bead&lt;/b&gt;
+&lt;pre&gt; &lt;b&gt;&lt;font size="4"&gt;Size: &lt;/b&gt;0603</description>
+<smd name="1" x="-0.725" y="0" dx="0.75" dy="0.7" layer="1"/>
+<smd name="2" x="0.725" y="0" dx="0.75" dy="0.7" layer="1"/>
+<text x="0.03" y="0.92" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="-2.07" y="-1.77" size="0.8128" layer="27">&gt;VALUE</text>
+<polygon width="0.1" layer="39">
+<vertex x="-1.3" y="0.7"/>
+<vertex x="1.3" y="0.7"/>
+<vertex x="1.3" y="-0.7"/>
+<vertex x="-1.3" y="-0.7"/>
+</polygon>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.1" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.1" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.1" layer="51"/>
+</package>
+<package name="WE-CBF_0603(W=2.6)" urn="urn:adsk.eagle:footprint:7784324/3" library_version="2">
+<description>&lt;b&gt;WE-CBF SMT EMI Suppression Ferrite Bead&lt;/b&gt;
+&lt;pre&gt; &lt;b&gt;&lt;font size="4"&gt;Size: &lt;/b&gt;0603</description>
+<smd name="1" x="-0.825" y="0" dx="0.95" dy="0.7" layer="1"/>
+<smd name="2" x="0.825" y="0" dx="0.95" dy="0.7" layer="1"/>
+<text x="-0.02" y="0.97" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="-2.12" y="-1.82" size="0.8128" layer="27">&gt;VALUE</text>
+<polygon width="0.1" layer="39">
+<vertex x="-1.5" y="0.7"/>
+<vertex x="1.5" y="0.7"/>
+<vertex x="1.5" y="-0.7"/>
+<vertex x="-1.5" y="-0.7"/>
+</polygon>
+<wire x1="0.8" y1="0.4" x2="-0.8" y2="0.4" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.4" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="0.8" y2="-0.4" width="0.1" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.1" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="WE-CBF_0603(W=2.2)" urn="urn:adsk.eagle:package:7784393/5" type="model" library_version="2">
+<description>&lt;b&gt;WE-CBF SMT EMI Suppression Ferrite Bead&lt;/b&gt;
+&lt;pre&gt; &lt;b&gt;&lt;font size="4"&gt;Size: &lt;/b&gt;0603</description>
+<packageinstances>
+<packageinstance name="WE-CBF_0603(W=2.2)"/>
+</packageinstances>
+</package3d>
+<package3d name="WE-CBF_0603(W=2.6)" urn="urn:adsk.eagle:package:7784395/5" type="model" library_version="2">
+<description>&lt;b&gt;WE-CBF SMT EMI Suppression Ferrite Bead&lt;/b&gt;
+&lt;pre&gt; &lt;b&gt;&lt;font size="4"&gt;Size: &lt;/b&gt;0603</description>
+<packageinstances>
+<packageinstance name="WE-CBF_0603(W=2.6)"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="L" urn="urn:adsk.eagle:symbol:14283148/1" library_version="2">
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WE-CBF_0603" urn="urn:adsk.eagle:component:14283150/2" prefix="L" library_version="2">
+<description>&lt;b&gt; WE-CBF SMD EMI Suppression Ferrite Bead
+&lt;br&gt;
+&lt;br&gt; Characteristics
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt; Reliable Ni-Sn electrodes
+&lt;br&gt; High rated current up to 6 A
+&lt;br&gt; Operating temperature: –55 ºC to +125 ºC
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Applications
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt; Perfect as data lined filter and for uncoupling of distribution voltage
+&lt;br&gt;&lt;br&gt;&lt;b&gt; Package name and Variant abbreviation:&lt;br&gt;&lt;br&gt;
+Package: 
+&lt;/b&gt;&lt;br&gt;Wide Band /High Speed: W=Width= 2.2
+&lt;br&gt;High Current: W=Width= 2.6
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt;Variant abbreviation:
+&lt;/b&gt;&lt;br&gt;WB = Wide Band 
+&lt;br&gt;HS=High Speed
+&lt;br&gt;HC=High Current 
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;a href="https://katalog.we-online.de/media/images/v2/o14753v209%20Family_WE-CBF.jpg" title="Enlarge picture"&gt;
+&lt;img src="https://katalog.we-online.de/media/images/v2/o14753v209%20Family_WE-CBF.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="http://katalog.we-online.de/en/pbs/WE-CBF"&gt;http://katalog.we-online.de/en/pbs/WE-CBF&lt;/a&gt;&lt;p&gt;
+
+Updated by Ella Wu   2019-01-02&lt;br&gt;
+2019 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_WB_HS" package="WE-CBF_0603(W=2.2)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7784393/5"/>
+</package3dinstances>
+<technologies>
+<technology name="_74279260">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279260.pdf" constant="no"/>
+<attribute name="IR1" value="400mA" constant="no"/>
+<attribute name="IR2" value="2200mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279260 " constant="no"/>
+<attribute name="RDC-MAX" value="0.15Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="40Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="89Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="60Ohm" constant="no"/>
+</technology>
+<technology name="_742792605">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792605.pdf" constant="no"/>
+<attribute name="IR1" value="500mA" constant="no"/>
+<attribute name="IR2" value="2200mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792605 " constant="no"/>
+<attribute name="RDC-MAX" value="0.1Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="33Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="48Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="50Ohm" constant="no"/>
+</technology>
+<technology name="_742792606">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792606.pdf" constant="no"/>
+<attribute name="IR1" value="200mA" constant="no"/>
+<attribute name="IR2" value="1600mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792606 " constant="no"/>
+<attribute name="RDC-MAX" value="0.35Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="120Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="212Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="388Ohm" constant="no"/>
+</technology>
+<technology name="_742792607">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792607.pdf" constant="no"/>
+<attribute name="IR1" value="300mA" constant="no"/>
+<attribute name="IR2" value="1700mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792607 " constant="no"/>
+<attribute name="RDC-MAX" value="0.3Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="68Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="214Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="284Ohm" constant="no"/>
+</technology>
+<technology name="_742792608">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792608.pdf" constant="no"/>
+<attribute name="IR1" value="500mA" constant="no"/>
+<attribute name="IR2" value="1300mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792608 " constant="no"/>
+<attribute name="RDC-MAX" value="0.1Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="47Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="82Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="75Ohm" constant="no"/>
+</technology>
+<technology name="_74279261">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279261.pdf" constant="no"/>
+<attribute name="IR1" value="200mA" constant="no"/>
+<attribute name="IR2" value="1000mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279261 " constant="no"/>
+<attribute name="RDC-MAX" value="0.3Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="80Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="303Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="350Ohm" constant="no"/>
+</technology>
+<technology name="_74279262">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279262.pdf" constant="no"/>
+<attribute name="IR1" value="500mA" constant="no"/>
+<attribute name="IR2" value="1350mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279262 " constant="no"/>
+<attribute name="RDC-MAX" value="0.3Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="120Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="141Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="200Ohm" constant="no"/>
+</technology>
+<technology name="_742792620">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792620.pdf" constant="no"/>
+<attribute name="IR1" value="500mA" constant="no"/>
+<attribute name="IR2" value="1650mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792620 " constant="no"/>
+<attribute name="RDC-MAX" value="0.15Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="100Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="137Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="125Ohm" constant="no"/>
+</technology>
+<technology name="_742792621">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792621.pdf" constant="no"/>
+<attribute name="IR1" value="550mA" constant="no"/>
+<attribute name="IR2" value="1250mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792621 " constant="no"/>
+<attribute name="RDC-MAX" value="0.2Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="140Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="271Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="430Ohm" constant="no"/>
+</technology>
+<technology name="_742792622">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792622.pdf" constant="no"/>
+<attribute name="IR1" value="500mA" constant="no"/>
+<attribute name="IR2" value="1500mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792622 " constant="no"/>
+<attribute name="RDC-MAX" value="0.3Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="180Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="191Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="283Ohm" constant="no"/>
+</technology>
+<technology name="_74279263">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279263.pdf" constant="no"/>
+<attribute name="IR1" value="500mA" constant="no"/>
+<attribute name="IR2" value="1000mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279263 " constant="no"/>
+<attribute name="RDC-MAX" value="0.3Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="220Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="246Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="280Ohm" constant="no"/>
+</technology>
+<technology name="_742792631">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792631.pdf" constant="no"/>
+<attribute name="IR1" value="200mA" constant="no"/>
+<attribute name="IR2" value="1800mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792631 " constant="no"/>
+<attribute name="RDC-MAX" value="0.4Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="240Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="235Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="340Ohm" constant="no"/>
+</technology>
+<technology name="_74279264">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279264.pdf" constant="no"/>
+<attribute name="IR1" value="200mA" constant="no"/>
+<attribute name="IR2" value="1000mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279264 " constant="no"/>
+<attribute name="RDC-MAX" value="0.35Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="300Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="279Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="500Ohm" constant="no"/>
+</technology>
+<technology name="_742792640">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792640.pdf" constant="no"/>
+<attribute name="IR1" value="300mA" constant="no"/>
+<attribute name="IR2" value="750mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792640 " constant="no"/>
+<attribute name="RDC-MAX" value="0.35Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="300Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="220Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="1500Ohm" constant="no"/>
+</technology>
+<technology name="_742792642">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792642.pdf" constant="no"/>
+<attribute name="IR1" value="200mA" constant="no"/>
+<attribute name="IR2" value="950mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792642 " constant="no"/>
+<attribute name="RDC-MAX" value="0.45Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="470Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="256Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="780Ohm" constant="no"/>
+</technology>
+<technology name="_742792643">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792643.pdf" constant="no"/>
+<attribute name="IR1" value="400mA" constant="no"/>
+<attribute name="IR2" value="730mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792643 " constant="no"/>
+<attribute name="RDC-MAX" value="0.35Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="470Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="247Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="700Ohm" constant="no"/>
+</technology>
+<technology name="_74279265">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279265.pdf" constant="no"/>
+<attribute name="IR1" value="200mA" constant="no"/>
+<attribute name="IR2" value="850mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279265 " constant="no"/>
+<attribute name="RDC-MAX" value="0.45Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="600Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="224Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="720Ohm" constant="no"/>
+</technology>
+<technology name="_742792653">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792653.pdf" constant="no"/>
+<attribute name="IR1" value="300mA" constant="no"/>
+<attribute name="IR2" value="500mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792653 " constant="no"/>
+<attribute name="RDC-MAX" value="0.65Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="600Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="230Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="4500Ohm" constant="no"/>
+</technology>
+<technology name="_742792656">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792656.pdf" constant="no"/>
+<attribute name="IR1" value="400mA" constant="no"/>
+<attribute name="IR2" value="900mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792656 " constant="no"/>
+<attribute name="RDC-MAX" value="0.35Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="750Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="253Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="800Ohm" constant="no"/>
+</technology>
+<technology name="_74279266">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279266.pdf" constant="no"/>
+<attribute name="IR1" value="200mA" constant="no"/>
+<attribute name="IR2" value="650mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279266 " constant="no"/>
+<attribute name="RDC-MAX" value="0.6Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="1000Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="265Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="1350Ohm" constant="no"/>
+</technology>
+<technology name="_742792662">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792662.pdf" constant="no"/>
+<attribute name="IR1" value="600mA" constant="no"/>
+<attribute name="IR2" value="830mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792662 " constant="no"/>
+<attribute name="RDC-MAX" value="0.3Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="1000Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="186Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="1050Ohm" constant="no"/>
+</technology>
+<technology name="_742792663">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792663.pdf" constant="no"/>
+<attribute name="IR1" value="100mA" constant="no"/>
+<attribute name="IR2" value="650mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792663 " constant="no"/>
+<attribute name="RDC-MAX" value="0.85Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="1000Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="201Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="1100Ohm" constant="no"/>
+</technology>
+<technology name="_742792664">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792664.pdf" constant="no"/>
+<attribute name="IR1" value="300mA" constant="no"/>
+<attribute name="IR2" value="680mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792664 " constant="no"/>
+<attribute name="RDC-MAX" value="0.6Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="1000Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="191Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="1100Ohm" constant="no"/>
+</technology>
+<technology name="_74279267">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279267.pdf" constant="no"/>
+<attribute name="IR1" value="500mA" constant="no"/>
+<attribute name="IR2" value="2000mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279267 " constant="no"/>
+<attribute name="RDC-MAX" value="0.3Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="60Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="92Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="110Ohm" constant="no"/>
+</technology>
+<technology name="_74279268">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279268.pdf" constant="no"/>
+<attribute name="IR1" value="500mA" constant="no"/>
+<attribute name="IR2" value="1900mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279268 " constant="no"/>
+<attribute name="RDC-MAX" value="0.1Ohm" constant="no"/>
+<attribute name="TYPE" value="High Speed" constant="no"/>
+<attribute name="VALUE" value="15Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="56Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="60Ohm" constant="no"/>
+</technology>
+<technology name="_74279269">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/74279269.pdf" constant="no"/>
+<attribute name="IR1" value="50mA" constant="no"/>
+<attribute name="IR2" value="650mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 74279269 " constant="no"/>
+<attribute name="RDC-MAX" value="0.7Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="1200Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="258Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="1500Ohm" constant="no"/>
+</technology>
+<technology name="_742792691">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792691.pdf" constant="no"/>
+<attribute name="IR1" value="50mA" constant="no"/>
+<attribute name="IR2" value="650mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792691 " constant="no"/>
+<attribute name="RDC-MAX" value="0.7Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="1500Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="201Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="1900Ohm" constant="no"/>
+</technology>
+<technology name="_742792692">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792692.pdf" constant="no"/>
+<attribute name="IR1" value="50mA" constant="no"/>
+<attribute name="IR2" value="500mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792692 " constant="no"/>
+<attribute name="RDC-MAX" value="0.8Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="1800Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="249Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="2100Ohm" constant="no"/>
+</technology>
+<technology name="_742792693">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792693.pdf" constant="no"/>
+<attribute name="IR1" value="50mA" constant="no"/>
+<attribute name="IR2" value="500mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792693 " constant="no"/>
+<attribute name="RDC-MAX" value="0.8Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="2200Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="192Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="2250Ohm" constant="no"/>
+</technology>
+<technology name="_742792695">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792695.pdf" constant="no"/>
+<attribute name="IR1" value="50mA" constant="no"/>
+<attribute name="IR2" value="450mA" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792695 " constant="no"/>
+<attribute name="RDC-MAX" value="1Ohm" constant="no"/>
+<attribute name="TYPE" value="Wide Band" constant="no"/>
+<attribute name="VALUE" value="2500Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="165Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="3000Ohm" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_HC" package="WE-CBF_0603(W=2.6)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7784395/5"/>
+</package3dinstances>
+<technologies>
+<technology name="_742792601">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792601.pdf" constant="no"/>
+<attribute name="IR1" value="1000mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792601 " constant="no"/>
+<attribute name="RDC-MAX" value="0.03Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="30Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="53Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="65Ohm" constant="no"/>
+</technology>
+<technology name="_742792602">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792602.pdf" constant="no"/>
+<attribute name="IR1" value="3000mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792602 " constant="no"/>
+<attribute name="RDC-MAX" value="0.04Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="60Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="110Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="110Ohm" constant="no"/>
+</technology>
+<technology name="_742792603">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792603.pdf" constant="no"/>
+<attribute name="IR1" value="4000mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792603 " constant="no"/>
+<attribute name="RDC-MAX" value="0.03Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="28Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="50Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="45Ohm" constant="no"/>
+</technology>
+<technology name="_742792604">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792604.pdf" constant="no"/>
+<attribute name="IR1" value="1000mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792604 " constant="no"/>
+<attribute name="RDC-MAX" value="0.05Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="22Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="35Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="40Ohm" constant="no"/>
+</technology>
+<technology name="_742792609">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792609.pdf" constant="no"/>
+<attribute name="IR1" value="3000mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792609 " constant="no"/>
+<attribute name="RDC-MAX" value="0.04Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="30Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="40Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="40Ohm" constant="no"/>
+</technology>
+<technology name="_742792624">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792624.pdf" constant="no"/>
+<attribute name="IR1" value="1500mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792624 " constant="no"/>
+<attribute name="RDC-MAX" value="0.09Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="180Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="173Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="250Ohm" constant="no"/>
+</technology>
+<technology name="_742792625">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792625.pdf" constant="no"/>
+<attribute name="IR1" value="2000mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792625 " constant="no"/>
+<attribute name="RDC-MAX" value="0.05Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="120Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="146Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="180Ohm" constant="no"/>
+</technology>
+<technology name="_742792641">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792641.pdf" constant="no"/>
+<attribute name="IR1" value="2000mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792641 " constant="no"/>
+<attribute name="RDC-MAX" value="0.15Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="300Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="274Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="450Ohm" constant="no"/>
+</technology>
+<technology name="_742792645">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792645.pdf" constant="no"/>
+<attribute name="IR1" value="1000mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792645 " constant="no"/>
+<attribute name="RDC-MAX" value="0.2Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="470Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="-" constant="no"/>
+<attribute name="ZMAX" value="600Ohm" constant="no"/>
+</technology>
+<technology name="_742792651">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/742792651.pdf" constant="no"/>
+<attribute name="IR1" value="1000mA" constant="no"/>
+<attribute name="IR2" value="-" constant="no"/>
+<attribute name="MOUNT" value="SMT" constant="no"/>
+<attribute name="PART-NUMBER" value=" 742792651 " constant="no"/>
+<attribute name="RDC-MAX" value="0.2Ohm" constant="no"/>
+<attribute name="TYPE" value="High Current" constant="no"/>
+<attribute name="VALUE" value="600Ohm@100MHz" constant="no"/>
+<attribute name="Z" value="258Ohm@1GMHz" constant="no"/>
+<attribute name="ZMAX" value="800Ohm" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Wurth_EMC Components_WE-TVS" urn="urn:adsk.eagle:library:14282971">
+<description>&lt;BR&gt;Wurth Elektronik - EMC Components - ESD Protection - WE-TVS&lt;br&gt;&lt;Hr&gt;
+
+&lt;BR&gt;
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-5000&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;
+&lt;HR&gt;
+&lt;br&gt;Eagle Version 9, Library Revision 2020a, 2020-06-16&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="WE-TVS_SOT23-6L" urn="urn:adsk.eagle:footprint:12152346/2" library_version="2">
+<description>&lt;b&gt;WE-TVS TVS Diode
+&lt;br&gt;&lt;/b&gt;Size:  SOT23-6L
+&lt;BR&gt;L X W X H = 2.8mm X 2.9mm X 1.16mm</description>
+<wire x1="-1.45" y1="-0.8" x2="1.45" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="1.45" y1="-0.8" x2="1.45" y2="0.8" width="0.1" layer="51"/>
+<wire x1="1.45" y1="0.8" x2="-0.75" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-0.75" y1="0.8" x2="-1.15" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-1.15" y1="0.8" x2="-1.45" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-1.45" y1="0.8" x2="-1.45" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="-1.55" y1="-0.9" x2="-1.55" y2="0.9" width="0.2" layer="21"/>
+<wire x1="1.55" y1="-0.9" x2="1.55" y2="0.9" width="0.2" layer="21"/>
+<wire x1="-0.75" y1="-0.8" x2="-0.75" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="-0.75" y1="-1.4" x2="-1.15" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="-1.15" y1="-1.4" x2="-1.15" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="1.15" y1="-0.8" x2="1.15" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="1.15" y1="-1.4" x2="0.75" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="0.75" y1="-1.4" x2="0.75" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="0.2" y1="-0.8" x2="0.2" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="0.2" y1="-1.4" x2="-0.2" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="-0.2" y1="-1.4" x2="-0.2" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="0.75" y1="0.8" x2="0.75" y2="1.4" width="0.1" layer="51"/>
+<wire x1="0.75" y1="1.4" x2="1.15" y2="1.4" width="0.1" layer="51"/>
+<wire x1="1.15" y1="1.4" x2="1.15" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-1.15" y1="0.8" x2="-1.15" y2="1.4" width="0.1" layer="51"/>
+<wire x1="-1.15" y1="1.4" x2="-0.75" y2="1.4" width="0.1" layer="51"/>
+<wire x1="-0.75" y1="1.4" x2="-0.75" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-0.2" y1="0.8" x2="-0.2" y2="1.4" width="0.1" layer="51"/>
+<wire x1="-0.2" y1="1.4" x2="0.2" y2="1.4" width="0.1" layer="51"/>
+<wire x1="0.2" y1="1.4" x2="0.2" y2="0.8" width="0.1" layer="51"/>
+<smd name="6" x="-0.95" y="1.25" dx="0.6" dy="1.1" layer="1"/>
+<smd name="5" x="0" y="1.25" dx="0.6" dy="1.1" layer="1"/>
+<smd name="4" x="0.95" y="1.25" dx="0.6" dy="1.1" layer="1"/>
+<smd name="3" x="0.95" y="-1.25" dx="0.6" dy="1.1" layer="1"/>
+<smd name="1" x="-0.95" y="-1.25" dx="0.6" dy="1.1" layer="1"/>
+<smd name="2" x="0" y="-1.25" dx="0.6" dy="1.1" layer="1"/>
+<text x="0" y="2.3" size="0.6096" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="-1.6" y="-2.8" size="0.6096" layer="27">&gt;VALUE</text>
+<circle x="-1.665" y="-1.433" radius="0.05" width="0.1" layer="21"/>
+<polygon width="0.1" layer="39" spacing="0.2">
+<vertex x="-1.75" y="-2"/>
+<vertex x="-1.75" y="2"/>
+<vertex x="1.75" y="2"/>
+<vertex x="1.75" y="-2"/>
+</polygon>
+</package>
+</packages>
+<packages3d>
+<package3d name="WE-TVS_SOT23-6L" urn="urn:adsk.eagle:package:12152378/3" type="model" library_version="2">
+<description>&lt;b&gt;WE-TVS TVS Diode
+&lt;br&gt;&lt;/b&gt;Size:  SOT23-6L
+&lt;BR&gt;L X W X H = 2.8mm X 2.9mm X 1.16mm</description>
+<packageinstances>
+<packageinstance name="WE-TVS_SOT23-6L"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="WE-TVS_6RTR4" urn="urn:adsk.eagle:symbol:14282976/2" library_version="2">
+<wire x1="3.175" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="7.62" x2="0.762" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="7.62" x2="-1.905" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="7.62" x2="-5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="8.255" x2="3.175" y2="7.62" width="0.254" layer="94"/>
+<wire x1="3.175" y1="7.62" x2="3.175" y2="6.985" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="-0.762" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="-7.62" x2="-5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="7.62" x2="0.762" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-5.08" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="-7.62" x2="-0.762" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-0.381" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="0.635" x2="0.762" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-0.635" x2="1.27" y2="-1.143" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.635" x2="0.254" y2="1.143" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="8.255" x2="-1.905" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="7.62" x2="-1.905" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-0.762" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="3.175" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="3.175" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="3.175" x2="3.175" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.175" y1="2.54" x2="3.175" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="-1.905" x2="3.175" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-2.54" x2="3.175" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="-6.985" x2="3.175" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="3.175" y1="-7.62" x2="3.175" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-7.62" x2="-0.762" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="-7.62" x2="1.905" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-6.985" x2="-1.905" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-7.62" x2="-1.905" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="8.89" x2="6.35" y2="8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="6.35" y1="8.89" x2="6.35" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="6.35" y1="-8.89" x2="-6.35" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-6.35" y1="-8.89" x2="-6.35" y2="8.89" width="0.254" layer="94" style="shortdash"/>
+<text x="-5.08" y="-11.43" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="10.16" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="8.35" y="4.36" size="0.4064" layer="94">I/O4</text>
+<text x="8.36" y="-0.69" size="0.4064" layer="94">VDD</text>
+<text x="8.27" y="-5.74" size="0.4064" layer="94">I/O3</text>
+<text x="-9.39" y="4.39" size="0.4064" layer="94">I/O1</text>
+<text x="-9.42" y="-5.77" size="0.4064" layer="94">I/O2</text>
+<text x="-9.5" y="-0.79" size="0.4064" layer="94">GND</text>
+<pin name="6" x="10.16" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="VDD" x="10.16" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="10.16" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="-10.16" y="-5.08" visible="pad" length="short" direction="pas"/>
+<pin name="GND" x="-10.16" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="1" x="-10.16" y="5.08" visible="pad" length="short" direction="pas"/>
+<polygon width="0.254" layer="94">
+<vertex x="-0.508" y="0.635"/>
+<vertex x="0.762" y="0"/>
+<vertex x="-0.508" y="-0.635"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="8.255"/>
+<vertex x="3.175" y="7.62"/>
+<vertex x="1.905" y="6.985"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="3.175"/>
+<vertex x="3.175" y="2.54"/>
+<vertex x="1.905" y="1.905"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="-1.905"/>
+<vertex x="3.175" y="-2.54"/>
+<vertex x="1.905" y="-3.175"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="-6.985"/>
+<vertex x="3.175" y="-7.62"/>
+<vertex x="1.905" y="-8.255"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-3.175" y="-6.985"/>
+<vertex x="-1.905" y="-7.62"/>
+<vertex x="-3.175" y="-8.255"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-3.175" y="-1.905"/>
+<vertex x="-1.905" y="-2.54"/>
+<vertex x="-3.175" y="-3.175"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-3.175" y="3.175"/>
+<vertex x="-1.905" y="2.54"/>
+<vertex x="-3.175" y="1.905"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-3.175" y="8.255"/>
+<vertex x="-1.905" y="7.62"/>
+<vertex x="-3.175" y="6.985"/>
+</polygon>
+<circle x="0.762" y="7.62" radius="0.381" width="0" layer="94"/>
+<circle x="5.08" y="2.54" radius="0.381" width="0" layer="94"/>
+<circle x="5.08" y="0" radius="0.381" width="0" layer="94"/>
+<circle x="5.08" y="-2.54" radius="0.381" width="0" layer="94"/>
+<circle x="-0.762" y="2.54" radius="0.381" width="0" layer="94"/>
+<circle x="0.762" y="-2.54" radius="0.381" width="0" layer="94"/>
+<circle x="-0.762" y="-7.62" radius="0.381" width="0" layer="94"/>
+<circle x="-5.08" y="2.54" radius="0.381" width="0" layer="94"/>
+<circle x="-5.08" y="0" radius="0.381" width="0" layer="94"/>
+<circle x="-5.08" y="-2.54" radius="0.381" width="0" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WE-TVS-HS_SOT23-6L_824001" urn="urn:adsk.eagle:component:14282997/2" prefix="D" library_version="2">
+<description>&lt;b&gt;WE-TVS TVS Diode – High Speed Series
+&lt;br&gt;
+
+&lt;br&gt;&lt;b&gt; Characteristics
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt;&lt;/b&gt;Low clamping voltage
+&lt;br&gt;Sturdy design
+&lt;br&gt;Very low capacitance
+&lt;br&gt;Flow Thru Design for a simple layout
+&lt;br&gt;Rail to Rail protection
+&lt;br&gt;Epoxy flame resistant UL94-V0
+&lt;br&gt;RoHS, REACH and free of halogens
+
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt; Applications
+&lt;br&gt;
+&lt;br&gt;&lt;/b&gt;Very fast data lines
+&lt;br&gt;USB 2.0
+&lt;br&gt;Ethernet
+&lt;br&gt;PoE
+&lt;br&gt;VGA
+&lt;br&gt;Sim Cards
+&lt;br&gt;Keypads
+&lt;br&gt;&lt;br&gt;&lt;B&gt;HS = High Speed
+&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;a href="https://katalog.we-online.com/media/images/v2/o14883v209%20Family_WE-TVS_HIGHSPEED." title="Enlarge picture"&gt;
+&lt;img src="https://katalog.we-online.com/media/images/v2/o14883v209%20Family_WE-TVS_HIGHSPEED." width="320"&gt;&lt;/a&gt;&lt;p&gt;
+Details see: &lt;a href="https://katalog.we-online.com/en/pbs/WE-TVS-HS"&gt;https://katalog.we-online.com/en/pbs/WE-TVS-HS&lt;/a&gt;&lt;p&gt;
+&lt;br&gt;
+&lt;/b&gt;Updated  by  Ella Wu  2019-07-12&lt;br&gt;
+&lt;/b&gt;2019 (C) Wurth Elektronik</description>
+<gates>
+<gate name="G$1" symbol="WE-TVS_6RTR4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WE-TVS_SOT23-6L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12152378/3"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="C-CH" value="1pF"/>
+<attribute name="CHANNELS" value="4+1"/>
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/824001.pdf"/>
+<attribute name="IPEAK" value="5A"/>
+<attribute name="MOUNT" value="SMT"/>
+<attribute name="PART-NUMBER" value=" 824001 "/>
+<attribute name="VALUE" value="5Vdc"/>
+<attribute name="VBR" value="6.2V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -11967,9 +12766,9 @@ DIN A4, landscape with location and doc. field</description>
 <variantdefs>
 </variantdefs>
 <parts>
-<part name="U1" library="spectrometer" deviceset="ADS1255" device="TSSOP" package3d_urn="urn:adsk.eagle:package:11858354/1"/>
-<part name="U3" library="spectrometer" deviceset="OPA350" device="PDSO-8" package3d_urn="urn:adsk.eagle:package:11858781/1"/>
-<part name="U4" library="spectrometer" deviceset="REF5025" device="PDSO-8" package3d_urn="urn:adsk.eagle:package:11858781/1"/>
+<part name="U1" library="spectrometer" library_urn="urn:adsk.eagle:library:11973806" deviceset="ADS1255" device="TSSOP" package3d_urn="urn:adsk.eagle:package:11858354/1"/>
+<part name="U3" library="spectrometer" library_urn="urn:adsk.eagle:library:11973806" deviceset="OPA350" device="PDSO-8" package3d_urn="urn:adsk.eagle:package:11858781/1"/>
+<part name="U4" library="spectrometer" library_urn="urn:adsk.eagle:library:11973806" deviceset="REF5025" device="PDSO-8" package3d_urn="urn:adsk.eagle:package:11858781/1"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="100pF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="100nF"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="49.9"/>
@@ -11993,7 +12792,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="5V0F" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="5V0F"/>
 <part name="5V0F1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="5V0F"/>
-<part name="FB1" library="EMCComponents (rev19c)" deviceset="WE-CBF_0603" device="_WB_HS" technology="_742792631" value="240"/>
+<part name="FB1" library="Wurth_EMC Components_WE-CBF" library_urn="urn:adsk.eagle:library:14283147" deviceset="WE-CBF_0603" device="_WB_HS" package3d_urn="urn:adsk.eagle:package:7784393/5" technology="_742792631" value="240Ohm@100MHz"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="15uF"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="15uF"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="100nF"/>
@@ -12019,8 +12818,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="100nF"/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="2V5REF1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="2V5REF"/>
-<part name="D1" library="spectrometer" deviceset="SD003-151-001" device="SMD" package3d_urn="urn:adsk.eagle:package:11861022/1"/>
-<part name="U2" library="spectrometer" deviceset="OPA2376" device="PDSO-8" package3d_urn="urn:adsk.eagle:package:11858781/1"/>
+<part name="D1" library="spectrometer" library_urn="urn:adsk.eagle:library:11973806" deviceset="SD003-151-001" device="SMD" package3d_urn="urn:adsk.eagle:package:11861022/1"/>
+<part name="U2" library="spectrometer" library_urn="urn:adsk.eagle:library:11973806" deviceset="OPA2376" device="PDSO-8" package3d_urn="urn:adsk.eagle:package:11858781/1"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
@@ -12842,15 +13641,15 @@ DIN A4, landscape with location and doc. field</description>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="22R"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="D1" library="EMCComponents (rev19c)" deviceset="WE-TVS_SOT23-6L_82400102" device="" value="5Vdc/2pF"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="22R"/>
-<part name="FB1" library="EMCComponents (rev19c)" deviceset="WE-CBF_0603" device="_WB_HS" technology="_742792631" value="240"/>
+<part name="FB1" library="Wurth_EMC Components_WE-CBF" library_urn="urn:adsk.eagle:library:14283147" deviceset="WE-CBF_0603" device="_WB_HS" package3d_urn="urn:adsk.eagle:package:7784393/5" technology="_742792631" value="240Ohm@100MHz"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="X1" library="spectrometer" library_urn="urn:adsk.eagle:library:11973806" deviceset="632723300011" device="THT" package3d_urn="urn:adsk.eagle:package:11973817/2"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="5k1"/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="5k1"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="D1" library="Wurth_EMC Components_WE-TVS" library_urn="urn:adsk.eagle:library:14282971" deviceset="WE-TVS-HS_SOT23-6L_824001" device="" package3d_urn="urn:adsk.eagle:package:12152378/3" value="5Vdc"/>
 </parts>
 <sheets>
 <sheet>
@@ -12881,17 +13680,13 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY5" gate="GND" x="153.67" y="99.06" smashed="yes">
 <attribute name="VALUE" x="151.765" y="95.885" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="G$1" x="153.67" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="146.26" y="111.61" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="162.69" y="111.04" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R1" gate="G$1" x="181.61" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="185.42" y="102.6414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="185.42" y="107.442" size="1.27" layer="96" rot="R180"/>
 </instance>
-<instance part="FB1" gate="G$1" x="166.37" y="124.46" smashed="yes">
-<attribute name="NAME" x="163.83" y="129.54" size="1.27" layer="95"/>
-<attribute name="VALUE" x="168.91" y="129.54" size="1.27" layer="96"/>
+<instance part="FB1" gate="G$1" x="168.07" y="138.76" smashed="yes">
+<attribute name="NAME" x="165.53" y="143.84" size="1.27" layer="95"/>
+<attribute name="VALUE" x="170.61" y="143.84" size="1.27" layer="96"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
@@ -12916,6 +13711,10 @@ DIN A4, landscape with location and doc. field</description>
 </instance>
 <instance part="SUPPLY7" gate="GND" x="151.13" y="92.71" smashed="yes">
 <attribute name="VALUE" x="149.225" y="89.535" size="1.778" layer="96"/>
+</instance>
+<instance part="D1" gate="G$1" x="153.67" y="119.38" smashed="yes" rot="R90">
+<attribute name="VALUE" x="165.1" y="114.3" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="143.51" y="119.38" size="1.778" layer="95" rot="R90" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -12952,9 +13751,9 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="X1" gate="USBC" pin="GND2"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="153.67" y1="109.22" x2="153.67" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
@@ -12972,18 +13771,23 @@ DIN A4, landscape with location and doc. field</description>
 <net name="DP" class="0">
 <segment>
 <label x="130.81" y="104.14" size="1.778" layer="95"/>
-<pinref part="D1" gate="G$1" pin="I/O2"/>
 <wire x1="128.27" y1="104.14" x2="158.75" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="158.75" y1="104.14" x2="158.75" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="176.53" y1="104.14" x2="158.75" y2="104.14" width="0.1524" layer="91"/>
 <junction x="158.75" y="104.14"/>
 <pinref part="X1" gate="USBC" pin="DP2"/>
+<pinref part="D1" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="92.71" y1="106.68" x2="85.09" y2="106.68" width="0.1524" layer="91"/>
 <label x="85.09" y="106.68" size="1.778" layer="95"/>
 <pinref part="X1" gate="USBC" pin="DP1"/>
+</segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="4"/>
+<wire x1="158.75" y1="129.54" x2="158.75" y2="134.62" width="0.1524" layer="91"/>
+<label x="158.75" y="130.81" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="DN" class="0">
@@ -12995,12 +13799,17 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <wire x1="148.59" y1="106.68" x2="128.27" y2="106.68" width="0.1524" layer="91"/>
 <label x="130.81" y="106.68" size="1.778" layer="95"/>
-<pinref part="D1" gate="G$1" pin="I/O1"/>
 <wire x1="148.59" y1="106.68" x2="148.59" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="163.83" y1="106.68" x2="148.59" y2="106.68" width="0.1524" layer="91"/>
 <junction x="148.59" y="106.68"/>
 <pinref part="X1" gate="USBC" pin="DN2"/>
+<pinref part="D1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="6"/>
+<wire x1="148.59" y1="129.54" x2="148.59" y2="134.62" width="0.1524" layer="91"/>
+<label x="148.59" y="130.81" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -13027,10 +13836,10 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="FB1" gate="G$1" pin="1"/>
+<label x="154.1" y="138.76" size="1.27" layer="95"/>
 <pinref part="D1" gate="G$1" pin="VDD"/>
-<wire x1="158.75" y1="124.46" x2="153.67" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="124.46" x2="153.67" y2="121.92" width="0.1524" layer="91"/>
-<label x="151.13" y="124.46" size="1.27" layer="95"/>
+<wire x1="153.67" y1="129.54" x2="153.67" y2="138.76" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="138.76" x2="160.45" y2="138.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -13050,8 +13859,8 @@ DIN A4, landscape with location and doc. field</description>
 <net name="V+" class="0">
 <segment>
 <pinref part="FB1" gate="G$1" pin="2"/>
-<wire x1="173.99" y1="124.46" x2="184.15" y2="124.46" width="0.1524" layer="91"/>
-<label x="179.07" y="124.46" size="1.27" layer="95"/>
+<wire x1="175.69" y1="138.76" x2="185.85" y2="138.76" width="0.1524" layer="91"/>
+<label x="180.77" y="138.76" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="CC2" class="0">
@@ -13092,7 +13901,7 @@ DIN A4, landscape with location and doc. field</description>
 <variantdefs>
 </variantdefs>
 <parts>
-<part name="U1" library="spectrometer" deviceset="STM32F302K8U6" device="UFQFPN32" package3d_urn="urn:adsk.eagle:package:11863136/1"/>
+<part name="U1" library="spectrometer" library_urn="urn:adsk.eagle:library:11973806" deviceset="STM32F302K8U6" device="UFQFPN32" package3d_urn="urn:adsk.eagle:package:11863136/2"/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -13109,7 +13918,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="10k"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="X2" library="BMAS" library_urn="urn:adsk.eagle:library:8795504" deviceset="CORTEX-MDEBUG-10P" device="" package3d_urn="urn:adsk.eagle:package:8951899/2"/>
+<part name="X2" library="spectrometer" library_urn="urn:adsk.eagle:library:11973806" deviceset="CORTEX-MDEBUG-10P" device="" package3d_urn="urn:adsk.eagle:package:8951899/2"/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1k"/>
@@ -13675,7 +14484,7 @@ USB communication</text>
 <variantdefs>
 </variantdefs>
 <parts>
-<part name="U1" library="spectrometer" deviceset="TLC59208F" device="TSSOP-16" package3d_urn="urn:adsk.eagle:package:11867276/1"/>
+<part name="U1" library="spectrometer" library_urn="urn:adsk.eagle:library:11973806" deviceset="TLC59208F" device="TSSOP-16" package3d_urn="urn:adsk.eagle:package:11867276/1"/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -14708,6 +15517,12 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="8.4" severity="warning">
+Since Version 8.4, EAGLE supports properties for SPICE simulation. 
+Probes in schematics and SPICE mapping objects found in parts and library devices
+will not be understood with this version. Update EAGLE to the latest version
+for full support of SPICE simulation. 
 </note>
 </compatibility>
 </eagle>
