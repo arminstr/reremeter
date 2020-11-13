@@ -1,3 +1,9 @@
+# hardware v2
+
+We are currently working on a second version of the low cost plastic sensor based on a MEMS-FPI chip by HAMAMATSU.
+
+This folder now contains the schematics in the folders spectrometer-2 and usb-interface-2.
+
 # reremeter hardware
 
 ![Sketch of reremeter exported from CAD model](../images/reremeter_sketch.png)
