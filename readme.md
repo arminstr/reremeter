@@ -19,7 +19,7 @@ Now the guide on how to get started with the build of your own reremeter.
 ### Additional information 
 - The main idea behind this project came from reading this paper about [Identification and classification of plastic resins using near infrared reflectance spectroscopy](https://www.researchgate.net/publication/285330830_Identification_and_classification_of_plastic_resins_using_near_infrared_reflectance_spectroscopy) by Hamed Masoumi, Seyed Mohsen Safavi, and Zahra Khani.
 - Inspiration for the analog frontend design was given by the [ADS1255](https://www.ti.com/product/ADS1255) reference designs on the TI website. They used this ADC in several DLP NIR spectrometer designs. (e.g. [DLP® NIRscan™ Evaluation Module](https://www.ti.com/tool/DLPNIRSCANEVM#2), [DLP Ultra-mobile NIR Spectrometer for Portable Chemical Analysis with Bluetooth Connectivity](https://www.ti.com/tool/TIDA-00554))
-- Super interesting [MEMS spectrometer](https://www.neospectra.com/wp-content/uploads/2019/03/NeoSpectra-Polymer-Commodities-01.pdf) by NeoSpectra.
+- Super interesting [MEMS spectrum sensor](https://www.hamamatsu.com/eu/en/product/type/C13272-02/index.html). You can read more about this on [OpenRecycling](https://openrecycling.com/en/projects/2021/01/06/plastic-type-sensor.html). 
 
 ### Notes
-The reremeter project is a part of [RealRecycling](https://re-re.org) by Armin Straller and Bernhard Gessler. 
+The reremeter project was created at RealRecycling by Armin Straller and Bernhard Gessler. 
